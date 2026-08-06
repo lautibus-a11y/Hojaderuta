@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Hoja de Ruta Inmobiliaria - Ivana Molina Bienes Raices y Asociados. Recorridos personalizados de inversión en 20 de Junio.">
+  <title>Hoja de Ruta Inmobiliaria | Ivana Molina Bienes Raices</title>
+  
+  <!-- Favicon References -->
+  <link rel="icon" type="image/png" href="assets/logo-favicon-.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo-favicon-.png">
+  <link rel="apple-touch-icon" href="assets/logo-favicon-.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Aurora Mesh Background Elements (Monochrome Dark) -->
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+  </div>
+
+  <!-- Header Navigation Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="brand" id="brandLink" title="Inicio - Ivana Molina Bienes Raices">
+        <img src="assets/logo-favicon-.png" alt="Ivana Molina Bienes Raices y Asociados" class="header-logo">
+        <div class="brand-info">
+          <h1>Hoja de Ruta Inmobiliaria</h1>
+          <p>Ivana Molina Bienes Raices y Asociados</p>
+        </div>
+      </a>
+
+      <!-- Professional Mobile-First Navigation Tabs -->
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="dashboard">
+          <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="9"></rect>
+            <rect x="14" y="3" width="7" height="5"></rect>
+            <rect x="14" y="12" width="7" height="9"></rect>
+            <rect x="3" y="16" width="7" height="5"></rect>
+          </svg>
+          <span>Dashboard</span>
+        </button>
+
+        <button class="nav-tab" data-tab="generator">
+          <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>Generar Ruta</span>
+        </button>
+
+        <button class="nav-tab" data-tab="roadmap" id="tabRoadmapNav">
+          <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="1 6 1 22 8 18 15 22 22 18 22 2 15 6 8 2 1 6"></polygon>
+            <line x1="8" y1="2" x2="8" y2="18"></line>
+            <line x1="15" y1="6" x2="15" y2="22"></line>
+          </svg>
+          <span>Hoja de Ruta</span>
+        </button>
+
+        <button class="nav-tab" data-tab="visit-sheet">
+          <svg class="tab-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+          </svg>
+          <span>Ficha Visita</span>
+        </button>
+      </nav>
+
+      <!-- Agent Info Badge -->
+      <div class="agent-badge">
+        <div class="agent-avatar">KM</div>
+        <div>
+          <strong style="color: #fff; font-size: 0.85rem;">Karen Ivana Molina</strong><br>
+          <span style="font-size: 0.72rem;">Martillera Matrícula N° 1048</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main class="main-content">
+
+    <!-- ====================================================================
+         TAB 1: DASHBOARD PRINCIPAL (Diseño UX/UI Destacado)
+         ==================================================================== -->
+    <section id="view-dashboard" class="tab-view active">
+      <!-- Hero Banner Glassmorphic Card -->
+      <div class="hero-banner">
+        <div class="hero-text">
+          <h2>Tu Hoja de Ruta de Inversión</h2>
+          <p>Encontrá propiedades seleccionadas en <strong>20 de Junio</strong> ajustadas a tu presupuesto y objetivo de búsqueda.</p>
+          
+          <div style="margin-top: 1.35rem;">
+            <button class="btn btn-primary btn-animated-cta" id="btnStartGenerator">
+              <span class="btn-arrow-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+              <span>Crear Mi Ruta</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property Catalog Filter Bar -->
+      <div class="glass-panel catalog-filter-bar">
+        <div class="filter-flex">
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800;">Propiedades Disponibles</h3>
+            <p style="font-size: 0.84rem; color: var(--text-secondary);">Oportunidades destacadas en 20 de Junio</p>
+          </div>
+
+          <div class="filter-controls">
+            <select id="filterTipo" class="form-control filter-select">
+              <option value="todos">🏠 Todos los Tipos</option>
+              <option value="Casa Quinta">🏡 Casa Quinta</option>
+              <option value="Casa">🏠 Casa</option>
+              <option value="Lote">🌱 Lote</option>
+            </select>
+
+            <select id="filterEstado" class="form-control filter-select">
+              <option value="todos">✨ Todos los Estados</option>
+              <option value="Lista para usar">🟢 Lista para usar</option>
+              <option value="A reciclar">🟡 A reciclar</option>
+              <option value="A refaccionar">🔴 A refaccionar</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Properties Cards Container -->
+      <div class="properties-grid" id="dashboardPropertiesGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 2: GENERADOR DE HOJA DE RUTA
+         ==================================================================== -->
+    <section id="view-generator" class="tab-view">
+      <div class="glass-panel generator-card">
+        
+        <!-- Header -->
+        <div class="generator-header">
+          <div class="generator-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>PROPUESTA PERSONALIZADA</span>
+          </div>
+          <h2>Diseñá tu Hoja de Ruta</h2>
+          <p>Completá los campos para generar un recorrido exclusivo adaptado a tus necesidades en 20 de Junio.</p>
+        </div>
+
+        <form id="roadmapForm" class="generator-form-body" onsubmit="return false;">
+          
+          <!-- Step 1 Block -->
+          <div class="form-step-block">
+            <div class="step-header">
+              <span class="step-num">01</span>
+              <span class="step-title">Tus Datos & Presupuesto</span>
+            </div>
+
+            <div class="form-grid-2col">
+              <div class="form-group">
+                <label class="form-label" for="clientName">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span>Tu Nombre y Apellido *</span>
+                </label>
+                <input type="text" id="clientName" class="form-control" placeholder="Ej: Carlos Mendoza" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientBudget">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  <span>Presupuesto Máximo (USD) *</span>
+                </label>
+                <input type="number" id="clientBudget" class="form-control" placeholder="Ej: 100000" min="5000" step="5000" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 Block -->
+          <div class="form-step-block">
+            <div class="step-header">
+              <span class="step-num">02</span>
+              <span class="step-title">Preferencias de Búsqueda</span>
+            </div>
+
+            <div class="form-grid-2col">
+              <div class="form-group">
+                <label class="form-label" for="clientObjective">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  <span>Objetivo de Búsqueda *</span>
+                </label>
+                <select id="clientObjective" class="form-control" required>
+                  <option value="Inversión">Inversión / Rentabilidad</option>
+                  <option value="Vivienda">Vivienda Permanente</option>
+                  <option value="Alquiler">Alquiler Temporal</option>
+                  <option value="Casa quinta">Casa Quinta / Fin de Semana</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientPropertyType">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  <span>Tipo de Propiedad *</span>
+                </label>
+                <select id="clientPropertyType" class="form-control" required>
+                  <option value="todas">Cualquier tipo compatible</option>
+                  <option value="Casa Quinta">Casa Quinta</option>
+                  <option value="Casa">Casa</option>
+                  <option value="Lote">Lote / Terreno</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group full-width" style="margin-top: 1.25rem;">
+              <label class="form-label" for="clientNotes">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                <span>Observaciones / Preferencias Específicas</span>
+              </label>
+              <textarea id="clientNotes" class="form-control" placeholder="Ej: Parque amplio, piscina, arboleda, permuta o facilidades de pago..."></textarea>
+            </div>
+          </div>
+
+          <!-- Form Actions -->
+          <div class="generator-actions">
+            <button type="submit" class="btn btn-primary btn-submit-gen" id="btnSubmitGenerator">
+              <span>Generar Hoja de Ruta</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+
+            <button type="reset" class="btn-ghost-reset">
+              Limpiar campos
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 3: VISTA DE HOJA DE RUTA PERSONALIZADA
+         ==================================================================== -->
+    <section id="view-roadmap" class="tab-view">
+      <div id="roadmapContent">
+        <!-- Rendered dynamically by app.js -->
+        <div class="glass-panel" style="text-align: center; padding: 4rem 2rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;">Aún no generaste tu Hoja de Ruta</h3>
+          <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 1.75rem;">Indicá tu presupuesto y preferencias en el Generador para ver tu propuesta a medida.</p>
+          <button class="btn btn-primary" onclick="switchTab('generator')">Ir a Diseñar Mi Ruta</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ====================================================================
+         TAB 4: FICHA DE VISITA INMOBILIARIA
+         ==================================================================== -->
+    <section id="view-visit-sheet" class="tab-view">
+      <div class="visit-sheet-container">
+        
+        <!-- Printable Visit Sheet Header with Logo -->
+        <div class="visit-header">
+          <div style="display: flex; align-items: center; gap: 0.85rem;">
+            <img src="assets/logo-favicon-.png" alt="Logo" style="height: 52px; width: auto; object-fit: contain;">
+            <div class="visit-brand">
+              <h2>FICHA DE VISITA INMOBILIARIA</h2>
+              <p>Constancia de Recorrido e Inspección de Inmueble</p>
+            </div>
+          </div>
+
+          <div class="visit-agent-info">
+            <strong>Karen Ivana Molina</strong><br>
+            Martillera Pública y Corredora Inmobiliaria<br>
+            Matrícula N° 1048 | CUIT 27-39.616.147-3<br>
+            20 de Junio, Buenos Aires
+          </div>
+        </div>
+
+        <form id="visitForm" onsubmit="return false;">
+          <!-- Datos del Inmueble -->
+          <div class="visit-section-title">1. Datos del Inmueble Visitado</div>
+          <div class="visit-form-grid">
+            <div class="visit-form-group">
+              <label class="visit-label">Inmueble / Propiedad</label>
+              <input type="text" id="visitProperty" class="visit-input" placeholder="Ej: Casa Quinta La Rosalía" required>
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">Dirección / Ubicación</label>
+              <input type="text" id="visitAddress" class="visit-input" placeholder="Ej: Calle Las Heras 1450, 20 de Junio" required>
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">Fecha de Visita</label>
+              <input type="date" id="visitDate" class="visit-input" required>
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">Hora</label>
+              <input type="time" id="visitTime" class="visit-input" required>
+            </div>
+          </div>
+
+          <!-- Datos del Interesado -->
+          <div class="visit-section-title">2. Datos del Interesado / Comprador</div>
+          <div class="visit-form-grid">
+            <div class="visit-form-group">
+              <label class="visit-label">Nombre y Apellido completo</label>
+              <input type="text" id="visitClientName" class="visit-input" placeholder="Ej: Carlos Mendoza" required>
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">DNI / CUIT</label>
+              <input type="text" id="visitClientDNI" class="visit-input" placeholder="Ej: 32.450.890" required>
+            </div>
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Teléfono de Contacto</label>
+              <input type="tel" id="visitClientPhone" class="visit-input" placeholder="Ej: 11 4590-1234" required>
+            </div>
+          </div>
+
+          <!-- Datos Laborales -->
+          <div class="visit-section-title">3. Datos Laborales y Económicos</div>
+          <div class="visit-form-grid">
+            <div class="visit-form-group">
+              <label class="visit-label">Situación Laboral</label>
+              <select id="visitJobStatus" class="visit-input" required>
+                <option value="Relación de dependencia">Relación de dependencia</option>
+                <option value="Monotributista">Monotributista</option>
+                <option value="Autónomo">Autónomo</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">Empresa / Actividad</label>
+              <input type="text" id="visitCompany" class="visit-input" placeholder="Ej: Consultoría Tecnológica">
+            </div>
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Ingreso Aproximado (Mensual)</label>
+              <input type="text" id="visitIncome" class="visit-input" placeholder="Ej: $ 1.200.000">
+            </div>
+          </div>
+
+          <!-- Datos de Locación / Habitabilidad -->
+          <div class="visit-section-title">4. Datos de Locación (En caso de alquiler)</div>
+          <div class="visit-form-grid">
+            <div class="visit-form-group">
+              <label class="visit-label">Cantidad de Personas a Habitar</label>
+              <input type="number" id="visitPeople" class="visit-input" min="1" value="2">
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">Mascotas</label>
+              <select id="visitPets" class="visit-input">
+                <option value="No">No</option>
+                <option value="Sí (Perro / Gato)">Sí (Perro / Gato)</option>
+              </select>
+            </div>
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Tipo de Garantía Presentada</label>
+              <select id="visitGuarantee" class="visit-input">
+                <option value="Propietaria">Garantía Propietaria</option>
+                <option value="Seguro de caución">Seguro de Caución (Finaer / Premium)</option>
+                <option value="Recibo de Sueldo">Recibo de Sueldo / Aval</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Conformidad y Firma Digital Canvas -->
+          <div class="visit-section-title">5. Conformidad y Firma del Visitante</div>
+          <p style="font-size: 0.8rem; color: #4b5563; margin-bottom: 0.75rem;">Dejo constancia de haber visitado e inspeccionado el inmueble precedentemente detallado en la fecha y hora indicadas.</p>
+
+          <div class="signature-box">
+            <label class="visit-label" style="display: block; margin-bottom: 0.5rem;">Firma del Interesado (Dibuje aquí con el cursor o pantalla táctil)</label>
+            <canvas id="signatureCanvas" width="700" height="160"></canvas>
+            
+            <div class="signature-controls">
+              <span style="font-size: 0.75rem; color: #6b7280;">Lienzo táctil habilitado</span>
+              <button type="button" class="btn btn-secondary btn-sm" id="btnClearSignature" style="background: #e5e7eb; color: #111;">Limpiar Firma</button>
+            </div>
+          </div>
+
+          <div class="visit-form-grid" style="margin-top: 1.5rem;">
+            <div class="visit-form-group">
+              <label class="visit-label">Aclaración de Firma</label>
+              <input type="text" id="visitSignClarification" class="visit-input" placeholder="Nombre completo">
+            </div>
+            <div class="visit-form-group">
+              <label class="visit-label">DNI Firmante</label>
+              <input type="text" id="visitSignDNI" class="visit-input" placeholder="Número de Documento">
+            </div>
+          </div>
+
+          <!-- Print / Action Controls -->
+          <div style="margin-top: 2.5rem; display: flex; justify-content: flex-end; gap: 1rem;" class="no-print">
+            <button type="button" class="btn btn-primary" id="btnPrintVisitSheet">
+              Imprimir / Descargar Ficha (PDF)
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Modal for Property Details with Interactive Multi-Photo Gallery Slider -->
+  <div class="modal-overlay" id="propertyModal">
+    <div class="modal-content">
+      <button class="modal-close" id="btnCloseModal">&times;</button>
+      <div id="modalBody">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Application Main Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

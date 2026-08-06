@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nombre": "Carlos Mendoza",
+    "presupuesto_max": 100000,
+    "objetivo": "Casa quinta",
+    "tipo_interes": "Casa Quinta",
+    "fecha_registro": "2026-08-01",
+    "observaciones": "Busca amplio parque y tranquilidad para fin de semana."
+  },
+  {
+    "id": 2,
+    "nombre": "Sofía Rossi",
+    "presupuesto_max": 150000,
+    "objetivo": "Inversión",
+    "tipo_interes": "Casa Quinta",
+    "fecha_registro": "2026-08-04",
+    "observaciones": "Interesada en alquileres temporales con buena rentabilidad."
+  },
+  {
+    "id": 3,
+    "nombre": "Martín Gómez",
+    "presupuesto_max": 80000,
+    "objetivo": "Vivienda",
+    "tipo_interes": "Casa",
+    "fecha_registro": "2026-08-05",
+    "observaciones": "Familia de 3 integrantes, valora estado aceptable y cercanía al centro."
+  }
+]

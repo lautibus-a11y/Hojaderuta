@@ -1,0 +1,22 @@
+[
+  {
+    "id": "HR-2026-001",
+    "cliente": "Carlos Mendoza",
+    "fecha": "2026-08-01",
+    "presupuesto": 100000,
+    "objetivo": "Casa quinta",
+    "tipo": "Casa Quinta",
+    "propiedades_ids": [1, 3],
+    "observaciones": "Interesado en parque arbolado y posibilidad de piscina."
+  },
+  {
+    "id": "HR-2026-002",
+    "cliente": "Sofía Rossi",
+    "fecha": "2026-08-04",
+    "presupuesto": 150000,
+    "objetivo": "Inversión",
+    "tipo": "Casa Quinta",
+    "propiedades_ids": [1, 2],
+    "observaciones": "Prioridad en renta estimada y potencial de valorización."
+  }
+]
