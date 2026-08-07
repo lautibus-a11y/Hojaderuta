@@ -554,11 +554,7 @@ body {
 }
 
 .property-card {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  background: var(--bg-surface);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: #161622;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1924,4 +1920,56 @@ textarea.form-control {
 }
 @media print {
   .btn-delete-prop { display: none !important; }
+}
+
+
+
+/* Budget Input Group Alignment Fix */
+.budget-input-group {
+  display: flex !important;
+  gap: 0.5rem !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.budget-currency-select {
+  width: 110px !important;
+  flex-shrink: 0 !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  cursor: pointer !important;
+}
+
+.budget-number-input {
+  flex: 1 !important;
+  width: 100% !important;
+}
+
+.generator-card {
+  margin: 1.5rem auto !important;
+  width: 100% !important;
+  max-width: 780px !important;
+  box-sizing: border-box !important;
+}
+
+.form-grid-2col {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1.25rem !important;
+  width: 100% !important;
+}
+
+@media (min-width: 640px) {
+  .form-grid-2col {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+.form-group {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
