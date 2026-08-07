@@ -1897,3 +1897,31 @@ textarea.form-control {
   opacity: 1;
   border-color: #ffffff;
 }
+
+
+.btn-delete-prop {
+  position: absolute;
+  top: 0.85rem;
+  right: 6rem; /* Avoid overlapping op badge */
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(231, 76, 60, 0.15);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+.btn-delete-prop:hover {
+  background: #e74c3c;
+  color: #fff;
+  transform: scale(1.1);
+}
+@media print {
+  .btn-delete-prop { display: none !important; }
+}

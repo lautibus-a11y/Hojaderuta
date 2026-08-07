@@ -1117,6 +1117,8 @@ const DEFAULT_CLIENTES = [
   }
 ];
 
+let currentGeneratedRoadmap = null;
+
 const state = {
   propiedades: [],
   clientes: [],
@@ -1347,7 +1349,7 @@ function generateRoadmap() {
   const roadmapId = `HR-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
   const todayStr = new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' });
 
-  const newRoadmap = {
+  currentGeneratedRoadmap = {
     id: roadmapId,
     cliente: clientName,
     fecha: todayStr,
@@ -1360,7 +1362,7 @@ function generateRoadmap() {
   };
 
   state.activeRoadmap = newRoadmap;
-  renderRoadmapView(newRoadmap);
+  renderRoadmapView(currentGeneratedRoadmap);
   switchTab('roadmap');
 }
 
@@ -1386,7 +1388,8 @@ function renderRoadmapView(roadmap) {
     const hasVideo = Boolean(p.video);
 
     return `
-      <div class="roadmap-property-card">
+      <div class="roadmap-property-card" style="position: relative;">
+      <button class="btn-delete-prop" onclick="removePropertyFromRoadmap(${p.id})" title="Quitar propiedad de la hoja de ruta">✕</button>
         <div class="roadmap-card-img-container" onclick="openPropertyModal(${p.id})" style="cursor: pointer;">
           ${mainImage ? `
             <img src="${encodeURI(mainImage)}" alt="${p.nombre}" class="roadmap-card-img" >
@@ -1572,6 +1575,16 @@ function renderRoadmapView(roadmap) {
       </div>
 
       <div class="roadmap-actions-row no-print">
+        <button class="btn btn-outline roadmap-action-btn" onclick="generateMultipleVisitSheet()" style="background: rgba(52, 152, 219, 0.1); border-color: #3498db; color: #3498db;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          Generar Ficha de Visita
+        </button>
         <button class="btn btn-primary roadmap-action-btn" onclick="window.print()">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="6 9 6 2 18 2 18 9"></polyline>
@@ -1890,4 +1903,34 @@ function closeModal() {
     modal.querySelectorAll('video').forEach(v => v.pause());
     modal.classList.remove('active');
   }
+}
+
+
+function removePropertyFromRoadmap(propId) {
+  if (!currentGeneratedRoadmap) return;
+  currentGeneratedRoadmap.propiedades = currentGeneratedRoadmap.propiedades.filter(p => p.id !== propId);
+  renderRoadmapView(currentGeneratedRoadmap);
+}
+
+function generateMultipleVisitSheet() {
+  if (!currentGeneratedRoadmap || currentGeneratedRoadmap.propiedades.length === 0) return;
+  
+  const propNames = currentGeneratedRoadmap.propiedades.map(p => "• " + p.nombre + " (" + p.direccion + ")").join('\n');
+  document.getElementById('visitPropName').value = propNames;
+  
+  // Set today's date
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('visitDate').value = today;
+  document.getElementById('visitTime').value = "10:00";
+  
+  // Try to pre-fill client name if available
+  const clientName = document.getElementById('visitClientName');
+  if(clientName && currentGeneratedRoadmap.cliente) {
+      clientName.value = currentGeneratedRoadmap.cliente;
+  }
+
+  // Clear signature
+  clearSignatureCanvas();
+  
+  switchTab('visit-sheet');
 }
