@@ -1617,7 +1617,7 @@ function renderRoadmapView(roadmap) {
           </svg>
           Generar Ficha de Visita
         </button>
-        <button class="btn btn-primary roadmap-action-btn" onclick="window.print()">
+        <button class="btn btn-primary roadmap-action-btn" onclick="printRoadmapPDF()">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="6 9 6 2 18 2 18 9"></polyline>
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
@@ -1784,9 +1784,7 @@ function initCanvas() {
 
   document.getElementById('btnClearSignature')?.addEventListener('click', clearSignatureCanvas);
 
-  document.getElementById('btnPrintVisitSheet')?.addEventListener('click', () => {
-    window.print();
-  });
+  document.getElementById('btnPrintVisitSheet')?.addEventListener('click', printVisitSheetPDF);
 }
 
 function clearSignatureCanvas() {
@@ -2002,4 +2000,39 @@ function generateMultipleVisitSheet() {
 // Explicitly attach to window
 window.generateMultipleVisitSheet = generateMultipleVisitSheet;
 window.removePropertyFromRoadmap = removePropertyFromRoadmap;
+
+
+function printRoadmapPDF() {
+  const originalTitle = document.title;
+  const active = getActiveRoadmap();
+  const clientName = active?.cliente || '';
+  const sanitizedClient = clientName ? clientName.replace(/[^a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ_-]/g, '').trim() : '';
+  
+  document.title = sanitizedClient ? `Hoja de Ruta - ${sanitizedClient}` : 'Hoja de Ruta Inmobiliaria';
+  
+  window.print();
+  
+  setTimeout(() => {
+    document.title = originalTitle;
+  }, 1000);
+}
+
+function printVisitSheetPDF() {
+  const originalTitle = document.title;
+  const clientInput = document.getElementById('visitClientName');
+  const clientName = clientInput ? clientInput.value.trim() : '';
+  const sanitizedClient = clientName ? clientName.replace(/[^a-zA-Z0-9 áéíóúÁÉÍÓÚñÑ_-]/g, '').trim() : '';
+  
+  document.title = sanitizedClient ? `Ficha de Visita - ${sanitizedClient}` : 'Ficha de Visita Inmobiliaria';
+  
+  window.print();
+  
+  setTimeout(() => {
+    document.title = originalTitle;
+  }, 1000);
+}
+
+// Explicitly attach to window
+window.printRoadmapPDF = printRoadmapPDF;
+window.printVisitSheetPDF = printVisitSheetPDF;
 
