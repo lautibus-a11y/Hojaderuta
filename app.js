@@ -1961,27 +1961,32 @@ function generateMultipleVisitSheet() {
     return;
   }
   
-  const propNames = active.propiedades.map(p => "• " + p.nombre + " (" + (p.direccion || p.ubicacion || '20 de Junio') + ")").join('\n');
-  const propInput = document.getElementById('visitPropName');
-  if (propInput) propInput.value = propNames;
+  const propListStr = active.propiedades.map((p, idx) => `${idx + 1}. ${p.nombre} (${p.tipo || 'Inmueble'}) - [${p.operacion || 'Venta'}]`).join('\n');
+  const addressListStr = active.propiedades.map((p, idx) => `${idx + 1}. ${p.direccion || p.ubicacion || '20 de Junio, La Matanza'}`).join('\n');
   
-  // Set today's date
+  const propInput = document.getElementById('visitProperty');
+  if (propInput) propInput.value = propListStr;
+  
+  const addrInput = document.getElementById('visitAddress');
+  if (addrInput) addrInput.value = addressListStr;
+  
+  // Set today's date & time
   const today = new Date().toISOString().split('T')[0];
   const dateInput = document.getElementById('visitDate');
   if (dateInput) dateInput.value = today;
   
+  const now = new Date();
+  const timeStr = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
   const timeInput = document.getElementById('visitTime');
-  if (timeInput) timeInput.value = "10:00";
+  if (timeInput) timeInput.value = timeStr;
   
-  // Try to pre-fill client name if available
-  const clientNameInput = document.getElementById('visitClientName');
-  if (clientNameInput && active.cliente) {
-    clientNameInput.value = active.cliente;
-  }
+  // Pre-fill client name if available
+  if (active.cliente) {
+    const clientNameInput = document.getElementById('visitClientName');
+    if (clientNameInput) clientNameInput.value = active.cliente;
 
-  const signClarificationInput = document.getElementById('visitSignClarification');
-  if (signClarificationInput && active.cliente) {
-    signClarificationInput.value = active.cliente;
+    const signClarificationInput = document.getElementById('visitSignClarification');
+    if (signClarificationInput) signClarificationInput.value = active.cliente;
   }
 
   // Clear signature safely
@@ -1991,7 +1996,6 @@ function generateMultipleVisitSheet() {
     console.log("Signature clear error:", err);
   }
   
-  // Switch to visit sheet tab
   switchTab('visit-sheet');
 }
 

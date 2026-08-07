@@ -304,15 +304,17 @@
 
         <form id="visitForm" onsubmit="return false;">
           <!-- Datos del Inmueble -->
-          <div class="visit-section-title">1. Datos del Inmueble Visitado</div>
+          <div class="visit-section-title">1. Datos del / los Inmueble(s) Visitado(s)</div>
           <div class="visit-form-grid">
-            <div class="visit-form-group">
-              <label class="visit-label">Inmueble(s) / Propiedad(es)</label>
-              <input type="text" id="visitProperty" class="visit-input" placeholder="Ej: Casa Quinta La Rosalía" required>
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Inmueble(s) / Propiedad(es) a Visitar</label>
+              <textarea id="visitProperty" class="visit-input" rows="3" placeholder="Ej: 1. Casa Quinta La Rosalía
+2. Quinta El Maestro" required style="resize: vertical; min-height: 60px; font-weight: 600; line-height: 1.5;"></textarea>
             </div>
-            <div class="visit-form-group">
-              <label class="visit-label">Dirección / Ubicación</label>
-              <input type="text" id="visitAddress" class="visit-input" placeholder="Ej: Calle Las Heras 1450, 20 de Junio" required>
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Dirección / Ubicación(es)</label>
+              <textarea id="visitAddress" class="visit-input" rows="2" placeholder="Ej: 1. Calle Las Heras 1450, 20 de Junio
+2. Urien 890, 20 de Junio" required style="resize: vertical; min-height: 50px; line-height: 1.4;"></textarea>
             </div>
             <div class="visit-form-group">
               <label class="visit-label">Fecha de Visita</label>
