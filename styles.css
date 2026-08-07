@@ -833,7 +833,7 @@ body {
 
   /* Hide interactive web components */
   .aurora-bg, .app-header, .nav-tabs, .btn, .roadmap-actions-row, .roadmap-card-actions,
-  .signature-controls button, .gallery-btn, .thumbs-strip,
+  .signature-controls button, .gallery-btn, .thumbs-strip, .modal-overlay,
   .no-print, .catalog-filter-bar, .hero-banner, .section-title-with-arrow {
     display: none !important;
   }
@@ -1423,277 +1423,446 @@ textarea.form-control {
    MOBILE-FIRST RESPONSIVE ROADMAP VIEW POLISH
    ========================================================================== */
 .roadmap-header-banner {
-  background: linear-gradient(135deg, rgba(28, 28, 38, 0.95) 0%, rgba(12, 12, 18, 0.98) 100%) !important;
-  border: 1px solid var(--border-glow) !important;
-  border-radius: var(--radius-lg) !important;
-  padding: 1.35rem 1.15rem !important;
-  margin-bottom: 1.5rem !important;
-  box-shadow: var(--shadow-lg) !important;
+  background: linear-gradient(135deg, rgba(28, 28, 38, 0.95) 0%, rgba(12, 12, 18, 0.98) 100%);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.15rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-lg);
 }
 
 @media (min-width: 768px) {
   .roadmap-header-banner {
-    padding: 2.25rem 2.5rem !important;
-    margin-bottom: 2rem !important;
+    padding: 2.25rem 2.5rem;
+    margin-bottom: 2rem;
   }
 }
 
 .roadmap-badge-id {
-  display: inline-block !important;
-  font-size: 0.7rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.06em !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: var(--text-secondary) !important;
-  padding: 0.25rem 0.75rem !important;
-  border-radius: var(--radius-full) !important;
-  border: 1px solid var(--border-subtle) !important;
-  margin-bottom: 0.5rem !important;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 0.5rem;
 }
 
 .roadmap-client-title {
-  font-size: 1.45rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  margin-bottom: 0.25rem !important;
-  line-height: 1.25 !important;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
 }
 
 @media (min-width: 768px) {
   .roadmap-client-title {
-    font-size: 2.1rem !important;
+    font-size: 2.1rem;
   }
 }
 
 .roadmap-client-name {
-  font-size: 0.92rem !important;
-  color: var(--text-secondary) !important;
-  margin-bottom: 1.25rem !important;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
 }
 
 .client-meta-grid {
-  display: grid !important;
-  grid-template-columns: 1fr !important;
-  gap: 0.65rem !important;
-  margin-bottom: 1.25rem !important;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
 }
 
 @media (min-width: 480px) {
   .client-meta-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 840px) {
   .client-meta-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 1rem !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 }
 
 .meta-box {
-  background: rgba(255, 255, 255, 0.035) !important;
-  border: 1px solid var(--border-subtle) !important;
-  border-radius: var(--radius-sm) !important;
-  padding: 0.65rem 0.85rem !important;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.85rem;
 }
 
 .meta-label {
-  font-size: 0.68rem !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-  color: var(--text-muted) !important;
-  display: block !important;
-  margin-bottom: 0.15rem !important;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.15rem;
 }
 
 .meta-val {
-  font-size: 0.88rem !important;
-  font-weight: 700 !important;
-  color: #ffffff !important;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .roadmap-actions-row {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.65rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 
 @media (min-width: 480px) {
   .roadmap-actions-row {
-    flex-direction: row !important;
+    flex-direction: row;
   }
 }
 
 .roadmap-action-btn {
-  width: 100% !important;
-  justify-content: center !important;
+  width: 100%;
+  justify-content: center;
 }
 
 @media (min-width: 480px) {
   .roadmap-action-btn {
-    width: auto !important;
+    width: auto;
   }
 }
 
 /* Roadmap Property Cards Mobile First */
 .roadmap-property-card {
-  background: var(--bg-surface) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
-  border: 1px solid var(--border-subtle) !important;
-  border-radius: var(--radius-lg) !important;
-  overflow: hidden !important;
-  margin-bottom: 1.5rem !important;
-  display: flex !important;
-  flex-direction: column !important;
-  box-shadow: var(--shadow-sm) !important;
-  transition: transform 0.25s ease, border-color 0.25s ease !important;
+  background: var(--bg-surface);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.25s ease, border-color 0.25s ease;
 }
 
 .roadmap-property-card:hover {
-  border-color: var(--border-glow) !important;
+  border-color: var(--border-glow);
 }
 
 @media (min-width: 900px) {
   .roadmap-property-card {
-    flex-direction: row !important;
+    flex-direction: row;
   }
 }
 
 .roadmap-card-img-container {
-  position: relative !important;
-  width: 100% !important;
-  height: 220px !important;
-  background: #101016 !important;
-  overflow: hidden !important;
-  flex-shrink: 0 !important;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: #101016;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 @media (min-width: 900px) {
   .roadmap-card-img-container {
-    width: 320px !important;
-    height: auto !important;
-    min-height: 100% !important;
+    width: 320px;
+    height: auto;
+    min-height: 100%;
   }
 }
 
 .roadmap-card-img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .roadmap-card-content {
-  padding: 1.15rem !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  flex-grow: 1 !important;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 @media (min-width: 768px) {
   .roadmap-card-content {
-    padding: 1.6rem !important;
+    padding: 1.6rem;
   }
 }
 
 .roadmap-card-header {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.5rem !important;
-  margin-bottom: 0.75rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 @media (min-width: 480px) {
   .roadmap-card-header {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-    align-items: flex-start !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 
 .roadmap-price {
-  font-size: 1.25rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.08) !important;
-  padding: 0.35rem 0.85rem !important;
-  border-radius: var(--radius-sm) !important;
-  border: 1px solid var(--border-subtle) !important;
-  display: inline-block !important;
-  align-self: flex-start !important;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  display: inline-block;
+  align-self: flex-start;
 }
 
 .info-block {
-  background: rgba(255, 255, 255, 0.03) !important;
-  border-left: 3px solid #ffffff !important;
-  padding: 0.75rem 0.95rem !important;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
-  margin: 0.75rem 0 !important;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid #ffffff;
+  padding: 0.75rem 0.95rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 0.75rem 0;
 }
 
 .info-block h4 {
-  font-size: 0.78rem !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.04em !important;
-  color: var(--text-secondary) !important;
-  margin-bottom: 0.25rem !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
 }
 
 .info-block p {
-  font-size: 0.85rem !important;
-  color: #ffffff !important;
-  line-height: 1.45 !important;
+  font-size: 0.85rem;
+  color: #ffffff;
+  line-height: 1.45;
 }
 
 .roadmap-card-actions {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.65rem !important;
-  margin-top: 1.25rem !important;
-  padding-top: 1rem !important;
-  border-top: 1px solid var(--border-subtle) !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
 @media (min-width: 480px) {
   .roadmap-card-actions {
-    flex-direction: row !important;
+    flex-direction: row;
   }
 }
 
 .roadmap-card-actions .btn {
-  width: 100% !important;
+  width: 100%;
 }
 
 @media (min-width: 480px) {
   .roadmap-card-actions .btn {
-    width: auto !important;
+    width: auto;
   }
 }
 
 .section-title-with-arrow {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.65rem !important;
-  margin-bottom: 1.25rem !important;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
 }
 
 .section-title-with-arrow h3 {
-  font-size: 1.2rem !important;
-  font-weight: 800 !important;
-  color: #ffffff !important;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .animated-down-arrow {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 30px !important;
-  height: 30px !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border-radius: 50% !important;
-  color: #ffffff !important;
-  animation: bounceDown 2s infinite ease-in-out !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #ffffff;
+  animation: bounceDown 2s infinite ease-in-out;
+}
+
+/* --------------------------------------------------------------------------
+   Modal & Photo Gallery Styles
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transform: translateY(20px) scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-content {
+  transform: translateY(0) scale(1);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-viewer {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.gallery-viewer img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  display: block;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.gallery-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.gallery-btn-prev {
+  left: 10px;
+}
+
+.gallery-btn-next {
+  right: 10px;
+}
+
+.gallery-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.thumbs-strip {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.thumbs-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbs-strip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.thumb-item {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s, border 0.2s;
+  border: 2px solid transparent;
+  flex-shrink: 0;
+}
+
+.thumb-item:hover {
+  opacity: 0.8;
+}
+
+.thumb-item.active {
+  opacity: 1;
+  border-color: #ffffff;
 }
