@@ -1257,7 +1257,7 @@ function createPropertyCardHTML(p) {
     <div class="property-card">
       <div class="card-image-wrap" onclick="openPropertyModal(${p.id})" style="cursor: pointer;">
         ${mainImage ? `
-          <img loading="lazy" src="${encodeURI(mainImage)}" alt="${p.nombre}" class="card-image" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'card-image-placeholder\'><span>🏡</span><span>${p.nombre}</span></div>';">
+          <img src="${encodeURI(mainImage)}" alt="${p.nombre}" class="card-image" >
         ` : `
           <div class="card-image-placeholder">
             <span>🏡</span>
@@ -1388,7 +1388,7 @@ function renderRoadmapView(roadmap) {
       <div class="roadmap-property-card">
         <div class="roadmap-card-img-container" onclick="openPropertyModal(${p.id})" style="cursor: pointer;">
           ${mainImage ? `
-            <img loading="lazy" src="${encodeURI(mainImage)}" alt="${p.nombre}" class="roadmap-card-img" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'card-image-placeholder\'><span>🏡</span><span>${p.nombre}</span></div>';">
+            <img src="${encodeURI(mainImage)}" alt="${p.nombre}" class="roadmap-card-img" >
           ` : `
             <div class="card-image-placeholder">
               <span>🏡</span>
@@ -1485,7 +1485,7 @@ function renderRoadmapView(roadmap) {
       <div class="pdf-property-item">
         ${mainImage ? `
           <div class="pdf-property-frame">
-            <img loading="lazy" src="${encodeURI(mainImage)}" alt="${p.nombre}" class="pdf-property-img" onerror="this.onerror=null; this.src='assets/logo-favicon-.png';">
+            <img src="${encodeURI(mainImage)}" alt="${p.nombre}" class="pdf-property-img" >
           </div>
         ` : ''}
 
@@ -1610,7 +1610,7 @@ function renderRoadmapView(roadmap) {
     <div class="pdf-only">
       <div class="pdf-header-banner">
         <div class="pdf-header-left">
-          <img loading="lazy" src="assets/logo-favicon-.png" alt="Logo" class="pdf-logo">
+          <img src="assets/logo-favicon-.png" alt="Logo" class="pdf-logo">
           <div class="pdf-brand-text">
             <h2>IVANA MOLINA BIENES RAICES Y ASOCIADOS</h2>
             <p>HOJA DE RUTA DE INVERSIÓN INMOBILIARIA</p>
@@ -1775,7 +1775,7 @@ function renderPropertyModalContent(prop) {
   const thumbsHTML = totalImgs > 0 ? `
     <div class="thumbs-strip">
       ${prop.imagenes.map((img, idx) => `
-        <img loading="lazy" src="${encodeURI(img)}" alt="Foto ${idx + 1}" class="thumb-item ${idx === state.modalActiveImgIdx ? 'active' : ''}" onclick="setModalGalleryIndex(${idx})">
+        <img src="${encodeURI(img)}" alt="Foto ${idx + 1}" class="thumb-item ${idx === state.modalActiveImgIdx ? 'active' : ''}" onclick="setModalGalleryIndex(${idx})">
       `).join('')}
     </div>
   ` : '';
@@ -1796,7 +1796,7 @@ function renderPropertyModalContent(prop) {
       ` : ''}
 
       ${currentImg ? `
-        <img id="galleryMainImg" loading="lazy" src="${encodeURI(currentImg)}" alt="${prop.nombre}" class="gallery-main-img" onerror="this.onerror=null; this.parentNode.innerHTML='<div class=\'card-image-placeholder\'><span>🏡</span><span>${prop.nombre}</span></div>';">
+        <img id="galleryMainImg" src="${encodeURI(currentImg)}" alt="${prop.nombre}" class="gallery-main-img" >
       ` : `
         <div class="card-image-placeholder">
           <span>🏡</span>
