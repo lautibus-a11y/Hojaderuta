@@ -1623,7 +1623,7 @@ function renderRoadmapView(roadmap) {
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
             <rect x="6" y="14" width="12" height="8"></rect>
           </svg>
-          <span>Descargar PDF</span>
+          <span>Descargar Hoja de Ruta</span>
         </button>
         
         <button class="btn btn-secondary roadmap-action-btn" onclick="shareRoadmap('${escapeJS(roadmap.cliente)}')">
