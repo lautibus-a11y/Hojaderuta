@@ -2025,10 +2025,22 @@ function printVisitSheetPDF() {
   
   document.title = sanitizedClient ? `Ficha de Visita - ${sanitizedClient}` : 'Ficha de Visita Inmobiliaria';
   
+  // Auto-expand all textareas in Visit Sheet so no lines are truncated in PDF
+  const textareas = document.querySelectorAll('#view-visit-sheet textarea.visit-input');
+  const originalHeights = [];
+  textareas.forEach((ta, idx) => {
+    originalHeights[idx] = ta.style.height;
+    ta.style.height = 'auto';
+    ta.style.height = Math.max(ta.scrollHeight + 15, 60) + 'px';
+  });
+
   window.print();
   
   setTimeout(() => {
     document.title = originalTitle;
+    textareas.forEach((ta, idx) => {
+      ta.style.height = originalHeights[idx] || '';
+    });
   }, 1000);
 }
 

@@ -1016,6 +1016,22 @@ body {
     padding: 0 !important;
     box-shadow: none !important;
   }
+
+  /* Prevent text clipping in Ficha de Visita PDF inputs & textareas */
+  .visit-input,
+  textarea.visit-input {
+    max-height: none !important;
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+    background: #f9fafb !important;
+    border: 1px solid #cbd5e1 !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
 }
 
 
