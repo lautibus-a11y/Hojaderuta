@@ -1938,31 +1938,64 @@ function closeModal() {
 }
 
 
+function getActiveRoadmap() {
+  return currentGeneratedRoadmap || state.activeRoadmap || null;
+}
+
 function removePropertyFromRoadmap(propId) {
-  if (!currentGeneratedRoadmap) return;
-  currentGeneratedRoadmap.propiedades = currentGeneratedRoadmap.propiedades.filter(p => p.id !== propId);
-  renderRoadmapView(currentGeneratedRoadmap);
+  const active = getActiveRoadmap();
+  if (!active || !active.propiedades) return;
+  
+  active.propiedades = active.propiedades.filter(p => p.id !== propId);
+  currentGeneratedRoadmap = active;
+  state.activeRoadmap = active;
+  
+  renderRoadmapView(active);
 }
 
 function generateMultipleVisitSheet() {
-  if (!currentGeneratedRoadmap || currentGeneratedRoadmap.propiedades.length === 0) return;
+  const active = getActiveRoadmap();
   
-  const propNames = currentGeneratedRoadmap.propiedades.map(p => "• " + p.nombre + " (" + p.direccion + ")").join('\n');
-  document.getElementById('visitPropName').value = propNames;
+  if (!active || !active.propiedades || active.propiedades.length === 0) {
+    alert("No hay una Hoja de Ruta activa con propiedades. Por favor diseña una Hoja de Ruta primero.");
+    return;
+  }
+  
+  const propNames = active.propiedades.map(p => "• " + p.nombre + " (" + (p.direccion || p.ubicacion || '20 de Junio') + ")").join('\n');
+  const propInput = document.getElementById('visitPropName');
+  if (propInput) propInput.value = propNames;
   
   // Set today's date
   const today = new Date().toISOString().split('T')[0];
-  document.getElementById('visitDate').value = today;
-  document.getElementById('visitTime').value = "10:00";
+  const dateInput = document.getElementById('visitDate');
+  if (dateInput) dateInput.value = today;
+  
+  const timeInput = document.getElementById('visitTime');
+  if (timeInput) timeInput.value = "10:00";
   
   // Try to pre-fill client name if available
-  const clientName = document.getElementById('visitClientName');
-  if(clientName && currentGeneratedRoadmap.cliente) {
-      clientName.value = currentGeneratedRoadmap.cliente;
+  const clientNameInput = document.getElementById('visitClientName');
+  if (clientNameInput && active.cliente) {
+    clientNameInput.value = active.cliente;
   }
 
-  // Clear signature
-  clearSignatureCanvas();
+  const signClarificationInput = document.getElementById('visitSignClarification');
+  if (signClarificationInput && active.cliente) {
+    signClarificationInput.value = active.cliente;
+  }
+
+  // Clear signature safely
+  try {
+    clearSignatureCanvas();
+  } catch (err) {
+    console.log("Signature clear error:", err);
+  }
   
+  // Switch to visit sheet tab
   switchTab('visit-sheet');
 }
+
+// Explicitly attach to window
+window.generateMultipleVisitSheet = generateMultipleVisitSheet;
+window.removePropertyFromRoadmap = removePropertyFromRoadmap;
+
