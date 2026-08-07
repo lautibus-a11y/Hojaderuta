@@ -1265,7 +1265,8 @@ function createPropertyCardHTML(p) {
           </div>
         `}
         <span class="card-badge-status ${statusClass}">${p.estado}</span>
-        ${hasVideo ? `<span class="badge-video">🎬 Video</span>` : ''}
+        ${p.operacion ? `<span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>` : ''}
+        ${hasVideo ? `<span class="badge-video" style="top: 2.5rem;">🎬 Video</span>` : ''}
         <div class="card-price-tag">${p.precio > 0 ? (p.moneda || 'USD') + ' ' + p.precio.toLocaleString() : 'Consultar'}</div>
       </div>
 
@@ -1396,6 +1397,7 @@ function renderRoadmapView(roadmap) {
             </div>
           `}
           <span class="card-badge-status ${statusClass}" style="position: absolute; top: 1rem; left: 1rem;">${p.estado}</span>
+          <span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>
           ${hasVideo ? `<span class="badge-video" style="position: absolute; top: 1rem; right: 1rem;">🎬 Video</span>` : ''}
         </div>
 
