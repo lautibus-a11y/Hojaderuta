@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Hoja de Ruta Inmobiliaria - Ivana Molina Bienes Raices y Asociados. Recorridos personalizados de inversión en 20 de Junio.">
+  <meta name="description" content="Hoja de Ruta Inmobiliaria - Ivana Molina Bienes Raices y Asociados. Recorridos personalizados de inversión a tu medida.">
   <title>Hoja de Ruta Inmobiliaria | Ivana Molina Bienes Raices</title>
   
   <!-- Favicon References -->
@@ -29,7 +29,7 @@
         <img src="assets/logo-favicon-.png" alt="Ivana Molina Bienes Raices y Asociados" class="header-logo">
         <div class="brand-info">
           <h1>Hoja de Ruta Inmobiliaria</h1>
-          <p>Ivana Molina Bienes Raices y Asociados</p>
+          <h2 style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin: 0;">IVANA MOLINA & ASOCIADOS BIENES RAÍCES</h2>
         </div>
       </a>
 
@@ -76,7 +76,7 @@
         <div class="agent-avatar">IM</div>
         <div>
           <strong style="color: #fff; font-size: 0.85rem;">Ivana Molina</strong><br>
-          <span style="font-size: 0.72rem;">Martillera Matrícula N° 1048</span>
+          <span style="font-size: 0.72rem;">CORREDORA INMOBILIARIA<br>MATRÍCULA 1048</span>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
       <div class="hero-banner">
         <div class="hero-text">
           <h2>Tu Hoja de Ruta de Inversión</h2>
-          <p>Encontrá propiedades seleccionadas en <strong>20 de Junio</strong> ajustadas a tu presupuesto y objetivo de búsqueda.</p>
+          <p>Encontrá propiedades seleccionadas en <strong>la zona de tu interés</strong> ajustadas a tu presupuesto y objetivo de búsqueda.</p>
           
           <div style="margin-top: 1.35rem;">
             <button class="btn btn-primary btn-animated-cta" id="btnStartGenerator">
@@ -114,7 +114,7 @@
         <div class="filter-flex">
           <div>
             <h3 style="font-size: 1.15rem; font-weight: 800;">Propiedades Disponibles</h3>
-            <p style="font-size: 0.84rem; color: var(--text-secondary);">Oportunidades destacadas en 20 de Junio</p>
+            <p style="font-size: 0.84rem; color: var(--text-secondary);">Oportunidades destacadas</p>
           </div>
 
           <div class="filter-controls">
@@ -134,7 +134,7 @@
 
             <select id="filterEstado" class="form-control filter-select">
               <option value="todos">✨ Todos los Estados</option>
-              <option value="Lista para usar">🟢 Lista para usar</option>
+              <option value="Bueno">🟢 Bueno</option>
               <option value="A reciclar">🟡 A reciclar</option>
               <option value="A refaccionar">🔴 A refaccionar</option>
             </select>
@@ -164,7 +164,7 @@
             <span>PROPUESTA PERSONALIZADA</span>
           </div>
           <h2>Diseñá tu Hoja de Ruta</h2>
-          <p>Completá los campos para generar un recorrido exclusivo adaptado a tus necesidades en 20 de Junio.</p>
+          <p>Completá los campos para generar un recorrido exclusivo adaptado a tus necesidades.</p>
         </div>
 
         <form id="roadmapForm" class="generator-form-body" onsubmit="return false;">
@@ -173,52 +173,18 @@
           <div class="form-step-block">
             <div class="step-header">
               <span class="step-num">01</span>
-              <span class="step-title">Tus Datos & Presupuesto</span>
+              <span class="step-title">¿Es para alquiler o venta?</span>
             </div>
 
             <div class="form-grid-2col">
               <div class="form-group">
-                <label class="form-label" for="clientName">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                  <span>Tu Nombre y Apellido *</span>
-                </label>
-                <input type="text" id="clientName" class="form-control" placeholder="Ej: Carlos Mendoza" required>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" for="clientBudget">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
-                  <span>Presupuesto Máximo *</span>
-                </label>
-                <div class="budget-input-group">
-                  <select id="clientBudgetCurrency" class="form-control budget-currency-select">
-                    <option value="USD">USD ($)</option>
-                    <option value="ARS">ARS ($)</option>
-                  </select>
-                  <input type="number" id="clientBudget" class="form-control budget-number-input" placeholder="Ej: 100000" min="1" required>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Step 2 Block -->
-          <div class="form-step-block">
-            <div class="step-header">
-              <span class="step-num">02</span>
-              <span class="step-title">Preferencias de Búsqueda</span>
-            </div>
-
-            <div class="form-grid-2col">
-              <div class="form-group">
-                <label class="form-label" for="clientObjective">
+                <label class="form-label" for="clientOperation">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
-                  <span>Objetivo de Búsqueda *</span>
+                  <span>Operación *</span>
                 </label>
-                <select id="clientObjective" class="form-control" required>
-                  <option value="Inversión">Inversión / Rentabilidad</option>
-                  <option value="Vivienda">Vivienda Permanente</option>
-                  <option value="Alquiler">Alquiler Temporal</option>
-                  <option value="Casa quinta">Casa Quinta / Fin de Semana</option>
+                <select id="clientOperation" class="form-control" required>
+                  <option value="Venta">Venta / Compra</option>
+                  <option value="Alquiler">Alquiler</option>
                 </select>
               </div>
 
@@ -230,10 +196,63 @@
                 <select id="clientPropertyType" class="form-control" required>
                   <option value="todas">Cualquier tipo compatible</option>
                   <option value="Casa Quinta">Casa Quinta</option>
-                  <option value="Casa">Casa</option>
+                  <option value="Departamento">Departamento</option>
                   <option value="Lote">Lote / Terreno</option>
+                  <option value="Comercial">Comercial / Local</option>
                 </select>
               </div>
+            </div>
+            <div class="form-group full-width" style="margin-top: 1.25rem;">
+              <label class="form-label" for="clientLocation">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Localidad / Zona *</span>
+              </label>
+              <select id="clientLocation" class="form-control" required>
+                <option value="todas">Cualquier Localidad</option>
+                <option value="20 de Junio">20 de Junio</option>
+                <option value="Ramos Mejía">Ramos Mejía</option>
+                <option value="González Catán">González Catán</option>
+                <option value="Caseros">Caseros</option>
+                <option value="Pontevedra">Pontevedra</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Step 2 Block -->
+          <div class="form-step-block">
+            <div class="step-header">
+              <span class="step-num">02</span>
+              <span class="step-title">Presupuesto Estimativo</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="clientBudget">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                <span>Presupuesto Máximo *</span>
+              </label>
+              <div class="budget-input-group">
+                <select id="clientBudgetCurrency" class="form-control budget-currency-select">
+                  <option value="USD">USD ($)</option>
+                  <option value="ARS">ARS ($)</option>
+                </select>
+                <input type="number" id="clientBudget" class="form-control budget-number-input" placeholder="Ej: 100000" min="1" required>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 Block -->
+          <div class="form-step-block">
+            <div class="step-header">
+              <span class="step-num">03</span>
+              <span class="step-title">Datos Personales</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label" for="clientName">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>Tu Nombre y Apellido *</span>
+              </label>
+              <input type="text" id="clientName" class="form-control" placeholder="Ej: Carlos Mendoza" required>
             </div>
 
             <div class="form-group full-width" style="margin-top: 1.25rem;">
@@ -296,8 +315,8 @@
 
           <div class="visit-agent-info">
             <strong>Ivana Molina</strong><br>
-            Martillera Pública y Corredora Inmobiliaria<br>
-            Matrícula N° 1048 | CUIT 27-39.616.147-3<br>
+            CORREDORA INMOBILIARIA<br>
+            MATRÍCULA 1048 | CUIT 27-39.616.147-3<br>
             20 de Junio, Buenos Aires
           </div>
         </div>
@@ -306,6 +325,13 @@
           <!-- Datos del Inmueble -->
           <div class="visit-section-title">1. Datos del / los Inmueble(s) Visitado(s)</div>
           <div class="visit-form-grid">
+            <div class="visit-form-group full-width">
+              <label class="visit-label">Operación</label>
+              <select id="visitOperation" class="visit-input" onchange="toggleVisitRentalFields()" required>
+                <option value="Venta">Venta / Compra</option>
+                <option value="Alquiler">Alquiler</option>
+              </select>
+            </div>
             <div class="visit-form-group full-width">
               <label class="visit-label">Inmueble(s) / Propiedad(es) a Visitar</label>
               <textarea id="visitProperty" class="visit-input" rows="3" placeholder="Ej: 1. Casa Quinta La Rosalía
@@ -337,55 +363,61 @@
               <label class="visit-label">DNI / CUIT</label>
               <input type="text" id="visitClientDNI" class="visit-input" placeholder="Ej: 32.450.890" required>
             </div>
-            <div class="visit-form-group full-width">
+            <div class="visit-form-group">
               <label class="visit-label">Teléfono de Contacto</label>
               <input type="tel" id="visitClientPhone" class="visit-input" placeholder="Ej: 11 4590-1234" required>
             </div>
-          </div>
-
-          <!-- Datos Laborales -->
-          <div class="visit-section-title">3. Datos Laborales y Económicos</div>
-          <div class="visit-form-grid">
             <div class="visit-form-group">
-              <label class="visit-label">Situación Laboral</label>
-              <select id="visitJobStatus" class="visit-input" required>
-                <option value="Relación de dependencia">Relación de dependencia</option>
-                <option value="Monotributista">Monotributista</option>
-                <option value="Autónomo">Autónomo</option>
-                <option value="Otro">Otro</option>
-              </select>
-            </div>
-            <div class="visit-form-group">
-              <label class="visit-label">Empresa / Actividad</label>
-              <input type="text" id="visitCompany" class="visit-input" placeholder="Ej: Consultoría Tecnológica">
-            </div>
-            <div class="visit-form-group full-width">
-              <label class="visit-label">Ingreso Aproximado (Mensual)</label>
-              <input type="text" id="visitIncome" class="visit-input" placeholder="Ej: $ 1.200.000">
+              <label class="visit-label">Email Personal (Obligatorio)</label>
+              <input type="email" id="visitClientEmail" class="visit-input" placeholder="Ej: correo@ejemplo.com" required>
             </div>
           </div>
 
-          <!-- Datos de Locación / Habitabilidad -->
-          <div class="visit-section-title">4. Datos de Locación (En caso de alquiler)</div>
-          <div class="visit-form-grid">
-            <div class="visit-form-group">
-              <label class="visit-label">Cantidad de Personas a Habitar</label>
-              <input type="number" id="visitPeople" class="visit-input" min="1" value="2">
+          <div id="visitRentalFields" style="display: none;">
+            <!-- Datos Laborales -->
+            <div class="visit-section-title">3. Datos Laborales y Económicos <span style="font-size: 0.8rem; font-weight: normal; color: #6b7280; margin-left: 0.5rem;">(Completar solo para alquileres)</span></div>
+            <div class="visit-form-grid">
+              <div class="visit-form-group">
+                <label class="visit-label">Situación Laboral</label>
+                <select id="visitJobStatus" class="visit-input">
+                  <option value="Relación de dependencia">Relación de dependencia</option>
+                  <option value="Monotributista">Monotributista</option>
+                  <option value="Autónomo">Autónomo</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+              <div class="visit-form-group">
+                <label class="visit-label">Empresa / Actividad</label>
+                <input type="text" id="visitCompany" class="visit-input" placeholder="Ej: Consultoría Tecnológica">
+              </div>
+              <div class="visit-form-group full-width">
+                <label class="visit-label">Ingreso Aproximado (Mensual)</label>
+                <input type="text" id="visitIncome" class="visit-input" placeholder="Ej: $ 1.200.000">
+              </div>
             </div>
-            <div class="visit-form-group">
-              <label class="visit-label">Mascotas</label>
-              <select id="visitPets" class="visit-input">
-                <option value="No">No</option>
-                <option value="Sí (Perro / Gato)">Sí (Perro / Gato)</option>
-              </select>
-            </div>
-            <div class="visit-form-group full-width">
-              <label class="visit-label">Tipo de Garantía Presentada</label>
-              <select id="visitGuarantee" class="visit-input">
-                <option value="Propietaria">Garantía Propietaria</option>
-                <option value="Seguro de caución">Seguro de Caución (Finaer / Premium)</option>
-                <option value="Recibo de Sueldo">Recibo de Sueldo / Aval</option>
-              </select>
+
+            <!-- Datos de Locación / Habitabilidad -->
+            <div class="visit-section-title">4. Datos de Locación <span style="font-size: 0.8rem; font-weight: normal; color: #6b7280; margin-left: 0.5rem;">(Completar solo para alquileres)</span></div>
+            <div class="visit-form-grid">
+              <div class="visit-form-group">
+                <label class="visit-label">Cantidad de Personas a Habitar</label>
+                <input type="number" id="visitPeople" class="visit-input" min="1" value="2">
+              </div>
+              <div class="visit-form-group">
+                <label class="visit-label">Mascotas</label>
+                <select id="visitPets" class="visit-input">
+                  <option value="No">No</option>
+                  <option value="Sí (Perro / Gato)">Sí (Perro / Gato)</option>
+                </select>
+              </div>
+              <div class="visit-form-group full-width">
+                <label class="visit-label">Tipo de Garantía Presentada</label>
+                <select id="visitGuarantee" class="visit-input">
+                  <option value="Propietaria">Garantía Propietaria</option>
+                  <option value="Seguro de caución">Seguro de Caución (Finaer / Premium)</option>
+                  <option value="Recibo de Sueldo">Recibo de Sueldo / Aval</option>
+                </select>
+              </div>
             </div>
           </div>
 

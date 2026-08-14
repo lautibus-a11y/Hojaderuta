@@ -1,5 +1,5 @@
 /**
- * HOJA DE RUTA INMOBILIARIA - IVANA MOLINA BIENES RAICES Y ASOCIADOS
+ * HOJA DE RUTA INMOBILIARIA - IVANA MOLINA & ASOCIADOS BIENES RAÍCES
  * Lógica Vanilla JS (ES6+) con Generación de PDF Reparada e Imágenes Robustas
  */
 
@@ -10,25 +10,25 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1000000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3.109 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_1.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_10.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_11.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_12.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_13.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_2.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_3.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_4.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_5.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_6.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_7.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_8.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/ejercito-de-los-andes-1/ejercito-de-los-andes_9.webp"
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_1.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_10.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_11.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_12.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_13.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_2.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_3.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_4.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_5.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_6.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_7.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_8.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 1.000.000  🔑 ALQUILER PERMANENTE: CASA QUINTA CON PARQUE Y PILETA 🔑  📍 20 de Junio, La Mat...",
@@ -45,50 +45,50 @@ const DEFAULT_PROPIEDADES = [
     "id": 2,
     "nombre": "La Rosalia Simona",
     "tipo": "Casa Quinta",
-    "precio": 1500000,
+    "precio": 1300000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3.251 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/1.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/10.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/11.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/12.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/13-1.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/13.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/14.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/15.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/16.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/17.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/18.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/19.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/2-1.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/2.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/20.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/21.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/22.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/23.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/24.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/25.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/26.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/27.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/28.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/29.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/3.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/30.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/31.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/32.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/33.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/4.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/5.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/6.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/7.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/8.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/9-1.webp",
-      "assets/imagenes/propiedades/alquiler/casas-quintas/la-rosalia-simona/9.webp"
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/1.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/10.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/11.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/12.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/13-1.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/13.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/14.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/15.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/16.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/17.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/18.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/19.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/2-1.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/2.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/20.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/21.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/22.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/23.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/24.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/25.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/26.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/27.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/28.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/29.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/3.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/30.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/31.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/32.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/33.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/4.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/5.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/6.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/7.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/8.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/9-1.webp",
+      "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 1.500.000  ¡Una oportunidad única en la exclusiva y tranquila zona de 20 de Junio, La Mata...",
@@ -104,21 +104,21 @@ const DEFAULT_PROPIEDADES = [
   {
     "id": 3,
     "nombre": "De Los Franceses Nro 3740",
-    "tipo": "Casa",
+    "tipo": "Casa Quinta",
     "precio": 950000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "Consultar",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/1.webp",
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/2.webp",
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/3-1.webp",
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/3.webp",
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/4.webp",
-      "assets/imagenes/propiedades/alquiler/locales/de-los-franceses-nro-3740-1/portada_1.webp"
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/1.webp",
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/2.webp",
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/3-1.webp",
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/3.webp",
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/4.webp",
+      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/portada_1.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 950.000  ALQUILER DE LOCAL PARA USO COMERCIAL - Inmueble ubicado en De Los Franceses Nro 3...",
@@ -134,22 +134,22 @@ const DEFAULT_PROPIEDADES = [
   {
     "id": 4,
     "nombre": "Depto Canning",
-    "tipo": "Casa",
-    "precio": 110000,
+    "tipo": "Casa Quinta",
+    "precio": 0,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "Consultar",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/1.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/2.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/3.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/4.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/5.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/6.webp",
-      "assets/imagenes/propiedades/alquiler/departamentos/depto-canning-1/7.webp"
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/1.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/2.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/3.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/4.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/5.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/6.webp",
+      "assets/imagenes/20-de-junio/alquiler/depto-canning-1/7.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: Consultar Precio  Alquiler | Departamento 2 Ambientes Amoblado en Canning Center Viví con el...",
@@ -168,34 +168,34 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1500,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.500 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-en-alquiler-permanente-cosquin-194/9.webp"
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/1.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/10.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/11.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/12.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/13.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/14.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/15.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/16.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/17.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/18.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/19.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/2.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/20.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/21.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/22.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/3.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/4.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/5.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/6.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/7.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/8.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-en-alquiler-permanente-cosquin-194/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 1.500  Exclusiva Casa Quinta de estilo campo colonial en Alquiler Permanente, desarrolla...",
@@ -213,19 +213,19 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 115000,
     "ubicacion": "20 de Junio",
-    "direccion": "Cosquín y Manuel Castro (casi en el ingreso a la localidad).",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.610 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-venta-1.webp"
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-2.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-3.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-4.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-5.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-6.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-vent-7.webp",
+      "assets/imagenes/20-de-junio/venta/cosquin-1400-casa-quinta-en-ven/cosquin-1400-casa-quinta-en-venta-1.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 115.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Cosquín y Manuel Cast...",
@@ -243,27 +243,27 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 69000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "38 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/5-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/laprida-375-ramos/9.webp"
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/1.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/10.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/11.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/12.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/13.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/14.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/2.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/3.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/4.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/5-1.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/5.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/6.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/7.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/8.webp",
+      "assets/imagenes/20-de-junio/venta/laprida-375-ramos/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 69.000  🏡 DEPARTAMENTO DE PRIMERA CATEGORÍA EN VENTA  Si buscás diseño, calidad construc...",
@@ -281,47 +281,47 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 230000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3.000 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_23.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_24.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_25.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_26.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_27.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_28.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_29.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_30.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_31.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_32.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_33.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_34.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_35.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_9.webp"
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_1.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_10.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_11.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_12.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_13.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_14.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_15.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_16.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_17.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_18.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_19.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_2.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_20.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_21.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_22.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_23.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_24.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_25.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_26.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_27.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_28.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_29.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_3.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_30.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_31.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_32.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_33.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_34.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_35.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_4.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_5.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_6.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_7.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_8.webp",
+      "assets/imagenes/20-de-junio/venta/ceretti_1300-1/ceretti-1300-retocadas-y-marca-de-agua_9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 230.000  🏡 CASA QUINTA EN VENTA | 3.000 m²  📐 Superficie total: 3.000 m² parquizados con...",
@@ -339,21 +339,21 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.316 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/aguapey-venta/9.webp"
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/1.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/2.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/3.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/4.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/5.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/6.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/7.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/8.webp",
+      "assets/imagenes/20-de-junio/venta/aguapey-venta/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 135.000  🏡 CASA EN VENTA | 20 DE JUNIO 🌿  Viví rodeado de naturaleza, privacidad y confo...",
@@ -370,27 +370,27 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Carlos Tejedor Caseros",
     "tipo": "Casa Quinta",
     "precio": 95000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "Caseros",
+    "direccion": "Caseros, Buenos Aires",
     "superficie": "155 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/carlos-tejedor-caseros/9.webp"
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/1.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/10.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/11.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/2.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/3.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/4.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/5.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/6.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/7.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/8.webp",
+      "assets/imagenes/caseros/venta/carlos-tejedor-caseros/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 95.000  🏡 PH en venta frente a la plaza, en el corazón de Caseros  Si buscás amplitud, c...",
+    "potencial_inversion": "Excelente oportunidad en Caseros. Precio: USD 95.000  🏡 PH en venta frente a la plaza, en el corazón de Caseros  Si buscás amplitud, c...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -404,37 +404,37 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Leopardi Al 5800",
     "tipo": "Casa Quinta",
     "precio": 85000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "González Catán",
+    "direccion": "González Catán, Buenos Aires",
     "superficie": "1.135 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/leopardi-al-5800/leopardi-al-5800_9.webp"
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_1.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_10.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_11.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_12.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_13.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_14.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_15.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_16.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_17.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_18.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_19.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_2.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_20.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_21.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_3.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_4.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_5.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_6.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_7.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_8.webp",
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 85.000  QUINTA EN VENTA SOBRE AMPLIO LOTE DE 1.135 M² EN ESQUINA – GONZÁLEZ CATÁN  INFOR...",
+    "potencial_inversion": "Excelente oportunidad en González Catán. Precio: USD 85.000  QUINTA EN VENTA SOBRE AMPLIO LOTE DE 1.135 M² EN ESQUINA – GONZÁLEZ CATÁN  INFOR...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -448,28 +448,28 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Juan Pio Gana 4400",
     "tipo": "Casa Quinta",
     "precio": 38000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "González Catán",
+    "direccion": "González Catán, Buenos Aires",
     "superficie": "300 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_d_705244-mla89580743718_082025-f.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-36.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-37-1.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-37.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-38.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-40.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-41-1.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-41.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-43-1.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-43.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-45.jpeg",
-      "assets/imagenes/propiedades/venta/casas-quinta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-47.jpeg"
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_d_705244-mla89580743718_082025-f.webp",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-36.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-37-1.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-37.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-38.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-40.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-41-1.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-41.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-43-1.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-43.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-45.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/juan-pio-gana-4400/juan-pio-gana_whatsapp-image-2026-02-18-at-10-17-47.jpeg"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 38.000  CASA CON GRAN FONDO LIBRE Y RENTA ACTIVA EN GONZÁLEZ CATÁN  Descubrí esta propie...",
+    "potencial_inversion": "Excelente oportunidad en González Catán. Precio: USD 38.000  CASA CON GRAN FONDO LIBRE Y RENTA ACTIVA EN GONZÁLEZ CATÁN  Descubrí esta propie...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -484,26 +484,26 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 75000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "395 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/9.webp"
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/1.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/10.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/11.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/12.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/13.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/14.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/15.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/2.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/3.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/4.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/5.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/6.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/7.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 75.000  Casa Quinta en Venta – ¡Con pileta, quincho y excelente ubicación!  Ubicada en c...",
@@ -520,21 +520,21 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Gibraltar 1 Pontevedra",
     "tipo": "Casa Quinta",
     "precio": 35000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "Pontevedra",
+    "direccion": "Pontevedra, Buenos Aires",
     "superficie": "390 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-1-pontevedra-1/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-1-pontevedra-1/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-1-pontevedra-1/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-1-pontevedra-1/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-1-pontevedra-1/5.webp"
+      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/1.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/2.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/3.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/4.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/5.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 35.000  🏡 CASA EN VENTA | GRAN POTENCIAL PARA REFACCIONAR O AMPLIAR  ¡Una excelente opor...",
+    "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 35.000  🏡 CASA EN VENTA | GRAN POTENCIAL PARA REFACCIONAR O AMPLIAR  ¡Una excelente opor...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -548,21 +548,21 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Gibraltar 2 Pontevedra",
     "tipo": "Casa Quinta",
     "precio": 45000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "Pontevedra",
+    "direccion": "Pontevedra, Buenos Aires",
     "superficie": "390 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-2-pontevedra-1/1-portada.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-2-pontevedra-1/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-2-pontevedra-1/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-2-pontevedra-1/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/gibraltar-2-pontevedra-1/5.webp"
+      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/1-portada.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/1.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/2.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/4.webp",
+      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/5.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 45.000  🏡 CASA EN VENTA | OPORTUNIDAD PARA INVERTIR O AMPLIAR  Si buscás una propiedad c...",
+    "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 45.000  🏡 CASA EN VENTA | OPORTUNIDAD PARA INVERTIR O AMPLIAR  Si buscás una propiedad c...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -577,25 +577,25 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 185000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.495 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/1-2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/2-3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/9.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/girardot-1345/portada-2.webp"
+      "assets/imagenes/20-de-junio/venta/girardot-1345/1-2.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/10.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/11.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/12.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/2-3.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/3.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/4.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/5.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/6.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/7.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/8.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/9.webp",
+      "assets/imagenes/20-de-junio/venta/girardot-1345/portada-2.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 185.000  Casa en venta en 20 de Junio, La Matanza – Dos casas quintas con ingresos indep...",
@@ -613,39 +613,39 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 79000,
     "ubicacion": "20 de Junio",
-    "direccion": "Frente a la plazoleta comercial y en una zona con importante actividad gastronómica y constante circulación de personas, lo que la convierte en una ubicación estratégica.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "400 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_23.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_24.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_24_.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_26.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_27.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_28-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_28.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_4-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_9.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/castex-y-del-carril/castex-y-del-carril_portada-1.webp"
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_10.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_11.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_12.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_14.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_15.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_16.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_17.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_18.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_19.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_2.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_20.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_21.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_22.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_23.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_24.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_24_.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_26.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_27.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_28-1.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_28.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_3.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_4-1.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_5.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_7.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_8.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_9.webp",
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_portada-1.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 79.000  Transformá este espacio en tu próximo gran proyecto  Propiedad ideal para recicl...",
@@ -662,38 +662,38 @@ const DEFAULT_PROPIEDADES = [
     "nombre": "Propiedad De 6 Ambientes Caseros",
     "tipo": "Casa Quinta",
     "precio": 195000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "ubicacion": "Caseros",
+    "direccion": "Caseros, Buenos Aires",
     "superficie": "290 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/15-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/propiedad-de-6-ambientes-caseros/9.webp"
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/1.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/10.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/11.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/12.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/13.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/14.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/15-1.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/15.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/16.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/17.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/18.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/19.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/2.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/20.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/21.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/3.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/4.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/5.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/6.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/7.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/8.webp",
+      "assets/imagenes/caseros/venta/propiedad-de-6-ambientes-caseros/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 195.000  Excelente propiedad de 6 ambientes en venta, desarrollada sobre un lote de 290 ...",
+    "potencial_inversion": "Excelente oportunidad en Caseros. Precio: USD 195.000  Excelente propiedad de 6 ambientes en venta, desarrollada sobre un lote de 290 ...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -708,34 +708,34 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 125000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "2.600 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_13-14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_23.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_24.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_25.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_9.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/quinta-el-maestro/quinta-el-maestro_portada.webp"
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/16.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/17.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/18.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/19.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/20.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_12.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_13-14.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_14.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_15.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_21.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_22.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_23.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_24.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_25.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_3.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_4.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_5.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_6.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_7.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_8.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_9.webp",
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_portada.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 125.000  Casa Quinta en Venta – 20 de Junio (Calle El Maestro) Superficie y Entorno Únic...",
@@ -753,38 +753,38 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 250000,
     "ubicacion": "20 de Junio",
-    "direccion": "Cosquín 1120, 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.347 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/23.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/24.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/25.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/26.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/9.webp"
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/1.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/10.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/11.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/12.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/13.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/14.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/15.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/16.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/17.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/18.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/19.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/2.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/20.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/21.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/22.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/23.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/24.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/25.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/26.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/3.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/4.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/5.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/6.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/7.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/8.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 250.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Cosquín 1120, 20 de J...",
@@ -800,25 +800,25 @@ const DEFAULT_PROPIEDADES = [
     "id": 21,
     "nombre": "Casaquinta_Venta_20Dejunio_Piscina_1500M2",
     "tipo": "Casa Quinta",
-    "precio": 145000,
+    "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "Castañeda esquina Cosquín, 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.500 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casaquinta_venta_20dejunio_piscina_1500m2-1/9.webp"
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/1.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/13.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/14.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/15.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/2.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/3.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/4.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/5.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/6.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/8.webp",
+      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 145.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Castañeda esquina Cos...",
@@ -836,26 +836,26 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 160000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.500 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/urien-casa-quinta-20-de-junio-1/9.webp"
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/1.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/10.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/11.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/12.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/13.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/14.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/2.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/3.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/4.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/5.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/6.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/7.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/8.webp",
+      "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 160.000  🏡 CASA QUINTA EN VENTA | 20 DE JUNIO  Si buscás espacio, comodidad y un entorno...",
@@ -873,27 +873,27 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 850000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "Consultar",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-california-5900/9.webp"
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/1.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/10.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/11.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/12.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/13.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/14.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/15.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/2.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/3.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/4.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/5.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/6.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/7.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/8.webp",
+      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 850.000  Casa Quinta en Alquiler Permanente (Destino Vivienda) ubicada en California 5900,...",
@@ -911,48 +911,48 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "Copahue esq. Manuel Rico, 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3.251 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/13-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/16.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/17.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/18.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/19.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/2-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/20.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/21.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/22.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/23.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/24.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/25.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/26.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/27.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/28.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/29.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/30.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/31.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/32.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/33.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/8.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/9-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/la-rosalia-simona/9.webp"
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/1.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/10.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/11.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/12.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/13-1.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/13.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/14.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/15.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/16.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/17.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/18.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/19.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/2-1.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/2.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/20.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/21.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/22.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/23.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/24.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/25.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/26.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/27.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/28.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/29.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/3.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/30.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/31.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/32.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/33.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/4.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/5.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/6.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/7.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/8.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/9-1.webp",
+      "assets/imagenes/20-de-junio/venta/la-rosalia-simona/9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 135.000  ¡Una oportunidad única en la exclusiva y tranquila zona de 20 de Junio, La Mata...",
@@ -968,23 +968,23 @@ const DEFAULT_PROPIEDADES = [
     "id": 25,
     "nombre": "Departamento Independiente La Rosalia",
     "tipo": "Casa Quinta",
-    "precio": 80000,
+    "precio": 75000,
     "ubicacion": "20 de Junio",
-    "direccion": "Copahue esq. Manuel Rico, 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3.251 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/disen-o-sin-ti-tulo-75.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/disen-o-sin-ti-tulo-76.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/temperatura-un-toque-de-nitidez.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/toque-de-nitidez-y-temperatura-1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/toque-de-nitidez-y-temperatura.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/departamento-independiente-la-rosalia/portada.webp"
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/disen-o-sin-ti-tulo-75.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/disen-o-sin-ti-tulo-76.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/temperatura-un-toque-de-nitidez.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-1.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-2.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/toque-de-nitidez-temperatura-3.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/toque-de-nitidez-y-temperatura-1.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/toque-de-nitidez-y-temperatura.webp",
+      "assets/imagenes/20-de-junio/venta/departamento-independiente-la-rosalia/portada.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 80.000  ¡Una oportunidad única en la exclusiva y tranquila zona de 20 de Junio, La Matan...",
@@ -1002,17 +1002,17 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 155000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "3000 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/terrenos/terreno-alejo-castex-1_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-2.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-portada.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno-alejo-castex-portada_1.webp"
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-alejo-castex-1_1.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-1.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-2.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-manual-antonio-castro-y-1200-pasodeloslibres-portada.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-alejo-castex-portada_1.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 155.000  TERRENO 3000 m² ALEJO CASTEX, 20 DE JUNIO, LA MATANZA  Se venden dos terrenos c...",
@@ -1029,16 +1029,16 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 40000,
     "ubicacion": "20 de Junio",
-    "direccion": "Calle Pablo Ceretti, entre Gibson y Av. Gorostiaga, 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "900 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/ajustes-de-nitidez-y-temperatura.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-2.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-3.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-4.webp"
+      "assets/imagenes/20-de-junio/venta/terreno_venta_pabloceretti_20dejunio_lamatanza-1/ajustes-de-nitidez-y-temperatura.webp",
+      "assets/imagenes/20-de-junio/venta/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-2.webp",
+      "assets/imagenes/20-de-junio/venta/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-3.webp",
+      "assets/imagenes/20-de-junio/venta/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-4.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 40.000  Terreno en Venta – Pablo Ceretti, 20 de Junio Ubicación: Calle Pablo Ceretti, en...",
@@ -1055,20 +1055,20 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 55000,
     "ubicacion": "20 de Junio",
-    "direccion": "Casaffousth al 600, 20 de Junio.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "1.500 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_2_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_3_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_5_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_6_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_7_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_8_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_9_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/cassafousth-terreno-1/cassafousth_portada_1.webp"
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_2_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_3_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_5_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_6_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_7_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_8_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_9_1.webp",
+      "assets/imagenes/20-de-junio/venta/cassafousth-terreno-1/cassafousth_portada_1.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 55.000  OPORTUNIDAD | Lote de 1.500 m² con arboleda añosa en 20 de Junio  Ubicación: Cas...",
@@ -1085,14 +1085,14 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 29000,
     "ubicacion": "20 de Junio",
-    "direccion": "Calle Juan Casacuberta, entre Cóndor y Corona, localidad de 20 de Junio, La Matanza.",
+    "direccion": "20 de Junio, Buenos Aires",
     "superficie": "546 m²",
-    "estado": "Lista para usar",
+    "estado": "Bueno",
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/portada-1_1.webp",
-      "assets/imagenes/propiedades/venta/terrenos/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/foto-2.webp"
+      "assets/imagenes/20-de-junio/venta/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/portada-1_1.webp",
+      "assets/imagenes/20-de-junio/venta/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/foto-2.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 29.000  Terrenos en Venta – Juan Casacuberta, 20 de Junio Ubicación: Calle Juan Casacube...",
@@ -1249,7 +1249,7 @@ function renderPropertiesGrid(list) {
 }
 
 function createPropertyCardHTML(p) {
-  const statusClass = p.estado === 'Lista para usar' ? 'status-lista' :
+  const statusClass = p.estado === 'Bueno' ? 'status-lista' :
                       p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
   
   const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
@@ -1273,7 +1273,7 @@ function createPropertyCardHTML(p) {
       </div>
 
       <div class="card-body">
-        <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • 20 de Junio</div>
+        <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • ${p.ubicacion || 'Sin ubicación'}</div>
         <h3 class="card-title">${p.nombre}</h3>
         <div class="card-location">📍 ${p.direccion}</div>
 
@@ -1327,15 +1327,23 @@ function generateRoadmap() {
   const clientNameEl = document.getElementById('clientName');
   const clientBudgetEl = document.getElementById('clientBudget');
   const clientBudgetCurrencyEl = document.getElementById('clientBudgetCurrency');
-  const clientObjectiveEl = document.getElementById('clientObjective');
+  const clientOperationEl = document.getElementById('clientOperation');
+  const clientLocationEl = document.getElementById('clientLocation');
   const clientPropertyTypeEl = document.getElementById('clientPropertyType');
   const clientNotesEl = document.getElementById('clientNotes');
 
   const clientName = clientNameEl ? clientNameEl.value.trim() : '';
-  const rawBudget = clientBudgetEl ? parseFloat(clientBudgetEl.value) : NaN;
+  const rawBudgetValue = clientBudgetEl ? clientBudgetEl.value.trim() : '';
+  // Remover centavos si existen (ej. ",50" o ".00" al final)
+  let cleanBudgetStr = rawBudgetValue.replace(/[,.]\d{1,2}$/, '');
+  // Remover todos los caracteres no numéricos restantes (puntos, comas, espacios)
+  cleanBudgetStr = cleanBudgetStr.replace(/\D/g, '');
+  
+  const rawBudget = cleanBudgetStr ? parseFloat(cleanBudgetStr) : NaN;
   const clientBudget = isNaN(rawBudget) ? 0 : rawBudget;
   const clientBudgetCurrency = clientBudgetCurrencyEl ? clientBudgetCurrencyEl.value : 'USD';
-  const clientObjective = clientObjectiveEl ? clientObjectiveEl.value : '';
+  const clientOperation = clientOperationEl ? clientOperationEl.value : '';
+  const clientLocation = clientLocationEl ? clientLocationEl.value.trim() : '';
   const clientPropertyType = clientPropertyTypeEl ? clientPropertyTypeEl.value : 'todas';
   const clientNotes = clientNotesEl ? clientNotesEl.value.trim() : '';
 
@@ -1352,42 +1360,39 @@ function generateRoadmap() {
       return false;
     }
 
-    // Objective filter
-    if (clientObjective) {
-      const objLower = clientObjective.toLowerCase();
-
-      // Check Alquiler
-      if (objLower.includes('alquiler') && p.operacion === 'Alquiler') {
-        return true;
+    // Operation filter
+    if (clientOperation) {
+      if (p.operacion && p.operacion.toLowerCase() !== clientOperation.toLowerCase()) {
+         return false;
       }
-      
-      if (p.destinos) {
-        const matchDestino = p.destinos.some(d => d.toLowerCase().includes(objLower) || objLower.includes(d.toLowerCase()));
-        if (matchDestino) return true;
-      }
+    }
 
-      if (objLower.includes('inversión') || objLower.includes('inversion')) return true;
-      if (objLower.includes('vivienda') || objLower.includes('quinta')) return true;
+    // Location filter
+    if (clientLocation && clientLocation !== 'todas') {
+       const locLower = clientLocation.toLowerCase();
+       const pLoc = (p.ubicacion || p.direccion || '').toLowerCase();
+       if (pLoc && !pLoc.includes(locLower)) {
+          return false;
+       }
     }
 
     return true;
   });
 
-  // If no matching properties found, fallback to top properties under budget or all
-  if (matchingProperties.length === 0) {
-    matchingProperties = state.propiedades.slice(0, 4);
-  }
+  // Eliminado el fallback para que devuelva array vacío si no hay coincidencias
 
   const roadmapId = `HR-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
   const todayStr = new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' });
 
+  // Update current generated roadmap
   currentGeneratedRoadmap = {
     id: roadmapId,
     cliente: clientName || 'Cliente Estimado',
     fecha: todayStr,
     presupuesto: clientBudget,
     monedaPresupuesto: clientBudgetCurrency,
-    objetivo: clientObjective,
+    operacion: clientOperation,
+    localidad: clientLocation,
     tipo: clientPropertyType,
     observaciones: clientNotes,
     propiedades: matchingProperties
@@ -1402,11 +1407,12 @@ function renderRoadmapView(roadmap) {
   const container = document.getElementById('roadmapContent');
   if (!container) return;
 
-  if (!roadmap || !roadmap.propiedades) {
+  if (!roadmap || !roadmap.propiedades || roadmap.propiedades.length === 0) {
     container.innerHTML = `
       <div class="glass-panel" style="text-align: center; padding: 4rem 2rem;">
-        <h3 style="font-size: 1.4rem; font-weight: 700;">No hay Hoja de Ruta activa</h3>
-        <button class="btn btn-primary" onclick="switchTab('generator')" style="margin-top: 1rem;">Ir a Diseñar Mi Ruta</button>
+        <h3 style="font-size: 1.4rem; font-weight: 700;">No se encontraron propiedades</h3>
+        <p style="color: var(--text-secondary); margin-top: 1rem; margin-bottom: 2rem;">No hay inmuebles disponibles actualmente para esa localidad, operación o tipo de inmueble.</p>
+        <button class="btn btn-primary" onclick="switchTab('generator')" style="margin-top: 1rem;">Intentar otra búsqueda</button>
       </div>
     `;
     return;
@@ -1414,7 +1420,7 @@ function renderRoadmapView(roadmap) {
 
   // 1. Web Property Cards (Pantalla)
   const webPropsHTML = roadmap.propiedades.length > 0 ? roadmap.propiedades.map(p => {
-    const statusClass = p.estado === 'Lista para usar' ? 'status-lista' :
+    const statusClass = p.estado === 'Bueno' ? 'status-lista' :
                         p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
     const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
     const hasVideo = Boolean(p.video);
@@ -1440,7 +1446,7 @@ function renderRoadmapView(roadmap) {
           <div>
             <div class="roadmap-card-header">
               <div>
-                <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • 20 de Junio</div>
+                <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • ${p.ubicacion || 'Sin ubicación'}</div>
                 <h3 class="card-title" style="font-size: 1.4rem;">${p.nombre}</h3>
                 <div class="card-location">📍 ${p.direccion}</div>
               </div>
@@ -1529,7 +1535,7 @@ function renderRoadmapView(roadmap) {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
           <div>
             <div class="pdf-property-title">${p.nombre}</div>
-            <div style="font-size: 0.85rem; color: #4b5563;">📍 ${p.direccion} (${p.tipo} • 20 de Junio)</div>
+            <div style="font-size: 0.85rem; color: #4b5563;">📍 ${p.direccion} (${p.tipo} • ${p.ubicacion || 'Sin ubicación'})</div>
           </div>
           <div class="pdf-property-price">${p.precio > 0 ? (p.moneda || 'USD') + ' ' + p.precio.toLocaleString() : 'Consultar'}</div>
         </div>
@@ -1555,7 +1561,7 @@ function renderRoadmapView(roadmap) {
 
         <div class="why-buy-list">
           <strong style="font-size: 0.82rem; text-transform: uppercase; color: #374151; display: block; margin-bottom: 0.4rem;">💡 Aspectos Clave de Conveniencia:</strong>
-          <div class="why-buy-item"><span>✓</span> Revalorización de zona estimada: <strong>+25% a 3 años en 20 de Junio</strong></div>
+          <div class="why-buy-item"><span>✓</span> Revalorización de zona estimada: <strong>+25% a 3 años en ${p.ubicacion || 'la zona'}</strong></div>
           <div class="why-buy-item"><span>✓</span> Entorno residencial tranquilo con excelente proyección de desarrollo</div>
           <div class="why-buy-item"><span>✓</span> Alta demanda comprobada en ${p.destinos ? p.destinos.join(', ') : 'Inversión'}</div>
         </div>
@@ -1583,7 +1589,7 @@ function renderRoadmapView(roadmap) {
     <div class="roadmap-header-banner no-print">
       <div class="roadmap-header-info">
         <div class="roadmap-badge-id">HOJA DE RUTA #${roadmap.id}</div>
-        <h2 class="roadmap-client-title">Tu Recorrido en 20 de Junio</h2>
+        <h2 class="roadmap-client-title">Tu Recorrido ${roadmap.localidad && roadmap.localidad !== 'todas' ? 'en ' + roadmap.localidad : 'Inmobiliario'}</h2>
         <div class="roadmap-client-name">Propuesta para: <strong>${roadmap.cliente}</strong></div>
 
         <div class="client-meta-grid">
@@ -1659,7 +1665,7 @@ function renderRoadmapView(roadmap) {
         <div class="pdf-header-left">
           <img src="assets/logo-favicon-.png" alt="Logo" class="pdf-logo">
           <div class="pdf-brand-text">
-            <h2>IVANA MOLINA BIENES RAICES Y ASOCIADOS</h2>
+            <h2>IVANA MOLINA & ASOCIADOS BIENES RAÍCES</h2>
             <p>HOJA DE RUTA DE INVERSIÓN INMOBILIARIA</p>
           </div>
         </div>
@@ -1695,7 +1701,7 @@ function renderRoadmapView(roadmap) {
 function shareRoadmap(clientName) {
   const shareData = {
     title: `Hoja de Ruta Inmobiliaria - ${clientName}`,
-    text: `Propuesta personalizada de inversión en 20 de Junio por Ivana Molina Bienes Raices y Asociados.`,
+    text: `Propuesta personalizada de inversión por IVANA MOLINA & ASOCIADOS BIENES RAÍCES.`,
     url: window.location.href
   };
 
@@ -1811,7 +1817,7 @@ function renderPropertyModalContent(prop) {
   const modalBody = document.getElementById('modalBody');
   if (!modalBody) return;
 
-  const statusClass = prop.estado === 'Lista para usar' ? 'status-lista' :
+  const statusClass = prop.estado === 'Bueno' ? 'status-lista' :
                       prop.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
   const hasVideo = Boolean(prop.video);
   const totalImgs = prop.imagenes ? prop.imagenes.length : 0;
@@ -2048,3 +2054,16 @@ function printVisitSheetPDF() {
 window.printRoadmapPDF = printRoadmapPDF;
 window.printVisitSheetPDF = printVisitSheetPDF;
 
+function toggleVisitRentalFields() {
+  const opSelect = document.getElementById('visitOperation');
+  const rentalFields = document.getElementById('visitRentalFields');
+  if (opSelect && rentalFields) {
+    if (opSelect.value === 'Alquiler') {
+      rentalFields.style.display = 'block';
+    } else {
+      rentalFields.style.display = 'none';
+    }
+  }
+}
+
+window.toggleVisitRentalFields = toggleVisitRentalFields;
