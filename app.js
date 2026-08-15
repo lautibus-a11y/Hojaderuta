@@ -1035,10 +1035,10 @@ const DEFAULT_PROPIEDADES = [
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/ajustes-de-nitidez-y-temperatura.webp",
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-2.webp",
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-3.webp",
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_pabloceretti_20dejunio_lamatanza-1/foto-4.webp"
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-pabloceretti-20dejunio-lamatanza-1/ajustes-de-nitidez-y-temperatura.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-pabloceretti-20dejunio-lamatanza-1/foto-2.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-pabloceretti-20dejunio-lamatanza-1/foto-3.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-pabloceretti-20dejunio-lamatanza-1/foto-4.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 40.000  Terreno en Venta – Pablo Ceretti, 20 de Junio Ubicación: Calle Pablo Ceretti, en...",
@@ -1091,8 +1091,8 @@ const DEFAULT_PROPIEDADES = [
     "habitaciones": 0,
     "banos": 0,
     "imagenes": [
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/portada-1_1.webp",
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno_venta_juancasacuberta_20dejunio_lamatanza-1/foto-2.webp"
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-juancasacuberta-20dejunio-lamatanza-1/portada-1_1.webp",
+      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-juancasacuberta-20dejunio-lamatanza-1/foto-2.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 29.000  Terrenos en Venta – Juan Casacuberta, 20 de Junio Ubicación: Calle Juan Casacube...",
