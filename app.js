@@ -3,6 +3,14 @@
  * Lógica Vanilla JS (ES6+) con Generación de PDF Reparada e Imágenes Robustas
  */
 
+// ============================================================
+// CONFIGURACIÓN: número WhatsApp para compartir (sin +, con código país)
+// ============================================================
+const WHATSAPP_NUMBER = '541168091223';
+
+// WhatsApp icon SVG string (reutilizable)
+const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>`;
+
 const DEFAULT_PROPIEDADES = [
   {
     "id": 1,
@@ -1632,15 +1640,9 @@ function renderRoadmapView(roadmap) {
           <span>Descargar Hoja de Ruta</span>
         </button>
         
-        <button class="btn btn-secondary roadmap-action-btn" onclick="shareRoadmap('${escapeJS(roadmap.cliente)}')">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-          </svg>
-          <span>Compartir</span>
+        <button class="btn btn-whatsapp roadmap-action-btn" onclick="shareViaWhatsApp('roadmap', this)">
+          ${WPP_ICON_SVG}
+          <span>Compartir por WhatsApp</span>
         </button>
       </div>
     </div>
@@ -1698,20 +1700,6 @@ function renderRoadmapView(roadmap) {
   `;
 }
 
-function shareRoadmap(clientName) {
-  const shareData = {
-    title: `Hoja de Ruta Inmobiliaria - ${clientName}`,
-    text: `Propuesta personalizada de inversión por IVANA MOLINA & ASOCIADOS BIENES RAÍCES.`,
-    url: window.location.href
-  };
-
-  if (navigator.share) {
-    navigator.share(shareData).catch(() => {});
-  } else {
-    navigator.clipboard.writeText(window.location.href);
-    alert('¡Enlace de la propuesta copiado al portapapeles!');
-  }
-}
 
 function initDateFields() {
   const visitDate = document.getElementById('visitDate');
@@ -2067,3 +2055,557 @@ function toggleVisitRentalFields() {
 }
 
 window.toggleVisitRentalFields = toggleVisitRentalFields;
+
+// ============================================================
+// GENERACIÓN DE PDF + COMPARTIR POR WHATSAPP
+// ============================================================
+
+/**
+ * Muestra un overlay de carga mientras se genera el PDF.
+ * Retorna la función para quitarlo.
+ */
+function showPdfOverlay(clientName) {
+  const overlay = document.createElement('div');
+  overlay.className = 'pdf-generating-overlay';
+  overlay.id = 'pdfGeneratingOverlay';
+  overlay.innerHTML = `
+    <div class="overlay-spinner"></div>
+    <strong>Generando PDF...</strong>
+    <p>Preparando propuesta para <em>${clientName || 'el cliente'}</em></p>
+  `;
+  document.body.appendChild(overlay);
+  return () => overlay.remove();
+}
+
+// ─────────────────────────────────────────────────────────────
+// GENERACIÓN PROGRAMÁTICA DE PDF con jsPDF (sin html2canvas)
+// Sin capturas DOM → nunca cuelga, funciona en http:// y file://
+// ─────────────────────────────────────────────────────────────
+
+/** Dibuja un encabezado de sección oscuro con texto blanco */
+function pdfSection(pdf, title, x, y, w) {
+  pdf.setFillColor(18, 18, 24);
+  pdf.rect(x, y - 4, w, 7, 'F');
+  pdf.setTextColor(255, 255, 255);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(8);
+  pdf.text(title, x + 2, y + 0.5);
+  pdf.setTextColor(0, 0, 0);
+  return y + 9;
+}
+
+/** Genera PDF completo de la Hoja de Ruta */
+function buildRoadmapPDF(pdf, roadmap) {
+  const W = 210, MARGIN = 14, CW = W - 2 * MARGIN, PH = 297;
+  let y = MARGIN;
+
+  const newPageIfNeeded = (need = 25) => {
+    if (y + need > PH - MARGIN) { pdf.addPage(); y = MARGIN; }
+  };
+
+  // ── Encabezado negro ─────────────────────────────────────────
+  pdf.setFillColor(0, 0, 0);
+  pdf.rect(MARGIN, y, CW, 26, 'F');
+  pdf.setTextColor(255, 255, 255);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(12);
+  pdf.text('IVANA MOLINA & ASOCIADOS BIENES RAÍCES', MARGIN + 4, y + 9);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(8.5);
+  pdf.text('HOJA DE RUTA DE INVERSIÓN INMOBILIARIA', MARGIN + 4, y + 15);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(8);
+  pdf.text(`HOJA DE RUTA  #${roadmap.id}`, W - MARGIN - 3, y + 9, { align: 'right' });
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(7.5);
+  pdf.text('Matrícula 1048  |  CUIT 27-39.616.147-3', W - MARGIN - 3, y + 15, { align: 'right' });
+  y += 32;
+
+  // ── Tabla de datos del cliente ────────────────────────────────
+  const c4 = CW / 4;
+  pdf.setFillColor(40, 42, 58);
+  pdf.rect(MARGIN, y, CW, 7, 'F');
+  pdf.setTextColor(255, 255, 255);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  ['Cliente / Inversor', 'Fecha', 'Presupuesto Máx.', 'Operación'].forEach((h, i) => {
+    pdf.text(h, MARGIN + c4 * i + 2, y + 5);
+  });
+  y += 7;
+
+  pdf.setFillColor(248, 249, 252);
+  pdf.rect(MARGIN, y, CW, 9, 'F');
+  pdf.setDrawColor(200, 205, 215);
+  pdf.rect(MARGIN, y, CW, 9);
+  pdf.setTextColor(0, 0, 0);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(9);
+  pdf.text(roadmap.cliente || '—', MARGIN + 2, y + 6);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(8.5);
+  pdf.text(roadmap.fecha || '—', MARGIN + c4 + 2, y + 6);
+  pdf.text(
+    roadmap.presupuesto > 0
+      ? `${roadmap.monedaPresupuesto} ${roadmap.presupuesto.toLocaleString('es-AR')}`
+      : 'A convenir',
+    MARGIN + c4 * 2 + 2, y + 6
+  );
+  pdf.text(roadmap.operacion || '—', MARGIN + c4 * 3 + 2, y + 6);
+  y += 13;
+
+  if (roadmap.observaciones) {
+    pdf.setFont('helvetica', 'italic');
+    pdf.setFontSize(8);
+    pdf.setTextColor(70, 70, 80);
+    const obs = pdf.splitTextToSize('Observaciones: ' + roadmap.observaciones, CW);
+    pdf.text(obs, MARGIN, y);
+    y += obs.length * 4.5 + 3;
+    pdf.setTextColor(0, 0, 0);
+  }
+
+  // ── Propiedades ───────────────────────────────────────────────
+  y = pdfSection(pdf, 'PROPIEDADES SUGERIDAS EN EL RECORRIDO', MARGIN, y, CW);
+
+  (roadmap.propiedades || []).forEach((p, idx) => {
+    newPageIfNeeded(38);
+
+    // Nombre y precio
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(11);
+    pdf.setTextColor(0, 0, 0);
+    pdf.text(`${idx + 1}.  ${p.nombre}`, MARGIN, y + 5);
+
+    const priceStr = p.precio > 0
+      ? `${p.moneda || 'USD'} ${p.precio.toLocaleString('es-AR')}`
+      : 'Consultar';
+    pdf.setFontSize(11);
+    pdf.text(priceStr, W - MARGIN, y + 5, { align: 'right' });
+    y += 8;
+
+    // Dirección
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(8.5);
+    pdf.setTextColor(70, 70, 80);
+    pdf.text(`${p.direccion || ''}  (${p.tipo}  —  ${p.ubicacion || ''})`, MARGIN, y);
+    y += 5;
+
+    // Specs
+    pdf.setTextColor(0, 0, 0);
+    const specs = [
+      p.superficie ? `Sup: ${p.superficie}` : '',
+      p.habitaciones ? `${p.habitaciones} dorms` : '',
+      p.banos ? `${p.banos} baños` : '',
+      `Estado: ${p.estado || '—'}`,
+      `${p.operacion || ''}`
+    ].filter(Boolean).join('   ·   ');
+    pdf.setFontSize(8.5);
+    pdf.text(specs, MARGIN, y);
+    y += 5;
+
+    // Potencial de inversión (2 líneas máx)
+    if (p.potencial_inversion) {
+      pdf.setFont('helvetica', 'italic');
+      pdf.setFontSize(7.5);
+      pdf.setTextColor(80, 80, 100);
+      const pot = pdf.splitTextToSize(p.potencial_inversion, CW);
+      pdf.text(pot.slice(0, 2), MARGIN, y);
+      y += Math.min(pot.length, 2) * 4 + 1;
+    }
+
+    // Destinos
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(7.5);
+    pdf.setTextColor(60, 60, 60);
+    pdf.text(`Destinos: ${(p.destinos || []).join(', ')}`, MARGIN, y);
+    y += 4;
+
+    // Separador
+    pdf.setDrawColor(210, 215, 225);
+    pdf.line(MARGIN, y + 2, MARGIN + CW, y + 2);
+    y += 8;
+  });
+
+  // ── Pie de página ─────────────────────────────────────────────
+  newPageIfNeeded(10);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(7);
+  pdf.setTextColor(140, 140, 150);
+  pdf.text(
+    'Ivana Molina & Asociados Bienes Raíces  —  Matrícula 1048  —  CUIT 27-39.616.147-3  —  20 de Junio, Buenos Aires',
+    W / 2, PH - 8, { align: 'center' }
+  );
+
+  return pdf;
+}
+
+/** Genera PDF completo de la Ficha de Visita */
+function buildVisitSheetPDF(pdf) {
+  const W = 210, MARGIN = 14, CW = W - 2 * MARGIN, PH = 297;
+  let y = MARGIN;
+
+  const get = id => (document.getElementById(id)?.value || '').trim();
+
+  const operation    = get('visitOperation');
+  const propertyText = get('visitProperty');
+  const addressText  = get('visitAddress');
+  const visitDate    = get('visitDate');
+  const visitTime    = get('visitTime');
+  const clientName   = get('visitClientName');
+  const clientDNI    = get('visitClientDNI');
+  const clientPhone  = get('visitClientPhone');
+  const clientEmail  = get('visitClientEmail');
+  const signClarif   = get('visitSignClarification');
+  const signDNI      = get('visitSignDNI');
+  const isRental     = operation === 'Alquiler';
+  const col2 = CW / 2 - 3;
+
+  // Fecha formateada
+  let formattedDate = visitDate;
+  if (visitDate) {
+    const [yy, mm, dd] = visitDate.split('-');
+    const months = ['enero','febrero','marzo','abril','mayo','junio','julio',
+                    'agosto','septiembre','octubre','noviembre','diciembre'];
+    formattedDate = `${dd} de ${months[parseInt(mm, 10) - 1]} de ${yy}`;
+  }
+
+  // ── Encabezado negro ─────────────────────────────────────────
+  pdf.setFillColor(0, 0, 0);
+  pdf.rect(MARGIN, y, CW, 26, 'F');
+  pdf.setTextColor(255, 255, 255);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(13);
+  pdf.text('FICHA DE VISITA INMOBILIARIA', MARGIN + 4, y + 9);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(8.5);
+  pdf.text('Constancia de Recorrido e Inspección de Inmueble', MARGIN + 4, y + 15);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.text(['Ivana Molina — CORREDORA INMOBILIARIA',
+            'Matrícula 1048  |  CUIT 27-39.616.147-3',
+            '20 de Junio, Buenos Aires'],
+           W - MARGIN - 3, y + 7, { align: 'right' });
+  y += 32;
+
+  // ── Sección 1: Inmueble ────────────────────────────────────
+  y = pdfSection(pdf, '1.  DATOS DEL / LOS INMUEBLE(S) VISITADO(S)', MARGIN, y, CW);
+
+  // Operación
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Operación', MARGIN, y);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(10);
+  pdf.setTextColor(0, 0, 0);
+  pdf.text(operation || '—', MARGIN + 28, y);
+  y += 7;
+
+  // Inmueble(s)
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Inmueble(s) / Propiedad(es) a Visitar', MARGIN, y);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(9);
+  pdf.setTextColor(0, 0, 0);
+  const propLines = pdf.splitTextToSize(propertyText || '—', CW);
+  pdf.text(propLines, MARGIN, y + 5);
+  y += 5 + propLines.length * 4.5 + 3;
+
+  // Dirección
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Dirección / Ubicación(es)', MARGIN, y);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(9);
+  pdf.setTextColor(0, 0, 0);
+  const addrLines = pdf.splitTextToSize(addressText || '—', CW);
+  pdf.text(addrLines, MARGIN, y + 5);
+  y += 5 + addrLines.length * 4.5 + 3;
+
+  // Fecha y Hora en 2 columnas
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Fecha de Visita', MARGIN, y);
+  pdf.text('Hora', MARGIN + col2 + 6, y);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(10);
+  pdf.setTextColor(0, 0, 0);
+  pdf.text(formattedDate || '—', MARGIN, y + 6);
+  pdf.text(visitTime || '—', MARGIN + col2 + 6, y + 6);
+  y += 13;
+
+  // ── Sección 2: Interesado ──────────────────────────────────
+  y = pdfSection(pdf, '2.  DATOS DEL INTERESADO / COMPRADOR', MARGIN, y, CW);
+
+  // Nombre + DNI
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Nombre y Apellido completo', MARGIN, y);
+  pdf.text('DNI / CUIT', MARGIN + col2 + 6, y);
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(10);
+  pdf.setTextColor(0, 0, 0);
+  pdf.text(clientName || '—', MARGIN, y + 6);
+  pdf.text(clientDNI || '—', MARGIN + col2 + 6, y + 6);
+  y += 12;
+
+  // Teléfono + Email
+  pdf.setFont('helvetica', 'bold');
+  pdf.setFontSize(7.5);
+  pdf.setTextColor(90, 90, 100);
+  pdf.text('Teléfono de Contacto', MARGIN, y);
+  pdf.text('Email Personal', MARGIN + col2 + 6, y);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(9.5);
+  pdf.setTextColor(0, 0, 0);
+  pdf.text(clientPhone || '—', MARGIN, y + 6);
+  pdf.text(clientEmail || '—', MARGIN + col2 + 6, y + 6);
+  y += 14;
+
+  // ── Secciones 3 y 4 (solo alquileres) ──────────────────────
+  if (isRental) {
+    y = pdfSection(pdf, '3.  DATOS LABORALES Y ECONÓMICOS  (solo alquileres)', MARGIN, y, CW);
+
+    const jobStatus = get('visitJobStatus');
+    const company   = get('visitCompany');
+    const income    = get('visitIncome');
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(7.5);
+    pdf.setTextColor(90, 90, 100);
+    pdf.text('Situación Laboral', MARGIN, y);
+    pdf.text('Empresa / Actividad', MARGIN + col2 + 6, y);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(9.5);
+    pdf.setTextColor(0, 0, 0);
+    pdf.text(jobStatus || '—', MARGIN, y + 6);
+    pdf.text(company || '—', MARGIN + col2 + 6, y + 6);
+    y += 12;
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(7.5);
+    pdf.setTextColor(90, 90, 100);
+    pdf.text('Ingreso Aproximado (Mensual)', MARGIN, y);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(9.5);
+    pdf.setTextColor(0, 0, 0);
+    pdf.text(income || '—', MARGIN, y + 6);
+    y += 14;
+
+    y = pdfSection(pdf, '4.  DATOS DE LOCACIÓN  (solo alquileres)', MARGIN, y, CW);
+
+    const people    = get('visitPeople');
+    const pets      = get('visitPets');
+    const guarantee = get('visitGuarantee');
+    const col3      = CW / 3 - 2;
+
+    pdf.setFont('helvetica', 'bold');
+    pdf.setFontSize(7.5);
+    pdf.setTextColor(90, 90, 100);
+    pdf.text('Personas a Habitar', MARGIN, y);
+    pdf.text('Mascotas', MARGIN + col3 + 5, y);
+    pdf.text('Garantía Presentada', MARGIN + (col3 + 5) * 2, y);
+    pdf.setFont('helvetica', 'normal');
+    pdf.setFontSize(9.5);
+    pdf.setTextColor(0, 0, 0);
+    pdf.text(people || '—', MARGIN, y + 6);
+    pdf.text(pets || '—', MARGIN + col3 + 5, y + 6);
+    pdf.text(guarantee || '—', MARGIN + (col3 + 5) * 2, y + 6);
+    y += 14;
+  }
+
+  // ── Sección firma ──────────────────────────────────────────
+  const sigSection = isRental ? '5' : '3';
+  y = pdfSection(pdf, `${sigSection}.  CONFORMIDAD Y FIRMA DEL VISITANTE`, MARGIN, y, CW);
+
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(8);
+  pdf.setTextColor(70, 70, 70);
+  pdf.text(
+    'Dejo constancia de haber visitado e inspeccionado el inmueble precedentemente detallado en la fecha y hora indicadas.',
+    MARGIN, y, { maxWidth: CW }
+  );
+  y += 9;
+
+  // Recuadro de firma
+  pdf.setDrawColor(180, 185, 195);
+  pdf.setFillColor(250, 250, 252);
+  const sigH = 32;
+  pdf.rect(MARGIN, y, CW, sigH);
+
+  // Intentar incluir la firma del canvas
+  try {
+    const sigCanvas = document.getElementById('signatureCanvas');
+    if (sigCanvas) {
+      const sigData = sigCanvas.toDataURL('image/png');
+      // Verificar que no esté vacío (canvas vacío = data URL muy corta)
+      if (sigData && sigData.length > 200) {
+        pdf.addImage(sigData, 'PNG', MARGIN + 2, y + 1, CW - 4, sigH - 2);
+      } else {
+        pdf.setTextColor(180, 180, 180);
+        pdf.setFontSize(9);
+        pdf.text('[ Sin firma ]', W / 2, y + sigH / 2 + 3, { align: 'center' });
+      }
+    }
+  } catch (e) {
+    pdf.setTextColor(180, 180, 180);
+    pdf.setFontSize(9);
+    pdf.text('[ Sin firma ]', W / 2, y + sigH / 2 + 3, { align: 'center' });
+  }
+
+  y += sigH + 7;
+
+  // Líneas de aclaración y DNI firmante
+  pdf.setDrawColor(0, 0, 0);
+  pdf.line(MARGIN,         y + 8, MARGIN + col2,     y + 8);
+  pdf.line(MARGIN + col2 + 6, y + 8, MARGIN + CW,    y + 8);
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(9.5);
+  pdf.setTextColor(0, 0, 0);
+  pdf.text(signClarif || '', MARGIN, y + 6);
+  pdf.text(signDNI || '',    MARGIN + col2 + 6, y + 6);
+  pdf.setFontSize(7);
+  pdf.setTextColor(100, 100, 100);
+  pdf.text('Aclaración de Firma', MARGIN, y + 13);
+  pdf.text('DNI Firmante', MARGIN + col2 + 6, y + 13);
+  y += 18;
+
+  // Pie de página
+  pdf.setFont('helvetica', 'normal');
+  pdf.setFontSize(7);
+  pdf.setTextColor(140, 140, 150);
+  pdf.text(
+    'Ivana Molina & Asociados Bienes Raíces  —  Matrícula 1048  —  CUIT 27-39.616.147-3  —  20 de Junio, Buenos Aires',
+    W / 2, PH - 8, { align: 'center' }
+  );
+
+  return pdf;
+}
+
+/**
+ * Punto de entrada: elige el generador según el tipo y devuelve un Blob PDF.
+ * Sin html2canvas, sin DOM capture, sin cuelgues.
+ * @param {'roadmap'|'visit'} type
+ * @returns {Promise<Blob>}
+ */
+async function generatePDFBlob(type) {
+  console.log('[PDF v3] generatePDFBlob iniciado, type:', type);
+  if (!window.jspdf) {
+    throw new Error('Librería jsPDF no cargada. Revisá tu conexión a internet.');
+  }
+  console.log('[PDF v3] jsPDF disponible ✅');
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+
+  if (type === 'roadmap') {
+    const roadmap = getActiveRoadmap();
+    console.log('[PDF v3] roadmap activo:', roadmap ? `#${roadmap.id}` : 'NULL');
+    if (!roadmap) throw new Error('No hay una Hoja de Ruta activa. Generá una primero.');
+    buildRoadmapPDF(pdf, roadmap);
+  } else {
+    buildVisitSheetPDF(pdf);
+  }
+
+  console.log('[PDF v3] PDF generado, creando blob...');
+  return pdf.output('blob');
+}
+
+
+
+/**
+ * Función principal de compartir por WhatsApp.
+ * En móviles usa la Web Share API (el usuario elige el contacto).
+ * En desktop descarga el PDF y abre wa.me con mensaje prefijado.
+ * @param {'roadmap'|'visit'} type
+ * @param {HTMLElement} sourceBtn  Botón que disparó la acción
+ */
+async function shareViaWhatsApp(type, sourceBtn) {
+  console.log('[WPP v3] shareViaWhatsApp llamado, type:', type);
+  // Obtener nombre del cliente para el archivo
+  const active = getActiveRoadmap();
+  const clientName = type === 'roadmap'
+    ? (active?.cliente || 'Cliente')
+    : (document.getElementById('visitClientName')?.value?.trim() || 'Cliente');
+
+  // Feedback visual inmediato
+  const originalHTML = sourceBtn ? sourceBtn.innerHTML : '';
+  if (sourceBtn) {
+    sourceBtn.disabled = true;
+    sourceBtn.innerHTML = `<span class="wpp-spinner"></span> Generando PDF...`;
+  }
+
+  const removeOverlay = showPdfOverlay(clientName);
+
+  try {
+    const pdfBlob = await generatePDFBlob(type);
+
+    const docLabel = type === 'roadmap' ? 'Hoja-de-Ruta' : 'Ficha-de-Visita';
+    const safeClientName = clientName.replace(/[^a-zA-Z0-9áéíóúÁÉÍÓÚñÑ ]/g, '').trim().replace(/\s+/g, '-');
+    const fileName = `${docLabel}-${safeClientName}.pdf`;
+    const pdfFile = new File([pdfBlob], fileName, { type: 'application/pdf' });
+
+    const shareTitle = type === 'roadmap'
+      ? `Hoja de Ruta Inmobiliaria – ${clientName}`
+      : `Ficha de Visita Inmobiliaria – ${clientName}`;
+    const shareText = type === 'roadmap'
+      ? `¡Hola! Te envío la Hoja de Ruta de Inversión personalizada. 🏡\n— Ivana Molina & Asociados Bienes Raíces`
+      : `¡Hola! Te envío la Ficha de Visita Inmobiliaria para ${clientName}. 📋\n— Ivana Molina & Asociados Bienes Raíces`;
+
+    removeOverlay();
+
+    // ---- Opción A: Web Share API con archivo (móviles modernos → panel nativo del SO) ----
+    if (navigator.canShare && navigator.canShare({ files: [pdfFile] })) {
+      await navigator.share({
+        files: [pdfFile],
+        title: shareTitle,
+        text: shareText
+      });
+      // Pulso de éxito
+      if (sourceBtn) {
+        sourceBtn.classList.add('shared-pulse');
+        setTimeout(() => sourceBtn.classList.remove('shared-pulse'), 700);
+      }
+      return;
+    }
+
+    // ---- Opción B: Descarga automática + Abrir wa.me (desktop / navegadores sin Web Share) ----
+    const blobURL = URL.createObjectURL(pdfBlob);
+    const link = document.createElement('a');
+    link.href = blobURL;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setTimeout(() => URL.revokeObjectURL(blobURL), 5000);
+
+    // Pequeña pausa para que el navegador procese la descarga antes de abrir WhatsApp
+    await new Promise(r => setTimeout(r, 400));
+
+    const waText = encodeURIComponent(
+      shareText + `\n\n📎 El PDF "${fileName}" se descargó automáticamente. Adjuntalo en esta conversación.`
+    );
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${waText}`, '_blank', 'noopener,noreferrer');
+
+  } catch (err) {
+    removeOverlay();
+    // Ignorar si el usuario canceló el panel de compartir
+    if (err.name === 'AbortError') return;
+    // Para cualquier otro error, mostrar mensaje amigable
+    console.error('[shareViaWhatsApp]', err);
+    alert(`⚠️ No se pudo generar el PDF.\nDetalle: ${err.message}`);
+  } finally {
+    if (sourceBtn) {
+      sourceBtn.disabled = false;
+      sourceBtn.innerHTML = originalHTML;
+    }
+    // Asegurarse de quitar el overlay si aún existe
+    const overlay = document.getElementById('pdfGeneratingOverlay');
+    if (overlay) overlay.remove();
+  }
+}
+
+window.shareViaWhatsApp = shareViaWhatsApp;

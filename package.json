@@ -2,11 +2,8 @@
   "name": "hoja-de-ruta-inmobiliaria",
   "version": "1.0.0",
   "description": "Hoja de Ruta Inmobiliaria - Ivana Molina & Asociados Bienes Raíces",
-  "main": "electron.js",
   "scripts": {
-    "start": "electron ."
-  },
-  "devDependencies": {
-    "electron": "^31.0.0"
+    "dev": "npx serve . --listen 3000",
+    "start": "npx serve . --listen 3000"
   }
 }
