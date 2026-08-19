@@ -47,7 +47,8 @@ const DEFAULT_PROPIEDADES = [
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 2,
@@ -107,12 +108,13 @@ const DEFAULT_PROPIEDADES = [
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 3,
     "nombre": "De Los Franceses Nro 3740",
-    "tipo": "Casa Quinta",
+    "tipo": "Comercial",
     "precio": 950000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -137,12 +139,13 @@ const DEFAULT_PROPIEDADES = [
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 4,
     "nombre": "Depto Canning",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 0,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -168,7 +171,8 @@ const DEFAULT_PROPIEDADES = [
       "Alquiler"
     ],
     "moneda": "USD",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 5,
@@ -213,7 +217,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 6,
@@ -243,12 +248,13 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 7,
     "nombre": "Laprida 375 Ramos",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 69000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -281,7 +287,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 8,
@@ -339,18 +346,19 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 9,
-    "nombre": "Aguapey Venta",
+    "nombre": "Aguapey 1119 – 20 de Junio",
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
-    "superficie": "1.316 m²",
+    "superficie": "1.316 m² (114 m² cub.)",
     "estado": "Bueno",
-    "habitaciones": 3,
+    "habitaciones": 1,
     "banos": 2,
     "imagenes": [
       "assets/imagenes/20-de-junio/venta/aguapey-venta/1.webp",
@@ -364,14 +372,15 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/20-de-junio/venta/aguapey-venta/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 135.000  🏡 CASA EN VENTA | 20 DE JUNIO 🌿  Viví rodeado de naturaleza, privacidad y confo...",
+    "potencial_inversion": "Casa ubicada en 20 de Junio, sobre un terreno de 1.316 m², totalmente alambrado y parquizado. La propiedad ofrece privacidad y conexión con el entorno natural gracias a su amplio espacio exterior y cercado. Cuenta con una superficie cubierta de 114 m², construida con doble pared de ladrillo visto y aberturas de PVC con DVH. El ambiente principal integra cocina, comedor y living, y dispone de una salamandra a leña. Un pasillo distribuidor conecta con un toilette y con la habitación principal en suite, que cuenta con vestidor. En el exterior posee una galería semicubierta que funciona como cochera techada y quincho, brindando un espacio adicional para reuniones. La propiedad tiene orientación norte, un dormitorio, dos baños y una cochera. No cuenta con pileta, seguridad privada ni gimnasio. Tiene 8 años de antigüedad y presenta un buen estado de mantenimiento. La propiedad es apta crédito hipotecario.",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": true
   },
   {
     "id": 10,
@@ -405,7 +414,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 11,
@@ -449,7 +459,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 12,
@@ -484,7 +495,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 13,
@@ -521,7 +533,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 14,
@@ -549,7 +562,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 15,
@@ -577,7 +591,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 16,
@@ -613,7 +628,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 17,
@@ -663,7 +679,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 18,
@@ -708,7 +725,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 19,
@@ -753,11 +771,12 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 20,
-    "nombre": "Casaquinta_Venta_Cosquin1120_1347M2_Aptocredito",
+    "nombre": "Cosquín 1120 – 20 de Junio",
     "tipo": "Casa Quinta",
     "precio": 250000,
     "ubicacion": "20 de Junio",
@@ -765,7 +784,7 @@ const DEFAULT_PROPIEDADES = [
     "superficie": "1.347 m²",
     "estado": "Bueno",
     "habitaciones": 3,
-    "banos": 2,
+    "banos": 3,
     "imagenes": [
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/1.webp",
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/10.webp",
@@ -795,14 +814,15 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 250.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Cosquín 1120, 20 de J...",
+    "potencial_inversion": "Casa quinta en venta en 20 de Junio. Cuenta con 3 habitaciones de 4x4 m, una de ellas en suite, 2 baños completos y 1 toilette. Dispone de pileta, cocina-comedor, living integrado, galería con parrilla, cochera semicubierta y garage cubierto para 3 autos. La propiedad cuenta además con una pileta de 8x4 m con solárium de 3x3 m y sistema de riego en todo el terreno. Excelente ubicación. Toma en parte de pago departamento en Zona Oeste o Capital. Acepta permuta de mayor valor en Castelar, Ituzaingó o Parque Leloir. MOLINA IVANA & ASOC. BIENES RAÍCES",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": true
   },
   {
     "id": 21,
@@ -836,7 +856,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 22,
@@ -873,7 +894,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 23,
@@ -911,7 +933,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "ARS",
-    "operacion": "Venta"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 24,
@@ -970,12 +993,13 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 25,
     "nombre": "Departamento Independiente La Rosalia",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 75000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -1002,7 +1026,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 26,
@@ -1029,7 +1054,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 27,
@@ -1055,7 +1081,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 28,
@@ -1085,7 +1112,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 29,
@@ -1109,7 +1137,8 @@ const DEFAULT_PROPIEDADES = [
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   }
 ];
 
@@ -1219,17 +1248,20 @@ function renderDashboard() {
   const filterOperacion = document.getElementById('filterOperacion');
   const filterTipo = document.getElementById('filterTipo');
   const filterEstado = document.getElementById('filterEstado');
+  const filterAptoCredito = document.getElementById('filterAptoCredito');
 
   const applyFilters = () => {
     const operacionVal = filterOperacion ? filterOperacion.value : 'todos';
-    const tipoVal = filterTipo.value;
-    const estadoVal = filterEstado.value;
+    const tipoVal = filterTipo ? filterTipo.value : 'todos';
+    const estadoVal = filterEstado ? filterEstado.value : 'todos';
+    const aptoCreditoVal = filterAptoCredito ? filterAptoCredito.value : 'todos';
 
     const filtered = state.propiedades.filter(p => {
       const matchOperacion = (operacionVal === 'todos' || p.operacion === operacionVal);
       const matchTipo = (tipoVal === 'todos' || p.tipo === tipoVal);
       const matchEstado = (estadoVal === 'todos' || p.estado === estadoVal);
-      return matchOperacion && matchTipo && matchEstado;
+      const matchAptoCredito = (aptoCreditoVal === 'todos' || (aptoCreditoVal === 'si' && p.apto_credito));
+      return matchOperacion && matchTipo && matchEstado && matchAptoCredito;
     });
 
     renderPropertiesGrid(filtered);
@@ -1238,6 +1270,7 @@ function renderDashboard() {
   filterOperacion?.addEventListener('change', applyFilters);
   filterTipo?.addEventListener('change', applyFilters);
   filterEstado?.addEventListener('change', applyFilters);
+  filterAptoCredito?.addEventListener('change', applyFilters);
 }
 
 function renderPropertiesGrid(list) {
@@ -1276,7 +1309,8 @@ function createPropertyCardHTML(p) {
         `}
         <span class="card-badge-status ${statusClass}">${p.estado}</span>
         ${p.operacion ? `<span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>` : ''}
-        ${hasVideo ? `<span class="badge-video" style="top: 2.5rem;">🎬 Video</span>` : ''}
+        ${p.apto_credito ? `<span class="card-badge-credito">🏦 Apto Crédito</span>` : ''}
+        ${hasVideo ? `<span class="badge-video" style="top: ${p.apto_credito ? '4.85rem' : '2.5rem'};">🎬 Video</span>` : ''}
         <div class="card-price-tag">${p.precio > 0 ? (p.moneda || 'USD') + ' ' + p.precio.toLocaleString() : 'Consultar'}</div>
       </div>
 
@@ -1289,6 +1323,7 @@ function createPropertyCardHTML(p) {
           <div class="feature-item">📐 ${p.superficie}</div>
           ${p.habitaciones ? `<div class="feature-item">🛏️ ${p.habitaciones} hab</div>` : ''}
           ${p.banos ? `<div class="feature-item">🚿 ${p.banos} baños</div>` : ''}
+          ${p.apto_credito ? `<div class="feature-item" style="color: #facc15;">🏦 Apto Crédito</div>` : ''}
         </div>
 
         <div class="card-potential">
@@ -1325,6 +1360,30 @@ function initEventListeners() {
     });
   }
 
+  // Visibilidad condicional de Apto Crédito Hipotecario:
+  // Visible cuando se elige Comprar/Venta y tipo Terreno/Lote, Quinta o Casa (o todas)
+  const clientOpEl = document.getElementById('clientOperation');
+  const clientPropTypeEl = document.getElementById('clientPropertyType');
+  const groupAptoCredito = document.getElementById('groupAptoCredito');
+
+  function updateAptoCreditoVisibility() {
+    if (!groupAptoCredito || !clientOpEl || !clientPropTypeEl) return;
+    const op = clientOpEl.value;
+    const tipo = clientPropTypeEl.value;
+    const isEligibleType = ['Casa Quinta', 'Lote', 'todas'].includes(tipo);
+    if (op === 'Venta' && isEligibleType) {
+      groupAptoCredito.style.display = 'block';
+    } else {
+      groupAptoCredito.style.display = 'none';
+      const aptoSelect = document.getElementById('clientAptoCredito');
+      if (aptoSelect) aptoSelect.value = 'indistinto';
+    }
+  }
+
+  clientOpEl?.addEventListener('change', updateAptoCreditoVisibility);
+  clientPropTypeEl?.addEventListener('change', updateAptoCreditoVisibility);
+  updateAptoCreditoVisibility();
+
   document.getElementById('btnCloseModal')?.addEventListener('click', closeModal);
   document.getElementById('propertyModal')?.addEventListener('click', (e) => {
     if (e.target.id === 'propertyModal') closeModal();
@@ -1338,6 +1397,7 @@ function generateRoadmap() {
   const clientOperationEl = document.getElementById('clientOperation');
   const clientLocationEl = document.getElementById('clientLocation');
   const clientPropertyTypeEl = document.getElementById('clientPropertyType');
+  const clientAptoCreditoEl = document.getElementById('clientAptoCredito');
   const clientNotesEl = document.getElementById('clientNotes');
 
   const clientName = clientNameEl ? clientNameEl.value.trim() : '';
@@ -1353,29 +1413,39 @@ function generateRoadmap() {
   const clientOperation = clientOperationEl ? clientOperationEl.value : '';
   const clientLocation = clientLocationEl ? clientLocationEl.value.trim() : '';
   const clientPropertyType = clientPropertyTypeEl ? clientPropertyTypeEl.value : 'todas';
+  const clientAptoCredito = clientAptoCreditoEl ? clientAptoCreditoEl.value : 'indistinto';
   const clientNotes = clientNotesEl ? clientNotesEl.value.trim() : '';
 
   let matchingProperties = state.propiedades.filter(p => {
-    // Budget filter (only if user provided a budget > 0)
+    // 1. Budget filter (only if user provided a budget > 0)
     if (clientBudget > 0) {
       const propertyPriceUSD = p.moneda === 'ARS' ? p.precio / 1000 : p.precio;
       const budgetUSD = clientBudgetCurrency === 'ARS' ? clientBudget / 1000 : clientBudget;
       if (propertyPriceUSD > budgetUSD) return false;
     }
 
-    // Property type filter
-    if (clientPropertyType && clientPropertyType !== 'todas' && p.tipo !== clientPropertyType) {
-      return false;
-    }
-
-    // Operation filter
+    // 2. Operation filter (Venta / Alquiler)
     if (clientOperation) {
       if (p.operacion && p.operacion.toLowerCase() !== clientOperation.toLowerCase()) {
          return false;
       }
     }
 
-    // Location filter
+    // 3. Apto Crédito Hipotecario filter (si se selecciona "si", la propiedad DEBE ser apta a crédito)
+    if (clientAptoCredito === 'si') {
+      if (!p.apto_credito) {
+        return false;
+      }
+    }
+
+    // 4. Property type filter
+    if (clientPropertyType && clientPropertyType !== 'todas') {
+      if (p.tipo !== clientPropertyType) {
+        return false;
+      }
+    }
+
+    // 5. Location filter
     if (clientLocation && clientLocation !== 'todas') {
        const locLower = clientLocation.toLowerCase();
        const pLoc = (p.ubicacion || p.direccion || '').toLowerCase();
@@ -1386,8 +1456,6 @@ function generateRoadmap() {
 
     return true;
   });
-
-  // Eliminado el fallback para que devuelva array vacío si no hay coincidencias
 
   const roadmapId = `HR-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
   const todayStr = new Date().toLocaleDateString('es-AR', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -1402,6 +1470,7 @@ function generateRoadmap() {
     operacion: clientOperation,
     localidad: clientLocation,
     tipo: clientPropertyType,
+    aptoCredito: clientAptoCredito,
     observaciones: clientNotes,
     propiedades: matchingProperties
   };
@@ -1447,6 +1516,7 @@ function renderRoadmapView(roadmap) {
           `}
           <span class="card-badge-status ${statusClass}" style="position: absolute; top: 1rem; left: 1rem;">${p.estado}</span>
           <span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>
+          ${p.apto_credito ? `<span class="card-badge-credito" style="position: absolute; top: 3.2rem; left: 1rem;">🏦 Apto Crédito</span>` : ''}
           ${hasVideo ? `<span class="badge-video" style="position: absolute; top: 1rem; right: 1rem;">🎬 Video</span>` : ''}
         </div>
 
@@ -1465,12 +1535,18 @@ function renderRoadmapView(roadmap) {
               <div class="feature-item">📐 ${p.superficie}</div>
               ${p.habitaciones ? `<div class="feature-item">🛏️ ${p.habitaciones} dorms</div>` : ''}
               ${p.banos ? `<div class="feature-item">🚿 ${p.banos} baños</div>` : ''}
+              ${p.apto_credito ? `<div class="feature-item" style="color: #facc15;">🏦 Apto Crédito</div>` : ''}
             </div>
 
             <!-- 💡 ¿Por qué te conviene esta opción? (Checks de conveniencia) -->
             <div style="margin: 0.9rem 0;">
               <h4 style="font-size: 0.82rem; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 0.05em; margin-bottom: 0.4rem;">💡 ¿Por qué te conviene esta opción?</h4>
               <div class="why-buy-list">
+                ${p.apto_credito ? `
+                  <div class="why-buy-item">
+                    <span>✓</span> <strong>Apto Crédito Hipotecario:</strong> Apto para financiamiento bancario con escritura y documentación al día.
+                  </div>
+                ` : ''}
                 <div class="why-buy-item">
                   <span>✓</span> Revalorización de zona estimada: <strong>+25% a 3 años en 20 de Junio</strong>
                 </div>
@@ -1525,7 +1601,7 @@ function renderRoadmapView(roadmap) {
     `;
   }).join('') : `
     <div class="glass-panel" style="text-align: center; padding: 3rem;">
-      <p style="color: var(--text-secondary);">No encontramos propiedades dentro del presupuesto especificado (${roadmap.monedaPresupuesto} ${roadmap.presupuesto.toLocaleString()}). Te sugerimos probar aumentando el presupuesto en el generador.</p>
+      <p style="color: var(--text-secondary);">No encontramos propiedades dentro del presupuesto o criterios especificados. Te sugerimos probar ajustando los filtros en el generador.</p>
     </div>
   `;
 
@@ -1543,7 +1619,7 @@ function renderRoadmapView(roadmap) {
         <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.75rem;">
           <div>
             <div class="pdf-property-title">${p.nombre}</div>
-            <div style="font-size: 0.85rem; color: #4b5563;">📍 ${p.direccion} (${p.tipo} • ${p.ubicacion || 'Sin ubicación'})</div>
+            <div style="font-size: 0.85rem; color: #4b5563;">📍 ${p.direccion} (${p.tipo} • ${p.ubicacion || 'Sin ubicación'}${p.apto_credito ? ' • 🏦 Apto Crédito Hipotecario' : ''})</div>
           </div>
           <div class="pdf-property-price">${p.precio > 0 ? (p.moneda || 'USD') + ' ' + p.precio.toLocaleString() : 'Consultar'}</div>
         </div>
@@ -1569,6 +1645,7 @@ function renderRoadmapView(roadmap) {
 
         <div class="why-buy-list">
           <strong style="font-size: 0.82rem; text-transform: uppercase; color: #374151; display: block; margin-bottom: 0.4rem;">💡 Aspectos Clave de Conveniencia:</strong>
+          ${p.apto_credito ? '<div class="why-buy-item"><span>✓</span> <strong>Apto Crédito Bancario:</strong> Documentación e informe dominial en regla.</div>' : ''}
           <div class="why-buy-item"><span>✓</span> Revalorización de zona estimada: <strong>+25% a 3 años en ${p.ubicacion || 'la zona'}</strong></div>
           <div class="why-buy-item"><span>✓</span> Entorno residencial tranquilo con excelente proyección de desarrollo</div>
           <div class="why-buy-item"><span>✓</span> Alta demanda comprobada en ${p.destinos ? p.destinos.join(', ') : 'Inversión'}</div>
@@ -1610,13 +1687,20 @@ function renderRoadmapView(roadmap) {
             <span class="meta-val">${roadmap.monedaPresupuesto} ${roadmap.presupuesto.toLocaleString()}</span>
           </div>
           <div class="meta-box">
-            <span class="meta-label">Objetivo</span>
-            <span class="meta-val">${roadmap.objetivo}</span>
+            <span class="meta-label">Operación</span>
+            <span class="meta-val">${roadmap.operacion || 'Venta'}</span>
           </div>
-          <div class="meta-box">
-            <span class="meta-label">Sugerencias</span>
-            <span class="meta-val">${roadmap.propiedades.length} ${roadmap.propiedades.length === 1 ? 'Propiedad' : 'Propiedades'}</span>
-          </div>
+          ${roadmap.aptoCredito === 'si' ? `
+            <div class="meta-box">
+              <span class="meta-label">Crédito</span>
+              <span class="meta-val" style="color: #facc15;">🏦 Apto Hipotecario</span>
+            </div>
+          ` : `
+            <div class="meta-box">
+              <span class="meta-label">Sugerencias</span>
+              <span class="meta-val">${roadmap.propiedades.length} ${roadmap.propiedades.length === 1 ? 'Propiedad' : 'Propiedades'}</span>
+            </div>
+          `}
         </div>
       </div>
 
@@ -1822,6 +1906,7 @@ function renderPropertyModalContent(prop) {
   modalBody.innerHTML = `
     <div style="margin-bottom: 1rem;">
       <span class="card-badge-status ${statusClass}">${prop.estado}</span>
+      ${prop.apto_credito ? `<span class="card-badge-credito" style="position: static; display: inline-flex; margin-left: 0.4rem; vertical-align: middle;">🏦 Apto Crédito Hipotecario</span>` : ''}
       ${hasVideo ? `<span class="badge-video" style="margin-left: 0.4rem;">🎬 Video Incluido</span>` : ''}
       <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-top: 0.4rem;">${prop.nombre}</h2>
       <p style="color: var(--text-secondary); font-size: 0.88rem;">📍 ${prop.direccion} (20 de Junio)</p>
@@ -1864,7 +1949,7 @@ function renderPropertyModalContent(prop) {
       </div>
     ` : ''}
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin: 1.25rem 0; background: rgba(255,255,255,0.03); padding: 0.85rem; border-radius: var(--radius-md);">
+    <div style="display: grid; grid-template-columns: repeat(${prop.apto_credito ? '4' : '3'}, 1fr); gap: 0.75rem; margin: 1.25rem 0; background: rgba(255,255,255,0.03); padding: 0.85rem; border-radius: var(--radius-md);">
       <div>
         <span style="font-size: 0.72rem; color: var(--text-secondary);">Precio</span>
         <div style="font-size: 1.15rem; font-weight: 800; color: #ffffff;">${prop.precio > 0 ? (prop.moneda || 'USD') + ' ' + prop.precio.toLocaleString() : 'Consultar'}</div>
@@ -1877,6 +1962,12 @@ function renderPropertyModalContent(prop) {
         <span style="font-size: 0.72rem; color: var(--text-secondary);">Ambientes</span>
         <div style="font-size: 1rem; font-weight: 700; color: #fff;">${prop.habitaciones} hab / ${prop.banos} baños</div>
       </div>
+      ${prop.apto_credito ? `
+        <div>
+          <span style="font-size: 0.72rem; color: var(--text-secondary);">Crédito</span>
+          <div style="font-size: 0.95rem; font-weight: 700; color: #facc15;">✅ Apto Banco</div>
+        </div>
+      ` : ''}
     </div>
 
     <div class="info-block">
@@ -2196,6 +2287,7 @@ function buildRoadmapPDF(pdf, roadmap) {
       p.habitaciones ? `${p.habitaciones} dorms` : '',
       p.banos ? `${p.banos} baños` : '',
       `Estado: ${p.estado || '—'}`,
+      p.apto_credito ? 'Apto Crédito Hipotecario' : '',
       `${p.operacion || ''}`
     ].filter(Boolean).join('   ·   ');
     pdf.setFontSize(8.5);

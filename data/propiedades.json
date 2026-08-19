@@ -34,7 +34,8 @@
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 2,
@@ -94,12 +95,13 @@
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 3,
     "nombre": "De Los Franceses Nro 3740",
-    "tipo": "Casa Quinta",
+    "tipo": "Comercial",
     "precio": 950000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -124,12 +126,13 @@
       "Alquiler"
     ],
     "moneda": "ARS",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 4,
     "nombre": "Depto Canning",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 0,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -155,7 +158,8 @@
       "Alquiler"
     ],
     "moneda": "USD",
-    "operacion": "Alquiler"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 5,
@@ -200,7 +204,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 6,
@@ -230,12 +235,13 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 7,
     "nombre": "Laprida 375 Ramos",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 69000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -268,7 +274,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 8,
@@ -326,18 +333,19 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 9,
-    "nombre": "Aguapey Venta",
+    "nombre": "Aguapey 1119 – 20 de Junio",
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
-    "superficie": "1.316 m²",
+    "superficie": "1.316 m² (114 m² cub.)",
     "estado": "Bueno",
-    "habitaciones": 3,
+    "habitaciones": 1,
     "banos": 2,
     "imagenes": [
       "assets/imagenes/20-de-junio/venta/aguapey-venta/1.webp",
@@ -351,14 +359,15 @@
       "assets/imagenes/20-de-junio/venta/aguapey-venta/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 135.000  🏡 CASA EN VENTA | 20 DE JUNIO 🌿  Viví rodeado de naturaleza, privacidad y confo...",
+    "potencial_inversion": "Casa ubicada en 20 de Junio, sobre un terreno de 1.316 m², totalmente alambrado y parquizado. La propiedad ofrece privacidad y conexión con el entorno natural gracias a su amplio espacio exterior y cercado. Cuenta con una superficie cubierta de 114 m², construida con doble pared de ladrillo visto y aberturas de PVC con DVH. El ambiente principal integra cocina, comedor y living, y dispone de una salamandra a leña. Un pasillo distribuidor conecta con un toilette y con la habitación principal en suite, que cuenta con vestidor. En el exterior posee una galería semicubierta que funciona como cochera techada y quincho, brindando un espacio adicional para reuniones. La propiedad tiene orientación norte, un dormitorio, dos baños y una cochera. No cuenta con pileta, seguridad privada ni gimnasio. Tiene 8 años de antigüedad y presenta un buen estado de mantenimiento. La propiedad es apta crédito hipotecario.",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": true
   },
   {
     "id": 10,
@@ -392,7 +401,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 11,
@@ -436,7 +446,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 12,
@@ -471,7 +482,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 13,
@@ -508,7 +520,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 14,
@@ -536,7 +549,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 15,
@@ -564,7 +578,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 16,
@@ -600,7 +615,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 17,
@@ -650,7 +666,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 18,
@@ -695,7 +712,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 19,
@@ -740,11 +758,12 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 20,
-    "nombre": "Casaquinta_Venta_Cosquin1120_1347M2_Aptocredito",
+    "nombre": "Cosquín 1120 – 20 de Junio",
     "tipo": "Casa Quinta",
     "precio": 250000,
     "ubicacion": "20 de Junio",
@@ -752,7 +771,7 @@
     "superficie": "1.347 m²",
     "estado": "Bueno",
     "habitaciones": 3,
-    "banos": 2,
+    "banos": 3,
     "imagenes": [
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/1.webp",
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/10.webp",
@@ -782,14 +801,15 @@
       "assets/imagenes/20-de-junio/venta/casaquinta_venta_cosquin1120_1347m2_aptocredito-1/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 250.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Cosquín 1120, 20 de J...",
+    "potencial_inversion": "Casa quinta en venta en 20 de Junio. Cuenta con 3 habitaciones de 4x4 m, una de ellas en suite, 2 baños completos y 1 toilette. Dispone de pileta, cocina-comedor, living integrado, galería con parrilla, cochera semicubierta y garage cubierto para 3 autos. La propiedad cuenta además con una pileta de 8x4 m con solárium de 3x3 m y sistema de riego en todo el terreno. Excelente ubicación. Toma en parte de pago departamento en Zona Oeste o Capital. Acepta permuta de mayor valor en Castelar, Ituzaingó o Parque Leloir. MOLINA IVANA & ASOC. BIENES RAÍCES",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": true
   },
   {
     "id": 21,
@@ -823,7 +843,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 22,
@@ -860,7 +881,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 23,
@@ -898,7 +920,8 @@
       "Inversión"
     ],
     "moneda": "ARS",
-    "operacion": "Venta"
+    "operacion": "Alquiler",
+    "apto_credito": false
   },
   {
     "id": 24,
@@ -957,12 +980,13 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 25,
     "nombre": "Departamento Independiente La Rosalia",
-    "tipo": "Casa Quinta",
+    "tipo": "Departamento",
     "precio": 75000,
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, Buenos Aires",
@@ -989,7 +1013,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 26,
@@ -1016,7 +1041,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 27,
@@ -1042,7 +1068,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 28,
@@ -1072,7 +1099,8 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   },
   {
     "id": 29,
@@ -1096,6 +1124,7 @@
       "Inversión"
     ],
     "moneda": "USD",
-    "operacion": "Venta"
+    "operacion": "Venta",
+    "apto_credito": false
   }
 ]

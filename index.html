@@ -132,8 +132,9 @@
             <select id="filterTipo" class="form-control filter-select">
               <option value="todos">🏠 Todos los Tipos</option>
               <option value="Casa Quinta">🏡 Casa Quinta</option>
-              <option value="Casa">🏠 Casa</option>
-              <option value="Lote">🌱 Lote</option>
+              <option value="Lote">🌱 Lote / Terreno</option>
+              <option value="Departamento">🏢 Departamento</option>
+              <option value="Comercial">🏪 Comercial / Local</option>
             </select>
 
             <select id="filterEstado" class="form-control filter-select">
@@ -141,6 +142,11 @@
               <option value="Bueno">🟢 Bueno</option>
               <option value="A reciclar">🟡 A reciclar</option>
               <option value="A refaccionar">🔴 A refaccionar</option>
+            </select>
+
+            <select id="filterAptoCredito" class="form-control filter-select">
+              <option value="todos">🏛️ Crédito: Todos</option>
+              <option value="si">🏦 Solo Apto Crédito</option>
             </select>
           </div>
         </div>
@@ -199,13 +205,29 @@
                 </label>
                 <select id="clientPropertyType" class="form-control" required>
                   <option value="todas">Cualquier tipo compatible</option>
-                  <option value="Casa Quinta">Casa Quinta</option>
-                  <option value="Departamento">Departamento</option>
-                  <option value="Lote">Lote / Terreno</option>
-                  <option value="Comercial">Comercial / Local</option>
+                  <option value="Casa Quinta">🏡 Casa Quinta</option>
+                  <option value="Lote">🌱 Lote / Terreno</option>
+                  <option value="Departamento">🏢 Departamento</option>
+                  <option value="Comercial">🏪 Comercial / Local</option>
                 </select>
               </div>
             </div>
+
+            <!-- Campo dinámico: Apto Crédito Hipotecario (visible al elegir Comprar/Venta y Quinta, Terreno/Lote, Casa o compatible) -->
+            <div class="form-group full-width" id="groupAptoCredito" style="margin-top: 1.25rem;">
+              <label class="form-label" for="clientAptoCredito">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18M3 10h18M5 10v11M19 10v11M9 10v11M15 10v11M12 2L2 7h20L12 2z"/>
+                </svg>
+                <span>¿Apto Crédito Hipotecario?</span>
+              </label>
+              <select id="clientAptoCredito" class="form-control">
+                <option value="indistinto">🔍 Indistinto (Ver todas las propiedades)</option>
+                <option value="si">🏦 Sí, solo propiedades Aptas para Crédito Hipotecario</option>
+                <option value="no">❌ No requerido / Sin crédito</option>
+              </select>
+            </div>
+
             <div class="form-group full-width" style="margin-top: 1.25rem;">
               <label class="form-label" for="clientLocation">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
