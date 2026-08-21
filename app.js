@@ -18,7 +18,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1000000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Ejercito De Los Andes 498, 20 de Junio",
     "superficie": "3.109 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -48,7 +48,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "ARS",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Ejercito De Los Andes 498, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 2,
@@ -56,7 +57,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1300000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Copahue 1576, 20 de Junio",
     "superficie": "3.251 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -109,7 +110,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "ARS",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Copahue 1576, B1786cad 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 3,
@@ -117,7 +119,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Comercial",
     "precio": 950000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "De Los Franceses 3740, 20 de Junio",
     "superficie": "Consultar",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -140,7 +142,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "ARS",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "De Los Franceses 3740, B1786 20 de Junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 4,
@@ -148,7 +151,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Departamento",
     "precio": 0,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Av. Mariano Castex 1277, Canning",
     "superficie": "Consultar",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -172,7 +175,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Canning Center, Av. Mariano Castex 1277, B1804 Canning, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 5,
@@ -180,7 +184,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1500,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Cosquín 194, 20 de Junio",
     "superficie": "1.500 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -218,7 +222,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Cosquin 194, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 6,
@@ -226,7 +231,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 115000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Cosquín 1421, 20 de Junio",
     "superficie": "1.610 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -249,7 +254,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Cosquin 1421, B1786big 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 7,
@@ -257,7 +263,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Departamento",
     "precio": 69000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Laprida 375, Ramos Mejía",
     "superficie": "38 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -288,7 +294,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Laprida 375, B1704 Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 8,
@@ -296,7 +303,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 230000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Pablo Ceretti 1350, 20 de Junio",
     "superficie": "3.000 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -347,7 +354,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Pablo Ceretti 1350, B1786bzb 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 9,
@@ -355,7 +363,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Aguapey 1119, 20 de Junio",
     "superficie": "1.316 m² (114 m² cub.)",
     "estado": "Bueno",
     "habitaciones": 1,
@@ -380,7 +388,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": true
+    "apto_credito": true,
+    "google_maps": "Aguapey 1119, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 10,
@@ -388,7 +397,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 95000,
     "ubicacion": "Caseros",
-    "direccion": "Caseros, Buenos Aires",
+    "direccion": "Carlos Tejedor, Caseros",
     "superficie": "155 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -415,7 +424,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Carlos Tejedor, B1678 Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 11,
@@ -423,7 +433,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 85000,
     "ubicacion": "González Catán",
-    "direccion": "González Catán, Buenos Aires",
+    "direccion": "Giacomo Leopardi 5800, González Catán",
     "superficie": "1.135 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -460,7 +470,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Giacomo Leopardi 5800, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 12,
@@ -468,7 +479,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 38000,
     "ubicacion": "González Catán",
-    "direccion": "González Catán, Buenos Aires",
+    "direccion": "Juan Pío Gana 4400, González Catán",
     "superficie": "300 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -496,7 +507,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 13,
@@ -504,7 +516,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 75000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Cnel. Manuel Rico 1369, 20 de Junio",
     "superficie": "395 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -534,7 +546,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Cnel. Manuel Rico 1369, B1786cbc 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 14,
@@ -542,7 +555,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 35000,
     "ubicacion": "Pontevedra",
-    "direccion": "Pontevedra, Buenos Aires",
+    "direccion": "Gibraltar, Pontevedra",
     "superficie": "390 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -563,7 +576,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 15,
@@ -571,7 +585,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 45000,
     "ubicacion": "Pontevedra",
-    "direccion": "Pontevedra, Buenos Aires",
+    "direccion": "Gibraltar, Pontevedra",
     "superficie": "390 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -592,7 +606,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 16,
@@ -600,7 +615,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 185000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Girardot 1345, 20 de Junio",
     "superficie": "1.495 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -629,7 +644,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Girardot 1345, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 17,
@@ -637,7 +653,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 79000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Alejo Castex 1263, 20 de Junio",
     "superficie": "400 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -680,7 +696,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Alejo Castex 1263, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 18,
@@ -726,7 +743,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 19,
@@ -734,7 +752,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 125000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "El Maestro 892, 20 de Junio",
     "superficie": "2.600 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -772,7 +790,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "El Maestro 892, B1786bfd 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 20,
@@ -780,7 +799,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 250000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Cosquín 1120, 20 de Junio",
     "superficie": "1.347 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -822,7 +841,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": true
+    "apto_credito": true,
+    "google_maps": "Cosquin 1120, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 21,
@@ -830,7 +850,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Manuel Antonio Castro 646, 20 de Junio",
     "superficie": "1.500 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -857,7 +877,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Manuel Antonio Castro 646, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 22,
@@ -865,7 +886,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 160000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Urien S/N, 20 de Junio",
     "superficie": "1.500 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -895,7 +916,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Urien Sn, 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 23,
@@ -903,7 +925,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 850000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "California 5595, 20 de Junio",
     "superficie": "Consultar",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -934,7 +956,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "ARS",
     "operacion": "Alquiler",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "California 5595, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 24,
@@ -942,7 +965,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 135000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Cóndor 1489, 20 de Junio",
     "superficie": "3.251 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -994,7 +1017,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Condor 1489, B1786acg 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 25,
@@ -1002,7 +1026,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Departamento",
     "precio": 75000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Ejército De Los Andes y California 20, 20 de Junio",
     "superficie": "3.251 m²",
     "estado": "Bueno",
     "habitaciones": 3,
@@ -1027,7 +1051,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Ejercito De Los Andes, California 20, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 26,
@@ -1035,7 +1060,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 155000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Alejo Castex 1133, 20 de Junio",
     "superficie": "3000 m²",
     "estado": "Bueno",
     "habitaciones": 0,
@@ -1055,7 +1080,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Alejo Castex 1133, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 27,
@@ -1063,7 +1089,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 40000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Pablo Ceretti 1673, 20 de Junio",
     "superficie": "900 m²",
     "estado": "Bueno",
     "habitaciones": 0,
@@ -1082,7 +1108,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Pablo Ceretti 1673, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 28,
@@ -1090,7 +1117,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 55000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Carlos Casafoust 630, 20 de Junio",
     "superficie": "1.500 m²",
     "estado": "Bueno",
     "habitaciones": 0,
@@ -1113,7 +1140,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Carlos Casafoust 630, B1786ayl 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
     "id": 29,
@@ -1121,7 +1149,7 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Lote",
     "precio": 29000,
     "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, Buenos Aires",
+    "direccion": "Coronda 1040, 20 de Junio",
     "superficie": "546 m²",
     "estado": "Bueno",
     "habitaciones": 0,
@@ -1138,7 +1166,8 @@ const DEFAULT_PROPIEDADES = [
     ],
     "moneda": "USD",
     "operacion": "Venta",
-    "apto_credito": false
+    "apto_credito": false,
+    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina"
   }
 ];
 
@@ -1317,7 +1346,6 @@ function createPropertyCardHTML(p) {
       <div class="card-body">
         <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • ${p.ubicacion || 'Sin ubicación'}</div>
         <h3 class="card-title">${p.nombre}</h3>
-        <div class="card-location">📍 ${p.direccion}</div>
 
         <div class="card-features">
           <div class="feature-item">📐 ${p.superficie}</div>
@@ -1526,7 +1554,9 @@ function renderRoadmapView(roadmap) {
               <div>
                 <div class="card-type"><strong>${p.operacion || "Venta"}</strong> • ${p.tipo} • ${p.ubicacion || 'Sin ubicación'}</div>
                 <h3 class="card-title" style="font-size: 1.4rem;">${p.nombre}</h3>
-                <div class="card-location">📍 ${p.direccion}</div>
+                <div class="card-location" style="margin-top: 0.35rem; color: #a1a1aa; font-size: 0.92rem; font-weight: 500;">
+                  📍 Ubicación: <strong style="color: #ffffff;">${p.direccion}</strong>
+                </div>
               </div>
               <div class="roadmap-price">${p.precio > 0 ? (p.moneda || 'USD') + ' ' + p.precio.toLocaleString() : 'Consultar'}</div>
             </div>
@@ -1589,6 +1619,12 @@ function renderRoadmapView(roadmap) {
 
           <!-- Action Buttons inside Roadmap Card -->
           <div class="roadmap-card-actions">
+            <button class="btn btn-map-route btn-sm" onclick="openGoogleMapsRoute(${p.id})" title="Abrir Google Maps con la ruta desde tu ubicación actual hasta esta propiedad">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Cómo llegar</span>
+            </button>
             <button class="btn btn-secondary btn-sm" onclick="openPropertyModal(${p.id})">
               Ver Galería
             </button>
@@ -2020,6 +2056,55 @@ function closeModal() {
   }
 }
 
+/**
+ * Construye la URL de navegación de Google Maps con la ruta hacia la propiedad
+ * desde la ubicación actual del usuario (origin omitido = GPS actual).
+ * @param {Object} property
+ * @returns {string}
+ */
+function getGoogleMapsUrl(property) {
+  if (!property) return 'https://www.google.com/maps';
+
+  // Si tiene un enlace o coordenadas personalizadas de Google Maps
+  if (property.google_maps && property.google_maps.trim()) {
+    const raw = property.google_maps.trim();
+    // Si es un link web completo (ej: https://maps.app.goo.gl/..., https://goo.gl/maps/..., https://www.google.com/maps/...)
+    if (raw.startsWith('http://') || raw.startsWith('https://')) {
+      return raw;
+    }
+    // Si son coordenadas (ej: "-34.7812,-58.6712") o un nombre/dirección puntual
+    return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(raw)}`;
+  }
+
+  // Fallback con la dirección y localidad
+  const parts = [];
+  if (property.direccion) parts.push(property.direccion);
+  if (property.ubicacion && !property.direccion.toLowerCase().includes(property.ubicacion.toLowerCase())) {
+    parts.push(property.ubicacion);
+  }
+  parts.push('Buenos Aires, Argentina');
+  const destination = parts.join(', ');
+
+  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+}
+
+/**
+ * Abre Google Maps automáticamente con la ruta hacia la propiedad.
+ * @param {number} propId
+ */
+function openGoogleMapsRoute(propId) {
+  const prop = state.propiedades.find(p => p.id === propId);
+  if (!prop) {
+    console.warn('[Google Maps] Propiedad no encontrada con ID:', propId);
+    return;
+  }
+  const url = getGoogleMapsUrl(prop);
+  console.log('[Google Maps] Abriendo ruta hacia:', prop.nombre, '->', url);
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+
+window.getGoogleMapsUrl = getGoogleMapsUrl;
+window.openGoogleMapsRoute = openGoogleMapsRoute;
 
 function getActiveRoadmap() {
   return currentGeneratedRoadmap || state.activeRoadmap || null;
