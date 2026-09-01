@@ -13,45 +13,6 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
-    "id": 1,
-    "nombre": "Ejercito De Los Andes",
-    "tipo": "Casa Quinta",
-    "precio": 1000000,
-    "ubicacion": "20 de Junio",
-    "direccion": "Ejercito De Los Andes 498, 20 de Junio",
-    "superficie": "3.109 m²",
-    "estado": "Bueno",
-    "habitaciones": 3,
-    "banos": 2,
-    "imagenes": [
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_1.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_10.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_11.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_12.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_13.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_2.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_3.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_4.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_5.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_6.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_7.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_8.webp",
-      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_9.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 1.000.000  🔑 ALQUILER PERMANENTE: CASA QUINTA CON PARQUE Y PILETA 🔑  📍 20 de Junio, La Mat...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Vivienda",
-      "Inversión",
-      "Alquiler"
-    ],
-    "moneda": "ARS",
-    "operacion": "Alquiler",
-    "apto_credito": false,
-    "google_maps": "Ejercito De Los Andes 498, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
-  },
-  {
     "id": 2,
     "nombre": "La Rosalia Simona",
     "tipo": "Casa Quinta",
