@@ -1417,7 +1417,7 @@ function createPropertyCardHTML(p) {
               Ver Galería
             </button>
             ${p.operacion === 'Alquiler' ? `
-            <a href="/requisitos/${slug}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
+            <a href="requisitos/${slug}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
@@ -1694,7 +1694,7 @@ function renderRoadmapView(roadmap) {
               Ver Galería
             </button>
             ${p.operacion === 'Alquiler' ? `
-            <a href="/requisitos/${getPropertySlug(p)}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
+            <a href="requisitos/${getPropertySlug(p)}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                 <polyline points="14 2 14 8 20 8"></polyline>
@@ -2099,7 +2099,7 @@ function renderPropertyModalContent(prop) {
     <div style="margin-top: 1.75rem; display: flex; justify-content: flex-end; gap: 0.75rem; flex-wrap: wrap;">
       <button class="btn btn-secondary" onclick="closeModal()">Cerrar</button>
       ${prop.operacion === 'Alquiler' ? `
-      <a href="/requisitos/${getPropertySlug(prop)}.html" target="_blank" rel="noopener" class="btn btn-requisitos">
+      <a href="requisitos/${getPropertySlug(prop)}.html" target="_blank" rel="noopener" class="btn btn-requisitos">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
           <polyline points="14 2 14 8 20 8"></polyline>
