@@ -10,13 +10,6 @@
 const fs = require('fs');
 const path = require('path');
 
-let pdfParse = null;
-try {
-  pdfParse = require('pdf-parse');
-} catch (e) {
-  console.log('Nota: pdf-parse no disponible de forma global, se utilizará parser estándar.');
-}
-
 const ROOT_DIR = path.resolve(__dirname, '..');
 const PROPS_FILE = path.join(ROOT_DIR, 'data', 'propiedades.json');
 const REQUISITOS_DIR = path.join(ROOT_DIR, 'requisitos');
@@ -113,14 +106,7 @@ function findPdfInDir(dirPath) {
  * Extrae texto de un archivo PDF
  */
 async function extractTextFromPdf(pdfPath) {
-  if (!pdfParse || typeof pdfParse !== 'function') return null;
-  try {
-    const dataBuffer = fs.readFileSync(pdfPath);
-    const data = await pdfParse(dataBuffer);
-    return data ? data.text : null;
-  } catch (err) {
-    return null;
-  }
+  return null;
 }
 
 /**
