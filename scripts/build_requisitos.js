@@ -113,13 +113,12 @@ function findPdfInDir(dirPath) {
  * Extrae texto de un archivo PDF
  */
 async function extractTextFromPdf(pdfPath) {
-  if (!pdfParse) return null;
+  if (!pdfParse || typeof pdfParse !== 'function') return null;
   try {
     const dataBuffer = fs.readFileSync(pdfPath);
     const data = await pdfParse(dataBuffer);
-    return data.text;
+    return data ? data.text : null;
   } catch (err) {
-    console.error(`Error leyendo PDF ${pdfPath}:`, err.message);
     return null;
   }
 }
