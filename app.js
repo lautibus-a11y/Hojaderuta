@@ -1209,7 +1209,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function loadInitialData() {
   try {
-    const resProp = await fetch('data/propiedades.json').then(r => {
+    const resProp = await fetch('data/propiedades.json?v=' + Date.now()).then(r => {
       if (!r.ok) throw new Error('Network error');
       return r.json();
     }).catch(() => null);
