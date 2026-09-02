@@ -1124,9 +1124,10 @@ function generateHtmlPage(prop, slug, pdfContent) {
           `}
           <div class="req-hero-badges">
             <span class="card-badge-operacion ${isAlquiler ? 'op-alquiler' : 'op-venta'}">${prop.operacion || 'Venta'}</span>
-            <span class="card-badge-status status-lista">${prop.estado || 'Bueno'}</span>
+            <span class="card-badge-status ${(prop.estado === 'Alquilada' || prop.alquilada || prop.id === 5) ? 'status-alquilada' : 'status-lista'}">${(prop.estado === 'Alquilada' || prop.alquilada || prop.id === 5) ? 'Alquilada' : (prop.estado || 'Bueno')}</span>
             ${isAptoCredito ? `<span class="card-badge-credito">🏦 Apto Crédito</span>` : ''}
           </div>
+          ${(prop.estado === 'Alquilada' || prop.alquilada || prop.id === 5) ? `<div class="ribbon-alquilada">Alquilada</div>` : ''}
         </div>
 
         <div class="req-hero-info">

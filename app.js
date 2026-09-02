@@ -146,7 +146,8 @@ const DEFAULT_PROPIEDADES = [
     "ubicacion": "20 de Junio",
     "direccion": "Cosquín 194, 20 de Junio",
     "superficie": "1.500 m²",
-    "estado": "Bueno",
+    "estado": "Alquilada",
+    "alquilada": true,
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
@@ -1362,8 +1363,11 @@ function getPropertySlug(p) {
 }
 
 function createPropertyCardHTML(p) {
-  const statusClass = p.estado === 'Bueno' ? 'status-lista' :
+  const isAlquilada = p.estado === 'Alquilada' || p.alquilada || p.id === 5;
+  const statusClass = isAlquilada ? 'status-alquilada' :
+                      p.estado === 'Bueno' ? 'status-lista' :
                       p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
+  const statusLabel = isAlquilada ? 'Alquilada' : p.estado;
   
   const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
   const hasVideo = Boolean(p.video);
@@ -1371,7 +1375,7 @@ function createPropertyCardHTML(p) {
 
   return `
     <div class="property-card">
-      <div class="card-image-wrap" onclick="openPropertyModal(${p.id})" style="cursor: pointer;">
+      <div class="card-image-wrap" onclick="openPropertyModal(${p.id})" style="cursor: pointer; position: relative; overflow: hidden;">
         ${mainImage ? `
           <img src="${encodeURI(mainImage)}" alt="${p.nombre}" class="card-image" >
         ` : `
@@ -1380,7 +1384,8 @@ function createPropertyCardHTML(p) {
             <span>${p.nombre}</span>
           </div>
         `}
-        <span class="card-badge-status ${statusClass}">${p.estado}</span>
+        ${isAlquilada ? `<div class="ribbon-alquilada">Alquilada</div>` : ''}
+        <span class="card-badge-status ${statusClass}">${statusLabel}</span>
         ${p.operacion ? `<span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>` : ''}
         ${p.apto_credito ? `<span class="card-badge-credito">🏦 Apto Crédito</span>` : ''}
         ${hasVideo ? `<span class="badge-video" style="top: ${p.apto_credito ? '4.85rem' : '2.5rem'};">🎬 Video</span>` : ''}
@@ -1581,8 +1586,11 @@ function renderRoadmapView(roadmap) {
 
   // 1. Web Property Cards (Pantalla)
   const webPropsHTML = roadmap.propiedades.length > 0 ? roadmap.propiedades.map(p => {
-    const statusClass = p.estado === 'Bueno' ? 'status-lista' :
+    const isAlquilada = p.estado === 'Alquilada' || p.alquilada || p.id === 5;
+    const statusClass = isAlquilada ? 'status-alquilada' :
+                        p.estado === 'Bueno' ? 'status-lista' :
                         p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
+    const statusLabel = isAlquilada ? 'Alquilada' : p.estado;
     const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
     const hasVideo = Boolean(p.video);
 
@@ -1598,7 +1606,8 @@ function renderRoadmapView(roadmap) {
               <span>${p.nombre}</span>
             </div>
           `}
-          <span class="card-badge-status ${statusClass}" style="position: absolute; top: 1rem; left: 1rem;">${p.estado}</span>
+          ${isAlquilada ? `<div class="ribbon-alquilada">Alquilada</div>` : ''}
+          <span class="card-badge-status ${statusClass}" style="position: absolute; top: 1rem; left: 1rem;">${statusLabel}</span>
           <span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>
           ${p.apto_credito ? `<span class="card-badge-credito" style="position: absolute; top: 3.2rem; left: 1rem;">🏦 Apto Crédito</span>` : ''}
           ${hasVideo ? `<span class="badge-video" style="position: absolute; top: 1rem; right: 1rem;">🎬 Video</span>` : ''}
@@ -1991,8 +2000,11 @@ function renderPropertyModalContent(prop) {
   const modalBody = document.getElementById('modalBody');
   if (!modalBody) return;
 
-  const statusClass = prop.estado === 'Bueno' ? 'status-lista' :
+  const isAlquilada = prop.estado === 'Alquilada' || prop.alquilada || prop.id === 5;
+  const statusClass = isAlquilada ? 'status-alquilada' :
+                      prop.estado === 'Bueno' ? 'status-lista' :
                       prop.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
+  const statusLabel = isAlquilada ? 'Alquilada' : prop.estado;
   const hasVideo = Boolean(prop.video);
   const totalImgs = prop.imagenes ? prop.imagenes.length : 0;
   const currentImg = (totalImgs > 0) ? prop.imagenes[state.modalActiveImgIdx] : '';
@@ -2007,7 +2019,7 @@ function renderPropertyModalContent(prop) {
 
   modalBody.innerHTML = `
     <div style="margin-bottom: 1rem;">
-      <span class="card-badge-status ${statusClass}">${prop.estado}</span>
+      <span class="card-badge-status ${statusClass}">${statusLabel}</span>
       ${prop.apto_credito ? `<span class="card-badge-credito" style="position: static; display: inline-flex; margin-left: 0.4rem; vertical-align: middle;">🏦 Apto Crédito Hipotecario</span>` : ''}
       ${hasVideo ? `<span class="badge-video" style="margin-left: 0.4rem;">🎬 Video Incluido</span>` : ''}
       <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-top: 0.4rem;">${prop.nombre}</h2>

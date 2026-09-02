@@ -136,7 +136,8 @@
     "ubicacion": "20 de Junio",
     "direccion": "Cosquín 194, 20 de Junio",
     "superficie": "1.500 m²",
-    "estado": "Bueno",
+    "estado": "Alquilada",
+    "alquilada": true,
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [

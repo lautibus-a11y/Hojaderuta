@@ -128,7 +128,8 @@
     "ubicacion": "20 de Junio",
     "direccion": "20 de Junio, La Matanza",
     "superficie": "1.500 m²",
-    "estado": "Lista para usar",
+    "estado": "Alquilada",
+    "alquilada": true,
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
