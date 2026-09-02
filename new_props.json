@@ -1060,5 +1060,41 @@
     ],
     "moneda": "USD",
     "operacion": "Venta"
+  },
+  {
+    "id": 30,
+    "nombre": "La Camella",
+    "tipo": "Casa Quinta",
+    "precio": 900000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
+    "superficie": "Parque arbolado",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_PORTADA.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_2.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3(1).webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_4.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_5.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_6.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_7.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_9.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_10.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_11.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_12.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_13.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "¡Alquiler de casa en 20 de Junio! Ideal para disfrutar de la tranquilidad, el verde y momentos en familia. Ubicación: Casaffouths 725, 20 de Junio, La Matanza (a solo 2 cuadras y media del asfalto). Amplio living comedor luminoso, cocina equipada con bajo mesada y alacena de algarrobo y mesada de granito, 2 habitaciones espaciosas + vestidor amplio, 2 baños completos, quincho con parrilla, pileta de 9 x 5 m (2,20 m de prof.) y gran parque con arboleda añosa.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Alquiler"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler"
   }
 ]

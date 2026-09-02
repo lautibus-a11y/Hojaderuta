@@ -18,8 +18,8 @@ const DEFAULT_PROPIEDADES = [
     "tipo": "Casa Quinta",
     "precio": 1300000,
     "ubicacion": "20 de Junio",
-    "direccion": "Copahue 1576, 20 de Junio",
-    "superficie": "3.251 m²",
+    "direccion": "Copahue esquina Rico, 20 de Junio, Partido de La Matanza, Buenos Aires",
+    "superficie": "2.100 m²",
     "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
@@ -62,11 +62,10 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 1.500.000  ¡Una oportunidad única en la exclusiva y tranquila zona de 20 de Junio, La Mata...",
+    "potencial_inversion": "Casa quinta de 5 ambientes, desarrollada sobre un amplio terreno con espacios pensados para el descanso y la recreación. Dispone de 3 habitaciones, living con sala de estar, cocina-comedor integrada, baño completo, quincho con parrilla y pileta de fibra de vidrio de 8 x 3 m.",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
-      "Inversión",
       "Alquiler"
     ],
     "moneda": "ARS",
@@ -1129,6 +1128,45 @@ const DEFAULT_PROPIEDADES = [
     "operacion": "Venta",
     "apto_credito": false,
     "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina"
+  },
+  {
+    "id": 30,
+    "nombre": "La Camella",
+    "tipo": "Casa Quinta",
+    "precio": 900000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
+    "superficie": "Parque arbolado",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_PORTADA.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_2.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3(1).webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_4.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_5.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_6.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_7.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_9.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_10.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_11.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_12.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_13.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "¡Alquiler de casa en 20 de Junio! Ideal para disfrutar de la tranquilidad, el verde y momentos en familia. Ubicación: Casaffouths 725, 20 de Junio, La Matanza (a solo 2 cuadras y media del asfalto). Amplio living comedor luminoso, cocina equipada con bajo mesada y alacena de algarrobo y mesada de granito, 2 habitaciones espaciosas + vestidor amplio, 2 baños completos, quincho con parrilla, pileta de 9 x 5 m (2,20 m de prof.) y gran parque con arboleda añosa.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Alquiler"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Carlos Casafoust 725, 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "la-camella-alquiler"
   }
 ];
 
@@ -1279,12 +1317,57 @@ function renderPropertiesGrid(list) {
   container.innerHTML = list.map(p => createPropertyCardHTML(p)).join('');
 }
 
+const PROPERTY_SLUG_MAP = {
+  2: 'la-rosalia-simona-alquiler',
+  3: 'de-los-franceses-3740',
+  4: 'depto-canning',
+  5: 'casa-quinta-cosquin-194-alquiler',
+  6: 'cosquin-1400-venta',
+  7: 'laprida-375-ramos-mejia',
+  8: 'ceretti-1300',
+  9: 'aguapey-1119',
+  10: 'carlos-tejedor-caseros',
+  11: 'leopardi-5800-gonzalez-catan',
+  12: 'juan-pio-gana-4400',
+  13: 'casa-quinta-cevallos',
+  14: 'gibraltar-1-pontevedra',
+  15: 'gibraltar-2-pontevedra',
+  16: 'girardot-1345',
+  17: 'castex-y-del-carril',
+  18: 'propiedad-6-ambientes-caseros',
+  19: 'quinta-el-maestro',
+  20: 'cosquin-1120',
+  21: 'casaquinta-piscina-1500m2-20dejunio',
+  22: 'urien-casa-quinta',
+  23: 'casa-quinta-california-5900',
+  24: 'la-rosalia-simona-venta',
+  25: 'departamento-independiente-la-rosalia',
+  26: 'terreno-alejo-castex',
+  27: 'terreno-pablo-ceretti',
+  28: 'cassafousth-terreno',
+  29: 'terreno-juan-casacuberta',
+  30: 'la-camella-alquiler'
+};
+
+function getPropertySlug(p) {
+  if (p.slug) return p.slug;
+  if (p.id && PROPERTY_SLUG_MAP[p.id]) return PROPERTY_SLUG_MAP[p.id];
+  return (p.nombre || '')
+    .toString()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 function createPropertyCardHTML(p) {
   const statusClass = p.estado === 'Bueno' ? 'status-lista' :
                       p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
   
   const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
   const hasVideo = Boolean(p.video);
+  const slug = getPropertySlug(p);
 
   return `
     <div class="property-card">
@@ -1323,10 +1406,22 @@ function createPropertyCardHTML(p) {
           ${p.destinos.map(d => `<span class="tag-destino">${d}</span>`).join('')}
         </div>
 
-        <div style="display: flex; gap: 0.5rem; margin-top: auto;">
-          <button class="btn btn-secondary btn-sm btn-full" onclick="openPropertyModal(${p.id})">
-            Ver Galería
-          </button>
+        <div class="card-buttons-container">
+          <div class="card-buttons-row">
+            <button class="btn btn-secondary btn-sm" onclick="openPropertyModal(${p.id})">
+              Ver Galería
+            </button>
+            ${p.operacion === 'Alquiler' ? `
+            <a href="/requisitos/${slug}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Ver requisitos</span>
+            </a>` : ''}
+          </div>
           <button class="btn btn-primary btn-sm btn-full" onclick="prepareVisitSheetForProperty('${escapeJS(p.nombre)}', '${escapeJS(p.direccion)}')">
             Ficha Visita
           </button>
@@ -1589,6 +1684,16 @@ function renderRoadmapView(roadmap) {
             <button class="btn btn-secondary btn-sm" onclick="openPropertyModal(${p.id})">
               Ver Galería
             </button>
+            ${p.operacion === 'Alquiler' ? `
+            <a href="/requisitos/${getPropertySlug(p)}.html" target="_blank" rel="noopener" class="btn btn-requisitos btn-sm" title="Ver requisitos para ${escapeJS(p.nombre)}">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Ver requisitos</span>
+            </a>` : ''}
             <button class="btn btn-primary btn-sm" onclick="prepareVisitSheetForProperty('${escapeJS(p.nombre)}', '${escapeJS(p.direccion)}', '${escapeJS(roadmap.cliente)}')">
               Crear Ficha de Visita
             </button>
@@ -1981,6 +2086,16 @@ function renderPropertyModalContent(prop) {
 
     <div style="margin-top: 1.75rem; display: flex; justify-content: flex-end; gap: 0.75rem; flex-wrap: wrap;">
       <button class="btn btn-secondary" onclick="closeModal()">Cerrar</button>
+      ${prop.operacion === 'Alquiler' ? `
+      <a href="/requisitos/${getPropertySlug(prop)}.html" target="_blank" rel="noopener" class="btn btn-requisitos">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+        </svg>
+        <span>Ver requisitos</span>
+      </a>` : ''}
       <button class="btn btn-primary" onclick="closeModal(); prepareVisitSheetForProperty('${escapeJS(prop.nombre)}', '${escapeJS(prop.direccion)}');">
         Crear Ficha de Visita
       </button>

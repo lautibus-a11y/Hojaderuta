@@ -5,8 +5,8 @@
     "tipo": "Casa Quinta",
     "precio": 1300000,
     "ubicacion": "20 de Junio",
-    "direccion": "Copahue 1576, 20 de Junio",
-    "superficie": "3.251 m²",
+    "direccion": "Copahue esquina Rico, 20 de Junio, Partido de La Matanza, Buenos Aires",
+    "superficie": "2.100 m²",
     "estado": "Bueno",
     "habitaciones": 3,
     "banos": 2,
@@ -49,17 +49,17 @@
       "assets/imagenes/20-de-junio/alquiler/la-rosalia-simona/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 1.500.000  ¡Una oportunidad única en la exclusiva y tranquila zona de 20 de Junio, La Mata...",
+    "potencial_inversion": "Casa quinta de 5 ambientes, desarrollada sobre un amplio terreno con espacios pensados para el descanso y la recreación. Dispone de 3 habitaciones, living con sala de estar, cocina-comedor integrada, baño completo, quincho con parrilla y pileta de fibra de vidrio de 8 x 3 m.",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
-      "Inversión",
       "Alquiler"
     ],
     "moneda": "ARS",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "Copahue 1576, B1786cad 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Copahue 1576, B1786cad 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "la-rosalia-simona-alquiler"
   },
   {
     "id": 3,
@@ -91,7 +91,8 @@
     "moneda": "ARS",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "De Los Franceses 3740, B1786 20 de Junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "De Los Franceses 3740, B1786 20 de Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "de-los-franceses-3740"
   },
   {
     "id": 4,
@@ -124,7 +125,8 @@
     "moneda": "USD",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "Canning Center, Av. Mariano Castex 1277, B1804 Canning, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Canning Center, Av. Mariano Castex 1277, B1804 Canning, Provincia De Buenos Aires, Argentina",
+    "slug": "depto-canning"
   },
   {
     "id": 5,
@@ -171,7 +173,8 @@
     "moneda": "USD",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "Cosquin 194, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 194, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "casa-quinta-cosquin-194-alquiler"
   },
   {
     "id": 6,
@@ -203,7 +206,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Cosquin 1421, B1786big 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 1421, B1786big 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "cosquin-1400-venta"
   },
   {
     "id": 7,
@@ -243,7 +247,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Laprida 375, B1704 Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Laprida 375, B1704 Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "laprida-375-ramos-mejia"
   },
   {
     "id": 8,
@@ -303,7 +308,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Pablo Ceretti 1350, B1786bzb 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Pablo Ceretti 1350, B1786bzb 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "ceretti-1300"
   },
   {
     "id": 9,
@@ -337,7 +343,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": true,
-    "google_maps": "Aguapey 1119, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Aguapey 1119, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "aguapey-1119"
   },
   {
     "id": 10,
@@ -373,7 +380,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Carlos Tejedor, B1678 Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Carlos Tejedor, B1678 Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina",
+    "slug": "carlos-tejedor-caseros"
   },
   {
     "id": 11,
@@ -419,7 +427,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Giacomo Leopardi 5800, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Giacomo Leopardi 5800, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "leopardi-5800-gonzalez-catan"
   },
   {
     "id": 12,
@@ -456,7 +465,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "juan-pio-gana-4400"
   },
   {
     "id": 13,
@@ -495,7 +505,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Cnel. Manuel Rico 1369, B1786cbc 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cnel. Manuel Rico 1369, B1786cbc 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "casa-quinta-cevallos"
   },
   {
     "id": 14,
@@ -525,7 +536,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina",
+    "slug": "gibraltar-1-pontevedra"
   },
   {
     "id": 15,
@@ -555,7 +567,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina",
+    "slug": "gibraltar-2-pontevedra"
   },
   {
     "id": 16,
@@ -593,7 +606,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Girardot 1345, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Girardot 1345, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "girardot-1345"
   },
   {
     "id": 17,
@@ -645,7 +659,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Alejo Castex 1263, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Alejo Castex 1263, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "castex-y-del-carril"
   },
   {
     "id": 18,
@@ -692,7 +707,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina",
+    "slug": "propiedad-6-ambientes-caseros"
   },
   {
     "id": 19,
@@ -739,7 +755,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "El Maestro 892, B1786bfd 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "El Maestro 892, B1786bfd 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "quinta-el-maestro"
   },
   {
     "id": 20,
@@ -790,7 +807,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": true,
-    "google_maps": "Cosquin 1120, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 1120, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "cosquin-1120"
   },
   {
     "id": 21,
@@ -826,7 +844,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Manuel Antonio Castro 646, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Manuel Antonio Castro 646, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "casaquinta-piscina-1500m2-20dejunio"
   },
   {
     "id": 22,
@@ -865,7 +884,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Urien Sn, 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Urien Sn, 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "urien-casa-quinta"
   },
   {
     "id": 23,
@@ -905,7 +925,8 @@
     "moneda": "ARS",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "California 5595, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "California 5595, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "casa-quinta-california-5900"
   },
   {
     "id": 24,
@@ -966,7 +987,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Condor 1489, B1786acg 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Condor 1489, B1786acg 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "la-rosalia-simona-venta"
   },
   {
     "id": 25,
@@ -1000,7 +1022,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Ejercito De Los Andes, California 20, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Ejercito De Los Andes, California 20, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "departamento-independiente-la-rosalia"
   },
   {
     "id": 26,
@@ -1029,7 +1052,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Alejo Castex 1133, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Alejo Castex 1133, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-alejo-castex"
   },
   {
     "id": 27,
@@ -1057,7 +1081,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Pablo Ceretti 1673, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Pablo Ceretti 1673, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-pablo-ceretti"
   },
   {
     "id": 28,
@@ -1089,7 +1114,8 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Carlos Casafoust 630, B1786ayl 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Carlos Casafoust 630, B1786ayl 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "cassafousth-terreno"
   },
   {
     "id": 29,
@@ -1115,6 +1141,46 @@
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-juan-casacuberta"
+  },
+  {
+    "id": 30,
+    "nombre": "La Camella",
+    "tipo": "Casa Quinta",
+    "precio": 900000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
+    "superficie": "Parque arbolado",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_PORTADA.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_2.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_3(1).webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_4.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_5.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_6.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_7.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_9.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_10.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_11.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_12.webp",
+      "assets/imagenes/20-de-junio/alquiler/La Camella alquiler/wm_13.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "¡Alquiler de casa en 20 de Junio! Ideal para disfrutar de la tranquilidad, el verde y momentos en familia. Ubicación: Casaffouths 725, 20 de Junio, La Matanza (a solo 2 cuadras y media del asfalto). Amplio living comedor luminoso, cocina equipada con bajo mesada y alacena de algarrobo y mesada de granito, 2 habitaciones espaciosas + vestidor amplio, 2 baños completos, quincho con parrilla, pileta de 9 x 5 m (2,20 m de prof.) y gran parque con arboleda añosa.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Alquiler"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Carlos Casafoust 725, 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "la-camella-alquiler"
   }
 ]

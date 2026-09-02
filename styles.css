@@ -840,6 +840,44 @@ body {
   width: 100%;
 }
 
+.btn-requisitos {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-requisitos:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: #ffffff;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.18);
+}
+
+.card-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.card-buttons-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-buttons-row > * {
+  flex: 1;
+  min-width: 0;
+}
+
 /* Why Buy Key Advantage Badges */
 .why-buy-list {
   display: flex;
