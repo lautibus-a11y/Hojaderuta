@@ -1134,7 +1134,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 30,
     "nombre": "La Camella",
     "tipo": "Casa Quinta",
-    "precio": 900000,
+    "precio": 750000,
     "ubicacion": "20 de Junio",
     "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
     "superficie": "Parque arbolado",
