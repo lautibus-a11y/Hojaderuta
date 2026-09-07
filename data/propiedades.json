@@ -396,6 +396,7 @@
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
+      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_17.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_1.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_10.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_11.webp",
@@ -404,7 +405,6 @@
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_14.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_15.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_16.webp",
-      "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_17.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_18.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_19.webp",
       "assets/imagenes/gonzalez-catan/venta/leopardi-al-5800/leopardi-al-5800_2.webp",
@@ -622,6 +622,7 @@
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
+      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_2.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_10.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_11.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_12.webp",
@@ -631,7 +632,6 @@
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_17.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_18.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_19.webp",
-      "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_2.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_20.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_21.webp",
       "assets/imagenes/20-de-junio/venta/castex-y-del-carril/castex-y-del-carril_22.webp",
@@ -723,6 +723,7 @@
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_portada.webp",
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/16.webp",
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/17.webp",
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/18.webp",
@@ -743,8 +744,7 @@
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_6.webp",
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_7.webp",
       "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_8.webp",
-      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_9.webp",
-      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_portada.webp"
+      "assets/imagenes/20-de-junio/venta/quinta-el-maestro/quinta-el-maestro_9.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 125.000  Casa Quinta en Venta – 20 de Junio (Calle El Maestro) Superficie y Entorno Únic...",
@@ -813,30 +813,26 @@
   },
   {
     "id": 21,
-    "nombre": "Casaquinta_Venta_20Dejunio_Piscina_1500M2",
+    "nombre": "Castro al 600 – Terreno 1.512 m² con Construcción",
     "tipo": "Casa Quinta",
-    "precio": 135000,
+    "precio": 78000,
     "ubicacion": "20 de Junio",
     "direccion": "Manuel Antonio Castro 646, 20 de Junio",
-    "superficie": "1.500 m²",
-    "estado": "Bueno",
-    "habitaciones": 3,
-    "banos": 2,
+    "superficie": "1.512 m² (89 m² cub.)",
+    "estado": "A reciclar",
+    "habitaciones": 2,
+    "banos": 1,
     "imagenes": [
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/1.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/13.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/14.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/15.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/2.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/3.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/4.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/5.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/6.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/8.webp",
-      "assets/imagenes/20-de-junio/venta/casaquinta_venta_20dejunio_piscina_1500m2-1/9.webp"
+      "assets/imagenes/20-de-junio/venta/Castro-646/PORTADA.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/1_diseno_sin_titulo.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/2_diseno_sin_titulo.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/3_diseno_sin_titulo.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/4_diseno_sin_titulo.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/5_diseno_sin_titulo.webp",
+      "assets/imagenes/20-de-junio/venta/Castro-646/6_diseno_sin_titulo.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 145.000  Casa Quinta en Venta – 20 de Junio, La Matanza Ubicación: Castañeda esquina Cos...",
+    "potencial_inversion": "Propiedad emplazada sobre un amplio lote de 1512 m², con 27,50 metros de frente por 55 metros de fondo, ubicada sobre calle Castro al 600, a tan solo media cuadra del asfalto, en una zona tranquila y de fácil acceso dentro de la localidad de 20 de Junio. El terreno se encuentra parquizado, con arboleda añosa y totalmente perimetrado, lo que le otorga privacidad y un entorno natural consolidado. Sobre el lote se desarrollan dos edificaciones que suman aproximadamente 89 m² cubiertos a reciclar, ideales para refacción, ampliación o nueva construcción. IVANA MOLINA & ASOC. BIENES RAÍCES (MAT 1048).",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -846,7 +842,7 @@
     "operacion": "Venta",
     "apto_credito": false,
     "google_maps": "Manuel Antonio Castro 646, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
-    "slug": "casaquinta-piscina-1500m2-20dejunio"
+    "slug": "castro-al-600-20-de-junio"
   },
   {
     "id": 22,

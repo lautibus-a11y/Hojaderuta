@@ -49,7 +49,7 @@ const SLUG_MAP = {
   18: 'propiedad-6-ambientes-caseros',
   19: 'quinta-el-maestro',
   20: 'cosquin-1120', // Explicit slug from user specification
-  21: 'casaquinta-piscina-1500m2-20dejunio',
+  21: 'castro-al-600-20-de-junio',
   22: 'urien-casa-quinta',
   23: 'casa-quinta-california-5900',
   24: 'la-rosalia-simona-venta',
@@ -705,7 +705,7 @@ function generateHtmlPage(prop, slug, pdfContent) {
             <div class="req-check" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.35);">📊</div>
             <div>
               <strong>Esquema de Actualización</strong>
-              <span>Cada 6 meses, regida por el <strong>Índice de Precios al Consumidor (IPC)</strong>, con un <strong>ajuste de un 15% mínimo como base</strong>.</span>
+              <span>Aumento cada <strong>4 meses</strong> con un <strong>12% mínimo</strong> regido por <strong>IPC</strong>.</span>
             </div>
           </div>
         </div>
