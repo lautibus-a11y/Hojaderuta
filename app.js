@@ -472,45 +472,6 @@ const DEFAULT_PROPIEDADES = [
     "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
   },
   {
-    "id": 13,
-    "nombre": "Casa Quinta Con Pileta Y Quincho Cevallos",
-    "tipo": "Casa Quinta",
-    "precio": 75000,
-    "ubicacion": "20 de Junio",
-    "direccion": "Cnel. Manuel Rico 1369, 20 de Junio",
-    "superficie": "395 m²",
-    "estado": "Bueno",
-    "habitaciones": 3,
-    "banos": 2,
-    "imagenes": [
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/1.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/10.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/11.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/12.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/13.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/14.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/15.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/2.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/3.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/4.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/5.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/6.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/7.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-con-pileta-y-quincho-cevallos/9.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 75.000  Casa Quinta en Venta – ¡Con pileta, quincho y excelente ubicación!  Ubicada en c...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Vivienda",
-      "Inversión"
-    ],
-    "moneda": "USD",
-    "operacion": "Venta",
-    "apto_credito": false,
-    "google_maps": "Cnel. Manuel Rico 1369, B1786cbc 20 De Junio, Provincia De Buenos Aires, Argentina"
-  },
-  {
     "id": 14,
     "nombre": "Gibraltar 1 Pontevedra",
     "tipo": "Casa Quinta",
@@ -1327,7 +1288,6 @@ const PROPERTY_SLUG_MAP = {
   10: 'carlos-tejedor-caseros',
   11: 'leopardi-5800-gonzalez-catan',
   12: 'juan-pio-gana-4400',
-  13: 'casa-quinta-cevallos',
   14: 'gibraltar-1-pontevedra',
   15: 'gibraltar-2-pontevedra',
   16: 'girardot-1345',

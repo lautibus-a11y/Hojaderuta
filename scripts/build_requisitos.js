@@ -41,7 +41,6 @@ const SLUG_MAP = {
   10: 'carlos-tejedor-caseros',
   11: 'leopardi-5800-gonzalez-catan',
   12: 'juan-pio-gana-4400',
-  13: 'casa-quinta-cevallos',
   14: 'gibraltar-1-pontevedra',
   15: 'gibraltar-2-pontevedra',
   16: 'girardot-1345',

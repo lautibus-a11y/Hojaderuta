@@ -438,43 +438,6 @@
     "operacion": "Venta"
   },
   {
-    "id": 13,
-    "nombre": "Casa Quinta Con Pileta Y Quincho Cevallos",
-    "tipo": "Casa Quinta",
-    "precio": 75000,
-    "ubicacion": "20 de Junio",
-    "direccion": "20 de Junio, La Matanza",
-    "superficie": "395 m²",
-    "estado": "Lista para usar",
-    "habitaciones": 3,
-    "banos": 2,
-    "imagenes": [
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/1.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/10.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/11.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/12.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/13.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/14.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/15.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/2.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/3.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/4.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/5.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/6.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/7.webp",
-      "assets/imagenes/propiedades/venta/casas-quinta/casa-quinta-con-pileta-y-quincho-cevallos/9.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 75.000  Casa Quinta en Venta – ¡Con pileta, quincho y excelente ubicación!  Ubicada en c...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Vivienda",
-      "Inversión"
-    ],
-    "moneda": "USD",
-    "operacion": "Venta"
-  },
-  {
     "id": 14,
     "nombre": "Gibraltar 1 Pontevedra",
     "tipo": "Casa Quinta",
