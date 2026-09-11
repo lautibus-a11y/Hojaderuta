@@ -1126,6 +1126,37 @@ const DEFAULT_PROPIEDADES = [
     "apto_credito": false,
     "google_maps": "Carlos Casafoust 725, 20 De Junio, Provincia De Buenos Aires, Argentina",
     "slug": "la-camella-alquiler"
+  },
+  {
+    "id": 31,
+    "nombre": "Excelente Lote 1.915 m² – Manuel Antonio Castro",
+    "tipo": "Lote",
+    "precio": 65000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Manuel Antonio Castro (e/ Aroma y Copahue), 20 de Junio",
+    "superficie": "1.915 m²",
+    "estado": "Bueno",
+    "habitaciones": 0,
+    "banos": 0,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/cosmeee_terreno/wm_Cosme-Terreno_Portada.webp",
+      "assets/imagenes/20-de-junio/venta/cosmeee_terreno/wm_Cosme-Terreno_2.webp",
+      "assets/imagenes/20-de-junio/venta/cosmeee_terreno/wm_Cosme-Terreno_4.webp",
+      "assets/imagenes/20-de-junio/venta/cosmeee_terreno/wm_Cosme-Terreno_5.webp",
+      "assets/imagenes/20-de-junio/venta/cosmeee_terreno/wm_Cosme-Terreno_7.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "¡Gran oportunidad de inversión en una de las zonas más tranquilas y verdes de 20 de Junio! Ubicado sobre la calle Manuel Antonio Castro (entre Aroma y Copahue), este excepcional terreno destaca por su entorno natural consolidado, su amplitud y su excelente frente. Superficie Total: 1.915 m² (37,50 m de frente por 51,08 m de fondo). Terreno totalmente parquizado, nivelado, con vegetación y árboles añosos que aportan sombra y privacidad. Completamente alambrado y delimitado. Zona residencial de quintas, ideal para desarrollo de vivienda permanente, casa de fin de semana o proyecto recreativo. IVANA MOLINA & ASOC. BIENES RAÍCES (MAT 1048).",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Inversión",
+      "Vivienda"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Manuel Antonio Castro y Aroma, 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "lote-1915m-manuel-antonio-castro"
   }
 ];
 
@@ -1304,7 +1335,8 @@ const PROPERTY_SLUG_MAP = {
   27: 'terreno-pablo-ceretti',
   28: 'cassafousth-terreno',
   29: 'terreno-juan-casacuberta',
-  30: 'la-camella-alquiler'
+  30: 'la-camella-alquiler',
+  31: 'lote-1915m-manuel-antonio-castro'
 };
 
 function getPropertySlug(p) {

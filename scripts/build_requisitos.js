@@ -57,7 +57,8 @@ const SLUG_MAP = {
   27: 'terreno-pablo-ceretti',
   28: 'cassafousth-terreno',
   29: 'terreno-juan-casacuberta',
-  30: 'la-camella-alquiler'
+  30: 'la-camella-alquiler',
+  31: 'lote-1915m-manuel-antonio-castro'
 };
 
 /**
