@@ -16,7 +16,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 2,
     "nombre": "La Rosalia Simona",
     "tipo": "Casa Quinta",
-    "precio": 1300000,
+    "precio": 1250000,
     "ubicacion": "20 de Junio",
     "direccion": "Copahue esquina Rico, 20 de Junio, Partido de La Matanza, Buenos Aires",
     "superficie": "2.100 m²",
@@ -505,7 +505,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 15,
     "nombre": "Gibraltar 2 Pontevedra",
     "tipo": "Casa Quinta",
-    "precio": 45000,
+    "precio": 38000,
     "ubicacion": "Pontevedra",
     "direccion": "Gibraltar, Pontevedra",
     "superficie": "390 m²",
@@ -520,7 +520,7 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/5.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 45.000  🏡 CASA EN VENTA | OPORTUNIDAD PARA INVERTIR O AMPLIAR  Si buscás una propiedad c...",
+    "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 38.000  🏡 CASA EN VENTA | OPORTUNIDAD PARA INVERTIR O AMPLIAR  Si buscás una propiedad c...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
@@ -1157,6 +1157,49 @@ const DEFAULT_PROPIEDADES = [
     "apto_credito": false,
     "google_maps": "Manuel Antonio Castro y Aroma, 20 De Junio, Provincia De Buenos Aires, Argentina",
     "slug": "lote-1915m-manuel-antonio-castro"
+  },
+  {
+    "id": 32,
+    "nombre": "Depto 4 Ambientes Av. Rivadavia 14600",
+    "tipo": "Departamento",
+    "precio": 155000,
+    "ubicacion": "Ramos Mejía",
+    "direccion": "Av. Rivadavia 14600, Piso 1, Ramos Mejía, Partido de La Matanza",
+    "superficie": "174 m²",
+    "estado": "Excelente",
+    "habitaciones": 3,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/PORTADA.jpeg",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM.webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (1).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (2).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (3).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (4).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (5).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (6).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (7).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (8).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (9).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (10).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (11).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (12).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (13).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (14).webp",
+      "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (15).webp"
+    ],
+    "video": "",
+    "potencial_inversion": "DEPARTAMENTO 4 AMBIENTES EN VENTA - RAMOS MEJÍA - BALCÓN TERRAZA Y ESPACIO PARA VEHÍCULO\n\nUSD 155.000\n\nDepartamento de 4 ambientes al frente, ubicado sobre Av. Rivadavia al 14600, Ramos Mejía, a solo 5 cuadras de la estación.\n\nLa propiedad se encuentra en primer piso por escalera y cuenta con ambientes amplios y una superficie total de 174 m², de los cuales 150 m² son cubiertos.\n\nCARACTERÍSTICAS:\n• 4 ambientes\n• 3 dormitorios\n• Living comedor\n• Cocina comedor\n• Baño completo\n• Lavadero independiente\n• Toilette\n• Escritorio\n• Amplio balcón terraza\n• Disposición al frente\n• Espacio común para guardar vehículo\n• 150 m² cubiertos\n• 174 m² totales\n• A 5 cuadras de la estación de Ramos Mejía\n• Venta directa\n\nDISTRIBUCIÓN:\nCuenta con un amplio living comedor y una cómoda cocina comedor.\nDispone de 3 dormitorios, uno de ellos con espacio de escritorio, además de baño completo.\nTambién posee lavadero independiente con toilette y un amplio balcón terraza, brindando un excelente espacio exterior.\n\nUBICACIÓN:\nAv. Rivadavia 14600, Piso 1, Ramos Mejía, Partido de La Matanza, G.B.A. Zona Oeste.\nExcelente ubicación sobre Av. Rivadavia, con rápido acceso a comercios, transporte público y a la estación de Ramos Mejía.\n\nVENTA DIRECTA",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Av. Rivadavia 14600, Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "depto-av-rivadavia-14600"
   }
 ];
 
@@ -1336,7 +1379,8 @@ const PROPERTY_SLUG_MAP = {
   28: 'cassafousth-terreno',
   29: 'terreno-juan-casacuberta',
   30: 'la-camella-alquiler',
-  31: 'lote-1915m-manuel-antonio-castro'
+  31: 'lote-1915m-manuel-antonio-castro',
+  32: 'depto-av-rivadavia-14600'
 };
 
 function getPropertySlug(p) {
@@ -1354,7 +1398,7 @@ function getPropertySlug(p) {
 function createPropertyCardHTML(p) {
   const isAlquilada = p.estado === 'Alquilada' || p.alquilada || p.id === 5;
   const statusClass = isAlquilada ? 'status-alquilada' :
-                      p.estado === 'Bueno' ? 'status-lista' :
+                      (p.estado === 'Bueno' || p.estado === 'Excelente') ? 'status-lista' :
                       p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
   const statusLabel = isAlquilada ? 'Alquilada' : p.estado;
   
@@ -2012,7 +2056,7 @@ function renderPropertyModalContent(prop) {
       ${prop.apto_credito ? `<span class="card-badge-credito" style="position: static; display: inline-flex; margin-left: 0.4rem; vertical-align: middle;">🏦 Apto Crédito Hipotecario</span>` : ''}
       ${hasVideo ? `<span class="badge-video" style="margin-left: 0.4rem;">🎬 Video Incluido</span>` : ''}
       <h2 style="font-size: 1.5rem; font-weight: 800; color: #fff; margin-top: 0.4rem;">${prop.nombre}</h2>
-      <p style="color: var(--text-secondary); font-size: 0.88rem;">📍 ${prop.direccion} (20 de Junio)</p>
+      <p style="color: var(--text-secondary); font-size: 0.88rem;">📍 ${prop.direccion}${prop.ubicacion ? ` • ${prop.ubicacion}` : ''}</p>
     </div>
 
     <!-- Gallery Viewer Slider with Arrows and Counter -->
