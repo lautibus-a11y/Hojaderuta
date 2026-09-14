@@ -803,7 +803,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 22,
     "nombre": "Urien Casa Quinta 20 De Junio",
     "tipo": "Casa Quinta",
-    "precio": 160000,
+    "precio": 149000,
     "ubicacion": "20 de Junio",
     "direccion": "Urien S/N, 20 de Junio",
     "superficie": "1.500 m²",
@@ -827,7 +827,7 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/20-de-junio/venta/urien-casa-quinta-20-de-junio-1/9.webp"
     ],
     "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 160.000  🏡 CASA QUINTA EN VENTA | 20 DE JUNIO  Si buscás espacio, comodidad y un entorno...",
+    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 149.000  🏡 CASA QUINTA EN VENTA | 20 DE JUNIO  Si buscás espacio, comodidad y un entorno...",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
