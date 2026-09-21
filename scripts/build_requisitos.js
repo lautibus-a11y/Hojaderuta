@@ -59,7 +59,9 @@ const SLUG_MAP = {
   29: 'terreno-juan-casacuberta',
   30: 'la-camella-alquiler',
   31: 'lote-1915m-manuel-antonio-castro',
-  32: 'depto-av-rivadavia-14600'
+  32: 'depto-av-rivadavia-14600',
+  33: 'castaneda-235-alquiler',
+  34: 'depto-rio-de-janeiro-pontevedra'
 };
 
 /**
