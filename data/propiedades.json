@@ -1311,5 +1311,82 @@
     "apto_credito": false,
     "google_maps": "Río de Janeiro 3450, Pontevedra, Provincia de Buenos Aires, Argentina",
     "slug": "depto-rio-de-janeiro-pontevedra"
+  },
+  {
+    "id": 35,
+    "nombre": "Río de Janeiro – Venta Todo (Depto + Galpón + Lote 800 m²)",
+    "tipo": "Comercial",
+    "precio": 125000,
+    "ubicacion": "Pontevedra",
+    "direccion": "Río de Janeiro 3450, Pontevedra, Partido de Merlo, Buenos Aires",
+    "superficie": "800 m² tot. / 280 m² cub.",
+    "estado": "Bueno",
+    "habitaciones": 1,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_PORTADA.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_2.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_3.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_4.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_5.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_6.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_7.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_8.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_9.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_10.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_11.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_12.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_13.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_14.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_15.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_16.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_17.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_18.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_19.jpg",
+      "assets/imagenes/pontevedra/venta/rio de janeiro Venta todo/wm_20.png"
+    ],
+    "video": "",
+    "potencial_inversion": "Excelente oportunidad en venta o alquiler en Pontevedra.\n\nLote de 800 m² totales, con 19,90 m de frente y 35,55 m de laterales, ubicado a solo 200 metros del asfalto y con acceso por ripio.\n\nLa propiedad cuenta con un departamento de aproximadamente 80 m², con 1 dormitorio, 1 baño, cocina, comedor, living, patio y una cochera.\n\nAdemás, dispone de un galpón de aproximadamente 100 m² y una construcción de aproximadamente 100 m² a terminar, ofreciendo múltiples posibilidades de uso y adaptación.\n\nIdeal para vivienda, inversión, depósito, taller, emprendimiento comercial o desarrollo de viviendas adicionales.\n\nSuperficie total: 800 m²\nSuperficie cubierta: 280 m²\n\nPrecio de venta: USD 125.000\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión",
+      "Comercial"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Río de Janeiro 3450, Pontevedra, Provincia de Buenos Aires, Argentina",
+    "slug": "rio-de-janeiro-venta-todo"
+  },
+  {
+    "id": 36,
+    "nombre": "Terreno Río de Janeiro – 800 m²",
+    "tipo": "Lote",
+    "precio": 29000,
+    "ubicacion": "Pontevedra",
+    "direccion": "Río de Janeiro 3450, Pontevedra, Partido de Merlo, Buenos Aires",
+    "superficie": "800 m²",
+    "estado": "Bueno",
+    "habitaciones": 0,
+    "banos": 0,
+    "imagenes": [
+      "assets/imagenes/pontevedra/venta/RIO DE JANEIRO terreno/PORTADA.jpg",
+      "assets/imagenes/pontevedra/venta/RIO DE JANEIRO terreno/1.jpg",
+      "assets/imagenes/pontevedra/venta/RIO DE JANEIRO terreno/2.jpg",
+      "assets/imagenes/pontevedra/venta/RIO DE JANEIRO terreno/3.png"
+    ],
+    "video": "",
+    "potencial_inversion": "TERRENO EN VENTA 800 M2 - PONTEVEDRA\n\nTipo de operación: VENTA\n\nTerreno de 800 m2 totales.\n\nSuperficie:\nFrente: 17,90 m\nLaterales: 35,55 m\n\nPrecio de venta: USD 29.000\n\nDistancia al asfalto: 200 metros.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Inversión",
+      "Vivienda"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Río de Janeiro 3450, Pontevedra, Provincia de Buenos Aires, Argentina",
+    "slug": "terreno-rio-de-janeiro"
   }
 ]

@@ -61,7 +61,9 @@ const SLUG_MAP = {
   31: 'lote-1915m-manuel-antonio-castro',
   32: 'depto-av-rivadavia-14600',
   33: 'castaneda-235-alquiler',
-  34: 'depto-rio-de-janeiro-pontevedra'
+  34: 'depto-rio-de-janeiro-pontevedra',
+  35: 'rio-de-janeiro-venta-todo',
+  36: 'terreno-rio-de-janeiro'
 };
 
 /**
