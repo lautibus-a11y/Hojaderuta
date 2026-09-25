@@ -1109,7 +1109,7 @@
     "ubicacion": "20 de Junio",
     "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
     "superficie": "Parque arbolado",
-    "estado": "Bueno",
+    "estado": "Reservada",
     "habitaciones": 2,
     "banos": 2,
     "imagenes": [
@@ -1289,7 +1289,7 @@
     "habitaciones": 1,
     "banos": 1,
     "imagenes": [
-      "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_Portada.webp",
+      "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/PORTADA.jpeg",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_1.webp",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_2.webp",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_3.webp",

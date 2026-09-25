@@ -2237,3 +2237,28 @@ textarea.form-control {
   font-size: 1.1rem !important;
   color: #25D366 !important;
 }
+
+.status-reservada {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  border: 1px solid #f59e0b !important;
+  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.45);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.ribbon-reservada {
+  position: absolute;
+  top: 16px;
+  right: -32px;
+  transform: rotate(45deg);
+  background: #f59e0b;
+  color: white;
+  padding: 4px 40px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 5;
+}

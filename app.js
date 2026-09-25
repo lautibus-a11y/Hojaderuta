@@ -1096,7 +1096,7 @@ const DEFAULT_PROPIEDADES = [
     "ubicacion": "20 de Junio",
     "direccion": "Casaffouths 725, 20 de Junio, La Matanza",
     "superficie": "Parque arbolado",
-    "estado": "Bueno",
+    "estado": "Reservada",
     "habitaciones": 2,
     "banos": 2,
     "imagenes": [
@@ -1276,7 +1276,7 @@ const DEFAULT_PROPIEDADES = [
     "habitaciones": 1,
     "banos": 1,
     "imagenes": [
-      "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_Portada.webp",
+      "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/PORTADA.jpeg",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_1.webp",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_2.webp",
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_3.webp",
@@ -1575,11 +1575,13 @@ function getPropertySlug(p) {
 }
 
 function createPropertyCardHTML(p) {
+  const isReservada = p.estado === 'Reservada' || p.reservada;
   const isAlquilada = p.estado === 'Alquilada' || p.alquilada || p.id === 5;
   const statusClass = isAlquilada ? 'status-alquilada' :
+                      isReservada ? 'status-reservada' :
                       (p.estado === 'Bueno' || p.estado === 'Excelente') ? 'status-lista' :
                       p.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
-  const statusLabel = isAlquilada ? 'Alquilada' : p.estado;
+  const statusLabel = isAlquilada ? 'Alquilada' : isReservada ? 'Reservada' : p.estado;
   
   const mainImage = (p.imagenes && p.imagenes.length > 0) ? p.imagenes[0] : '';
   const hasVideo = Boolean(p.video);
@@ -1596,7 +1598,7 @@ function createPropertyCardHTML(p) {
             <span>${p.nombre}</span>
           </div>
         `}
-        ${isAlquilada ? `<div class="ribbon-alquilada">Alquilada</div>` : ''}
+        ${isAlquilada ? `<div class="ribbon-alquilada">Alquilada</div>` : isReservada ? `<div class="ribbon-reservada">Reservada</div>` : ''}
         <span class="card-badge-status ${statusClass}">${statusLabel}</span>
         ${p.operacion ? `<span class="card-badge-operacion ${p.operacion.toLowerCase() === 'venta' ? 'op-venta' : 'op-alquiler'}">${p.operacion}</span>` : ''}
         ${p.apto_credito ? `<span class="card-badge-credito">🏦 Apto Crédito</span>` : ''}
@@ -2212,11 +2214,13 @@ function renderPropertyModalContent(prop) {
   const modalBody = document.getElementById('modalBody');
   if (!modalBody) return;
 
+  const isReservada = prop.estado === 'Reservada' || prop.reservada;
   const isAlquilada = prop.estado === 'Alquilada' || prop.alquilada || prop.id === 5;
   const statusClass = isAlquilada ? 'status-alquilada' :
-                      prop.estado === 'Bueno' ? 'status-lista' :
+                      isReservada ? 'status-reservada' :
+                      (prop.estado === 'Bueno' || prop.estado === 'Excelente') ? 'status-lista' :
                       prop.estado === 'A reciclar' ? 'status-reciclar' : 'status-refaccionar';
-  const statusLabel = isAlquilada ? 'Alquilada' : prop.estado;
+  const statusLabel = isAlquilada ? 'Alquilada' : isReservada ? 'Reservada' : prop.estado;
   const hasVideo = Boolean(prop.video);
   const totalImgs = prop.imagenes ? prop.imagenes.length : 0;
   const currentImg = (totalImgs > 0) ? prop.imagenes[state.modalActiveImgIdx] : '';
