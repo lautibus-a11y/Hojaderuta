@@ -520,11 +520,11 @@ const DEFAULT_PROPIEDADES = [
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/1-portada.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/1.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/2.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/4.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-2-pontevedra-1/5.webp"
+      "assets/imagenes/pontevedra/venta/Gibraltar 2/Gibraltar 201_1_PORTADA.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 2/Gibraltar 202_1.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 2/Gibraltar 203_2.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 2/Gibraltar 204_5.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 2/4.png"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 38.000  🏡 CASA EN VENTA | OPORTUNIDAD PARA INVERTIR O AMPLIAR  Si buscás una propiedad c...",
