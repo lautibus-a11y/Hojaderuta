@@ -483,11 +483,18 @@ const DEFAULT_PROPIEDADES = [
     "habitaciones": 3,
     "banos": 2,
     "imagenes": [
-      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/1.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/2.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/3.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/4.webp",
-      "assets/imagenes/pontevedra/venta/gibraltar-1-pontevedra-1/5.webp"
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/1.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/2.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/3.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/4.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/5.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/6.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/7.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/8.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/9.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/10.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/11.webp",
+      "assets/imagenes/pontevedra/venta/Gibraltar 1 pontevedra/12.webp"
     ],
     "video": "",
     "potencial_inversion": "Excelente oportunidad en Pontevedra. Precio: USD 35.000  🏡 CASA EN VENTA | GRAN POTENCIAL PARA REFACCIONAR O AMPLIAR  ¡Una excelente opor...",
