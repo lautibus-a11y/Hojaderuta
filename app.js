@@ -1478,7 +1478,8 @@ const DEFAULT_PROPIEDADES = [
   "moneda": "USD",
   "operacion": "Venta",
   "apto_credito": false,
-  "google_maps": "Carlos Cassafouth 541, 20 de Junio, Buenos Aires"
+  "google_maps": "Carlos Cassafouth 541, 20 de Junio, Buenos Aires",
+  "slug": "carlos-cassafouth-541"
 }
 ];
 
