@@ -74,38 +74,6 @@ const DEFAULT_PROPIEDADES = [
     "google_maps": "Copahue 1576, B1786cad 20 De Junio, Provincia De Buenos Aires, Argentina"
   },
   {
-    "id": 3,
-    "nombre": "De Los Franceses Nro 3740",
-    "tipo": "Comercial",
-    "precio": 950000,
-    "ubicacion": "20 de Junio",
-    "direccion": "De Los Franceses 3740, 20 de Junio",
-    "superficie": "Consultar",
-    "estado": "Bueno",
-    "habitaciones": 3,
-    "banos": 2,
-    "imagenes": [
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/1.webp",
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/2.webp",
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/3-1.webp",
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/3.webp",
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/4.webp",
-      "assets/imagenes/20-de-junio/alquiler/de-los-franceses-nro-3740-1/portada_1.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 950.000  ALQUILER DE LOCAL PARA USO COMERCIAL - Inmueble ubicado en De Los Franceses Nro 3...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Vivienda",
-      "Inversión",
-      "Alquiler"
-    ],
-    "moneda": "ARS",
-    "operacion": "Alquiler",
-    "apto_credito": false,
-    "google_maps": "De Los Franceses 3740, B1786 20 de Junio, La Matanza, Provincia De Buenos Aires, Argentina"
-  },
-  {
     "id": 4,
     "nombre": "Depto Canning",
     "tipo": "Departamento",
@@ -1632,7 +1600,6 @@ function renderPropertiesGrid(list) {
 
 const PROPERTY_SLUG_MAP = {
   2: 'la-rosalia-simona-alquiler',
-  3: 'de-los-franceses-3740',
   4: 'depto-canning',
   5: 'casa-quinta-cosquin-194-alquiler',
   6: 'cosquin-1400-venta',

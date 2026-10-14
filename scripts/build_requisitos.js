@@ -31,7 +31,6 @@ function slugify(text) {
 // Mapeo canónico de slugs limpios y únicos para cada propiedad
 const SLUG_MAP = {
   2: 'la-rosalia-simona-alquiler',
-  3: 'de-los-franceses-3740',
   4: 'depto-canning',
   5: 'casa-quinta-cosquin-194-alquiler',
   6: 'cosquin-1400-venta',
