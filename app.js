@@ -1145,7 +1145,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 32,
     "nombre": "Depto 4 Ambientes Av. Rivadavia 14600",
     "tipo": "Departamento",
-    "precio": 155000,
+    "precio": 148000,
     "ubicacion": "Ramos Mejía",
     "direccion": "Av. Rivadavia 14600, Piso 1, Ramos Mejía, Partido de La Matanza",
     "superficie": "174 m²",
@@ -1172,7 +1172,7 @@ const DEFAULT_PROPIEDADES = [
       "assets/imagenes/Ramos mejia/Depto av rivadavia 14600/WhatsApp Image 2026-09-08 at 3.12.42 PM (15).webp"
     ],
     "video": "",
-    "potencial_inversion": "DEPARTAMENTO 4 AMBIENTES EN VENTA - RAMOS MEJÍA - BALCÓN TERRAZA Y ESPACIO PARA VEHÍCULO\n\nUSD 155.000\n\nDepartamento de 4 ambientes al frente, ubicado sobre Av. Rivadavia al 14600, Ramos Mejía, a solo 5 cuadras de la estación.\n\nLa propiedad se encuentra en primer piso por escalera y cuenta con ambientes amplios y una superficie total de 174 m², de los cuales 150 m² son cubiertos.\n\nCARACTERÍSTICAS:\n• 4 ambientes\n• 3 dormitorios\n• Living comedor\n• Cocina comedor\n• Baño completo\n• Lavadero independiente\n• Toilette\n• Escritorio\n• Amplio balcón terraza\n• Disposición al frente\n• Espacio común para guardar vehículo\n• 150 m² cubiertos\n• 174 m² totales\n• A 5 cuadras de la estación de Ramos Mejía\n• Venta directa\n\nDISTRIBUCIÓN:\nCuenta con un amplio living comedor y una cómoda cocina comedor.\nDispone de 3 dormitorios, uno de ellos con espacio de escritorio, además de baño completo.\nTambién posee lavadero independiente con toilette y un amplio balcón terraza, brindando un excelente espacio exterior.\n\nUBICACIÓN:\nAv. Rivadavia 14600, Piso 1, Ramos Mejía, Partido de La Matanza, G.B.A. Zona Oeste.\nExcelente ubicación sobre Av. Rivadavia, con rápido acceso a comercios, transporte público y a la estación de Ramos Mejía.\n\nVENTA DIRECTA",
+    "potencial_inversion": "DEPARTAMENTO 4 AMBIENTES EN VENTA - RAMOS MEJÍA - BALCÓN TERRAZA Y ESPACIO PARA VEHÍCULO\n\nUSD 148.000\n\nDepartamento de 4 ambientes al frente, ubicado sobre Av. Rivadavia al 14600, Ramos Mejía, a solo 5 cuadras de la estación.\n\nLa propiedad se encuentra en primer piso por escalera y cuenta con ambientes amplios y una superficie total de 174 m², de los cuales 150 m² son cubiertos.\n\nCARACTERÍSTICAS:\n• 4 ambientes\n• 3 dormitorios\n• Living comedor\n• Cocina comedor\n• Baño completo\n• Lavadero independiente\n• Toilette\n• Escritorio\n• Amplio balcón terraza\n• Disposición al frente\n• Espacio común para guardar vehículo\n• 150 m² cubiertos\n• 174 m² totales\n• A 5 cuadras de la estación de Ramos Mejía\n• Venta directa\n\nDISTRIBUCIÓN:\nCuenta con un amplio living comedor y una cómoda cocina comedor.\nDispone de 3 dormitorios, uno de ellos con espacio de escritorio, además de baño completo.\nTambién posee lavadero independiente con toilette y un amplio balcón terraza, brindando un excelente espacio exterior.\n\nUBICACIÓN:\nAv. Rivadavia 14600, Piso 1, Ramos Mejía, Partido de La Matanza, G.B.A. Zona Oeste.\nExcelente ubicación sobre Av. Rivadavia, con rápido acceso a comercios, transporte público y a la estación de Ramos Mejía.\n\nVENTA DIRECTA",
     "renta_estimada": "Consultar",
     "destinos": [
       "Vivienda",
