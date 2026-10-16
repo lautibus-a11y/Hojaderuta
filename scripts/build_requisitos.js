@@ -49,7 +49,6 @@ const SLUG_MAP = {
   20: 'cosquin-1120', // Explicit slug from user specification
   21: 'castro-al-600-20-de-junio',
   22: 'urien-casa-quinta',
-  23: 'casa-quinta-california-5900',
   24: 'la-rosalia-simona-venta',
   25: 'departamento-independiente-la-rosalia',
   26: 'terreno-alejo-castex',

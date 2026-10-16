@@ -820,47 +820,6 @@
     "slug": "urien-casa-quinta"
   },
   {
-    "id": 23,
-    "nombre": "Casa Quinta California 5900",
-    "tipo": "Casa Quinta",
-    "precio": 850000,
-    "ubicacion": "20 de Junio",
-    "direccion": "California 5595, 20 de Junio",
-    "superficie": "Consultar",
-    "estado": "Bueno",
-    "habitaciones": 3,
-    "banos": 2,
-    "imagenes": [
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/1.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/10.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/11.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/12.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/13.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/14.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/15.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/2.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/3.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/4.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/5.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/6.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/7.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/8.webp",
-      "assets/imagenes/20-de-junio/venta/casa-quinta-california-5900/9.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: $ 850.000  Casa Quinta en Alquiler Permanente (Destino Vivienda) ubicada en California 5900,...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Vivienda",
-      "Inversión"
-    ],
-    "moneda": "ARS",
-    "operacion": "Alquiler",
-    "apto_credito": false,
-    "google_maps": "California 5595, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
-    "slug": "casa-quinta-california-5900"
-  },
-  {
     "id": 24,
     "nombre": "La Rosalia Simona",
     "tipo": "Casa Quinta",
