@@ -1413,7 +1413,7 @@ const DEFAULT_PROPIEDADES = [
     "id": 38,
     "nombre": "Galpón Comercial Balladares – Pontevedra",
     "tipo": "Comercial",
-    "precio": 0,
+    "precio": 2500000,
     "ubicacion": "Pontevedra",
     "direccion": "Balladares 4388, esquina Valparaíso, Pontevedra, Merlo",
     "superficie": "242 m² cub. / 507 m² semicub.",
