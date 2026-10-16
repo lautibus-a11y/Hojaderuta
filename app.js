@@ -1408,6 +1408,46 @@ const DEFAULT_PROPIEDADES = [
     "apto_credito": false,
     "google_maps": "Carlos Cassafouth 541, 20 de Junio, Buenos Aires",
     "slug": "carlos-cassafouth-541"
+  },
+  {
+    "id": 38,
+    "nombre": "Galpón Comercial Balladares – Pontevedra",
+    "tipo": "Comercial",
+    "precio": 0,
+    "ubicacion": "Pontevedra",
+    "direccion": "Balladares 4388, esquina Valparaíso, Pontevedra, Merlo",
+    "superficie": "242 m² cub. / 507 m² semicub.",
+    "estado": "Excelente",
+    "habitaciones": 1,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_01_WhatsApp_Image_2026-05-11_at_16_51_34__1_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_02_WhatsApp_Image_2026-05-11_at_16_51_34__2_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_03_WhatsApp_Image_2026-05-11_at_16_51_34.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_04_WhatsApp_Image_2026-05-11_at_16_51_35.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_05_WhatsApp_Image_2026-10-16_at_11_18_55__1_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_06_WhatsApp_Image_2026-10-16_at_11_18_55__2_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_07_WhatsApp_Image_2026-10-16_at_11_18_55__3_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_08_WhatsApp_Image_2026-10-16_at_11_18_55.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_09_WhatsApp_Image_2026-10-16_at_11_18_56__1_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_10_WhatsApp_Image_2026-10-16_at_11_18_56__2_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_11_WhatsApp_Image_2026-10-16_at_11_18_56.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_12_WhatsApp_Image_2026-10-16_at_11_18_57__1_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_13_WhatsApp_Image_2026-10-16_at_11_18_57__2_.jpg",
+      "assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_14_WhatsApp_Image_2026-10-16_at_11_18_57.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "Excelente oportunidad de alquiler comercial en Pontevedra, Merlo.\n\nUbicación: Balladares 4388, esquina Valparaíso.\n\nSuperficies:\n• Superficie cubierta: 242 m² (Galpón de 11 m x 22 m)\n• Superficie semicubierta: 507 m²\n\nDestinos permitidos: Comercio minorista y mayorista, depósitos, talleres y fabricaciones menores.\n\nCaracterísticas principales:\n• Dos cortinas metálicas eléctricas\n• Instalación eléctrica trifásica\n• Sistema de desagüe instalado\n• Oficina administrativa y baño\n• Escalera con acceso a cubierta\n• Fondo libre con portón y acceso independiente por calle Valparaíso.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Comercial",
+      "Inversión"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Balladares 4388, Pontevedra, Merlo, Provincia de Buenos Aires, Argentina",
+    "slug": "galpon-comercial-balladares-pontevedra"
   }
 ];
 

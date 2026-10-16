@@ -62,7 +62,8 @@ const SLUG_MAP = {
   34: 'depto-rio-de-janeiro-pontevedra',
   35: 'rio-de-janeiro-venta-todo',
   36: 'terreno-rio-de-janeiro',
-  37: 'carlos-cassafouth-541'
+  37: 'carlos-cassafouth-541',
+  38: 'galpon-comercial-balladares-pontevedra'
 };
 
 /**
