@@ -118,6 +118,311 @@ async function extractTextFromPdf(pdfPath) {
  * Genera el HTML de requisitos para una propiedad
  */
 function generateHtmlPage(prop, slug, pdfContent) {
+  if (slug === 'galpon-comercial-balladares-pontevedra' || prop.id === 38) {
+    return `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Checklist de Requisitos y Documentación para Inquilino: Galpón Comercial Balladares – Pontevedra - Ivana Molina & Asociados Bienes Raíces.">
+  <title>Requisitos de Alquiler: Galpón Comercial Balladares – Pontevedra | Ivana Molina Bienes Raíces</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/logo-favicon-.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/logo-favicon-.png">
+  <link rel="apple-touch-icon" href="../assets/logo-favicon-.png">
+
+  <!-- Estilos base y de requisitos -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="requisitos.css">
+</head>
+<body class="requisitos-page">
+
+  <!-- Aurora Mesh Background -->
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+  </div>
+
+  <!-- Header Barra Superior -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand" title="Volver al Inicio">
+        <img src="../assets/logo-favicon-.png" alt="Ivana Molina Bienes Raíces" class="header-logo">
+        <div class="brand-info">
+          <h1>Hoja de Ruta Inmobiliaria</h1>
+          <h2 style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin: 0;">IVANA MOLINA & ASOCIADOS BIENES RAÍCES</h2>
+        </div>
+      </a>
+
+      <div class="header-actions-right">
+        <a href="../index.html" class="btn btn-secondary btn-sm btn-back-home">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Volver a la Web</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="req-main-container">
+
+    <!-- Ficha de Encabezado Corporativo de la Inmobiliaria -->
+    <div class="requisitos-card glass-panel" style="margin-bottom: 1.5rem; padding: 1.35rem 1.75rem; border-color: rgba(255, 255, 255, 0.15);">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 0.25rem; letter-spacing: 0.02em;">
+            IVANA MOLINA & ASOC. BIENES RAÍCES
+          </h2>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); margin: 0;">
+            📍 <strong>Dirección:</strong> Manuel Castro 1420, 20 de Junio, La Matanza.
+          </p>
+        </div>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.84rem; color: var(--text-secondary);">
+          <div>
+            📞 <strong>Tel:</strong> <a href="tel:01168091223" style="color: #ffffff; text-decoration: none;">011-6809 1223</a> / <a href="tel:01144051974" style="color: #ffffff; text-decoration: none;">011-4405 1974</a>
+          </div>
+          <div>
+            ✉️ <strong>Mail:</strong> <a href="mailto:info@molinaivana.com.ar" style="color: #34d399; text-decoration: underline;">info@molinaivana.com.ar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hero Banner de la Propiedad -->
+    <div class="req-hero-card glass-panel">
+      <div class="req-hero-grid">
+        <div class="req-hero-image-wrap">
+          <img src="../assets/imagenes/pontevedra/Alquiler/Pontevedra-galpon/wm_limpia_01_WhatsApp_Image_2026-05-11_at_16_51_34__1_.jpg" alt="Galpón Comercial Balladares – Pontevedra" class="req-hero-img">
+          <div class="req-hero-badges">
+            <span class="card-badge-operacion op-alquiler">Alquiler Comercial</span>
+            <span class="card-badge-status status-lista">Excelente</span>
+          </div>
+        </div>
+
+        <div class="req-hero-info">
+          <div class="req-chip-label">
+            <span>CHECKLIST DE REQUISITOS Y DOCUMENTACIÓN PARA INQUILINO</span>
+          </div>
+          <h1 class="req-prop-title">Galpón Comercial Balladares – Pontevedra</h1>
+          <p class="req-prop-address">📍 Balladares 4388, esquina Valparaíso, Pontevedra, Merlo</p>
+          
+          <div class="req-quick-specs">
+            <div class="spec-box">
+              <span class="spec-label">Canon Mensual</span>
+              <span class="spec-val highlight">$2.500.000</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Inmueble</span>
+              <span class="spec-val">Depósito / Galpón</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Plazo Locativo</span>
+              <span class="spec-val">24 meses (2 años)</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Superficie Cub.</span>
+              <span class="spec-val">242 m² (11x22m)</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Semicubierta</span>
+              <span class="spec-val">507 m²</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Instalación</span>
+              <span class="spec-val">Trifásica / Cortinas eléct.</span>
+            </div>
+          </div>
+
+          <div class="req-hero-actions">
+            <a href="https://wa.me/541168091223?text=%C2%A1Hola%20Ivana!%20Estuve%20viendo%20los%20requisitos%20para%20la%20propiedad%20%22Galp%C3%B3n%20Comercial%20Balladares%20%E2%80%93%20Pontevedra%22%20(Balladares%204388%2C%20esquina%20Valpara%C3%ADso%2C%20Pontevedra%2C%20Merlo).%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20para%20coordinar%20el%20siguiente%20paso." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+            <a href="../index.html" class="btn btn-secondary">
+              Ver en el Catálogo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido Detallado de Requisitos -->
+    <div class="req-content-body">
+      
+      <!-- Bloque 1: Montos de Ingreso y Conceptos Financieros -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">💰</div>
+          <div>
+            <h2>1. Montos de Ingreso y Conceptos Financieros</h2>
+            <p>Liquidación inicial de ingreso y conceptos correspondientes a la firma del contrato (Plazo: 24 meses / 2 años).</p>
+          </div>
+        </div>
+        
+        <div class="requisitos-grid" style="margin-bottom: 1.5rem;">
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Mes de alquiler por adelantado</strong>
+              <span>$2.500.000 (pesos argentinos).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Mes de honorarios inmobiliarios</strong>
+              <span>$2.500.000 (pesos argentinos).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Depósito en garantía</strong>
+              <span>USD 2.000 (dólares estadounidenses, billete).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Gastos de certificación de firmas</strong>
+              <span>A cargo del inquilino (cobrado según arancel vigente de la escribanía actuante).</span>
+            </div>
+          </div>
+          <div class="req-item" style="grid-column: 1 / -1;">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Sellado de Contrato (ARBA / Provincia de Bs. As.)</strong>
+              <span>A cargo del inquilino (consultar alícuota aplicable según la normativa fiscal local vigente).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen de Liquidación -->
+        <div style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.35); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: #34d399; letter-spacing: 0.05em; display: block;">Resumen Financiero Inicial</span>
+            <strong style="font-size: 1.35rem; color: #ffffff;">$5.000.000 ARS + USD 2.000</strong>
+          </div>
+          <span style="font-size: 0.88rem; color: var(--text-secondary);">+ Gastos de certificación de firmas y sellado de contrato</span>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Documentación e Impuestos del Locatario (Responsable Inscripto) -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">📋</div>
+          <div>
+            <h2>2. Documentación e Impuestos del Locatario (Responsable Inscripto)</h2>
+            <p>Requisitos formales, fiscales y societarios para la acreditación del locatario.</p>
+          </div>
+        </div>
+        <div class="requisitos-grid">
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Constancia de inscripción en ARCA (ex-AFIP)</strong>
+              <span>Estado activo como Responsable Inscripto.</span>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Acreditación de ingresos</strong>
+              <span>Últimas declaraciones juradas de IVA / Ganancias o Certificación de Ingresos emitida por Contador Público con firma certificada por el CPCECABA o CPCEPBA.</span>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Documento de Identidad (DNI)</strong>
+              <span>Copia frente y dorso del titular / firmante.</span>
+            </div>
+          </div>
+
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>En caso de ser Sociedad (S.A. / S.R.L.)</strong>
+              <span>Estatuto social, acta de designación de autoridades vigentes y poderes de representación legal correspondientes.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Obligaciones y Gastos Recurrentes a Cargo del Inquilino -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">⚙️</div>
+          <div>
+            <h2>3. Obligaciones y Gastos Recurrentes a Cargo del Inquilino</h2>
+            <p>Servicios, seguros y coberturas obligatorias durante todo el período contractual.</p>
+          </div>
+        </div>
+        <div class="requisitos-grid">
+          <div class="req-item" style="border-left: 3px solid #f59e0b;">
+            <div class="req-check" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35);">✓</div>
+            <div>
+              <strong>Seguro contra incendio</strong>
+              <span>Contratación obligatoria de póliza de incendio y responsabilidad civil a favor del locador durante todo el plazo de 24 meses.</span>
+            </div>
+          </div>
+
+          <div class="req-item" style="border-left: 3px solid #3b82f6;">
+            <div class="req-check" style="background: rgba(59, 130, 246, 0.15); color: #60a5fa; border-color: rgba(59, 130, 246, 0.35);">✓</div>
+            <div>
+              <strong>Tasa Municipal / Tasas Locales</strong>
+              <span>A cargo del locatario según liquidación emitida por el municipio correspondiente (Municipio de Merlo).</span>
+            </div>
+          </div>
+
+          <div class="req-item" style="border-left: 3px solid #10b981;">
+            <div class="req-check" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.35);">✓</div>
+            <div>
+              <strong>Servicios del galpón</strong>
+              <span>Cambio de titularidad o alta de servicios de luz (fuerza motriz / trifásica si corresponde) y agua.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Banner Inferior de Contacto & Asesoramiento -->
+    <div class="req-footer-contact glass-panel">
+      <div class="footer-contact-text">
+        <h3>¿Tenés dudas sobre los requisitos o querés coordinar una visita?</h3>
+        <p>Nuestro equipo de martilleros y corredores colegiados está a tu disposición para asesorarte en cada paso.</p>
+      </div>
+      <div class="footer-contact-actions">
+        <a href="https://wa.me/541168091223?text=%C2%A1Hola%20Ivana!%20Estuve%20viendo%20los%20requisitos%20para%20la%20propiedad%20%22Galp%C3%B3n%20Comercial%20Balladares%20%E2%80%93%20Pontevedra%22%20(Balladares%204388%2C%20esquina%20Valpara%C3%ADso%2C%20Pontevedra%2C%20Merlo).%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20para%20coordinar%20el%20siguiente%20paso." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <span>Hablar con Ivana Molina</span>
+        </a>
+        <a href="../index.html" class="btn btn-secondary">
+          <span>Volver al Inicio</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Legal -->
+  <footer class="app-footer" style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem;">
+    <p>Ivana Molina & Asociados Bienes Raíces • Matrícula 1048 • 20 de Junio, Buenos Aires</p>
+  </footer>
+
+</body>
+</html>`;
+  }
+
   if (slug === 'la-rosalia-simona-alquiler' || prop.id === 2) {
     return `<!DOCTYPE html>
 <html lang="es">
