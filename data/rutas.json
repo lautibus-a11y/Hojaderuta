@@ -6,7 +6,7 @@
     "presupuesto": 100000,
     "objetivo": "Casa quinta",
     "tipo": "Casa Quinta",
-    "propiedades_ids": [2],
+    "propiedades_ids": [],
     "observaciones": "Interesado en parque arbolado y posibilidad de piscina."
   },
   {
@@ -16,7 +16,7 @@
     "presupuesto": 150000,
     "objetivo": "Inversión",
     "tipo": "Casa Quinta",
-    "propiedades_ids": [2],
+    "propiedades_ids": [],
     "observaciones": "Prioridad en renta estimada y potencial de valorización."
   }
 ]
