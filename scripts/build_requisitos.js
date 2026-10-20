@@ -1050,6 +1050,356 @@ function generateHtmlPage(prop, slug, pdfContent) {
 </html>`;
   }
 
+  if (slug === 'castaneda-235-alquiler' || prop.id === 33) {
+    return `<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Requisitos y condiciones para Cabaña con Pileta – Castañeda 235 - Ivana Molina Bienes Raíces y Asociados.">
+  <title>Requisitos de Alquiler: Cabaña con Pileta – Castañeda 235 | Ivana Molina Bienes Raíces</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/logo-favicon-.png">
+  <link rel="shortcut icon" type="image/png" href="../assets/logo-favicon-.png">
+  <link rel="apple-touch-icon" href="../assets/logo-favicon-.png">
+
+  <!-- Estilos base y de requisitos -->
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="requisitos.css">
+</head>
+<body class="requisitos-page">
+
+  <!-- Aurora Mesh Background -->
+  <div class="aurora-bg">
+    <div class="aurora-blob aurora-blob-1"></div>
+    <div class="aurora-blob aurora-blob-2"></div>
+    <div class="aurora-blob aurora-blob-3"></div>
+  </div>
+
+  <!-- Header Barra Superior -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="../index.html" class="brand" title="Volver al Inicio">
+        <img src="../assets/logo-favicon-.png" alt="Ivana Molina Bienes Raíces" class="header-logo">
+        <div class="brand-info">
+          <h1>Hoja de Ruta Inmobiliaria</h1>
+          <h2 style="font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin: 0;">IVANA MOLINA & ASOCIADOS BIENES RAÍCES</h2>
+        </div>
+      </a>
+
+      <div class="header-actions-right">
+        <a href="../index.html" class="btn btn-secondary btn-sm btn-back-home">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Volver a la Web</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="req-main-container">
+
+    <!-- Ficha de Encabezado Corporativo de la Inmobiliaria -->
+    <div class="requisitos-card glass-panel" style="margin-bottom: 1.5rem; padding: 1.35rem 1.75rem; border-color: rgba(255, 255, 255, 0.15);">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h2 style="font-size: 1.15rem; font-weight: 800; color: #ffffff; margin-bottom: 0.25rem; letter-spacing: 0.02em;">
+            IVANA MOLINA & ASOC. BIENES RAÍCES
+          </h2>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); margin: 0;">
+            📍 <strong>Dirección:</strong> Manuel Castro 1420, 20 de Junio, La Matanza.
+          </p>
+        </div>
+        <div style="display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: 0.84rem; color: var(--text-secondary);">
+          <div>
+            📞 <strong>Tel:</strong> <a href="tel:01168091223" style="color: #ffffff; text-decoration: none;">011-6809 1223</a> / <a href="tel:01144051974" style="color: #ffffff; text-decoration: none;">011-4405 1974</a>
+          </div>
+          <div>
+            ✉️ <strong>Mail:</strong> <a href="mailto:info@molinaivana.com.ar" style="color: #34d399; text-decoration: underline;">info@molinaivana.com.ar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hero Banner de la Propiedad -->
+    <div class="req-hero-card glass-panel">
+      <div class="req-hero-grid">
+        <div class="req-hero-image-wrap">
+          <img src="../assets/imagenes/pontevedra/Alquiler/castaneda-235/Castanieda_Portada.webp" alt="Cabaña con Pileta – Castañeda 235" class="req-hero-img">
+          <div class="req-hero-badges">
+            <span class="card-badge-operacion op-alquiler">Alquiler Permanente</span>
+            <span class="card-badge-status status-lista">Excelente Estado</span>
+          </div>
+        </div>
+
+        <div class="req-hero-info">
+          <div class="req-chip-label">
+            <span>PLIEGO DE REQUISITOS Y CONDICIONES</span>
+          </div>
+          <h1 class="req-prop-title">Alquiler de Cabaña con Pileta – Vivienda Permanente</h1>
+          <p class="req-prop-address">📍 Castañeda 235, entre Camilo Torres y Cosquín, 20 de Junio, Partido de La Matanza, Buenos Aires</p>
+          
+          <div class="req-quick-specs">
+            <div class="spec-box">
+              <span class="spec-label">Alquiler Mensual</span>
+              <span class="spec-val highlight">ARS $770.000</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Destino</span>
+              <span class="spec-val">Vivienda Permanente</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Período</span>
+              <span class="spec-val">1 Año de Locación</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Terreno</span>
+              <span class="spec-val">600 m²</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Ambientes</span>
+              <span class="spec-val">4 Ambientes (PB + PA)</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Acceso</span>
+              <span class="spec-val">Ripio</span>
+            </div>
+          </div>
+
+          <div class="req-hero-actions">
+            <a href="https://wa.me/541168091223?text=%C2%A1Hola%20Ivana!%20Estuve%20viendo%20los%20requisitos%20para%20el%20Alquiler%20de%20la%20Caba%C3%B1a%20con%20Pileta%20en%20Casta%C3%B1eda%20235%20(20%20de%20Junio).%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              <span>Consultar por WhatsApp</span>
+            </a>
+            <a href="../index.html" class="btn btn-secondary">
+              Ver en el Catálogo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido Detallado de Requisitos -->
+    <div class="req-content-body">
+
+      <!-- Bloque 0: Descripción Detallada de la Casa -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">🏡</div>
+          <div>
+            <h2>Descripción Detallada de la Propiedad</h2>
+            <p>Espacios pensados para el confort diario, el descanso y la recreación.</p>
+          </div>
+        </div>
+        <div style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+          <p style="margin-bottom: 0.85rem;">
+            Cabaña de <strong>4 ambientes</strong>, desarrollada sobre un amplio terreno de <strong>600 m²</strong> con espacios pensados para el descanso y la recreación.
+          </p>
+          <div class="requisitos-grid" style="margin-top: 1rem; margin-bottom: 1rem;">
+            <div class="req-item">
+              <div class="req-check">✓</div>
+              <div>
+                <strong>Planta Baja</strong>
+                <span>Dispone de 2 habitaciones, amplio living, cocina-comedor integrada y baño completo.</span>
+              </div>
+            </div>
+            <div class="req-item">
+              <div class="req-check">✓</div>
+              <div>
+                <strong>Planta Alta</strong>
+                <span>Cuenta con una amplia habitación con balcón privado.</span>
+              </div>
+            </div>
+            <div class="req-item" style="grid-column: 1 / -1;">
+              <div class="req-check">✓</div>
+              <div>
+                <strong>Sector Exterior y Esparcimiento</strong>
+                <span>Galería cubierta con parrilla y pileta de fibra de vidrio de aprox. 5x3 metros, brindando un entorno ideal para disfrutar al aire libre.</span>
+              </div>
+            </div>
+          </div>
+          <p style="margin: 0; font-size: 0.88rem; color: var(--text-muted);">
+            • <strong>Terreno:</strong> 600 m² &nbsp;|&nbsp; • <strong>Acceso:</strong> Ripio &nbsp;|&nbsp; • <strong>Período:</strong> 1 (un) año de locación destinado a vivienda permanente.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bloque 1: Liquidación Inicial de Ingreso -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">💰</div>
+          <div>
+            <h2>Requisitos de Alquiler y Liquidación de Ingreso</h2>
+            <p>Detalle de conceptos requeridos para la suscripción del contrato de locación.</p>
+          </div>
+        </div>
+        
+        <div class="requisitos-grid" style="margin-bottom: 1.5rem;">
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Mes de Ingreso (Adelantado)</strong>
+              <span>$770.000 (pesos argentinos).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Mes de Depósito en Garantía</strong>
+              <span>$770.000 (pesos argentinos).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Mes de Honorarios Inmobiliarios</strong>
+              <span>$770.000 (pesos argentinos).</span>
+            </div>
+          </div>
+          <div class="req-item">
+            <div class="req-check">✓</div>
+            <div>
+              <strong>Gastos Administrativos e Informes</strong>
+              <span>Más gastos administrativos y pedidos de informes de dominio / inhibición.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen Total Financiero -->
+        <div style="background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.35); padding: 1.25rem 1.5rem; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <span style="font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: #34d399; letter-spacing: 0.05em; display: block;">Total Inicial Requerido</span>
+            <strong style="font-size: 1.45rem; color: #ffffff;">$2.310.000 ARS</strong>
+          </div>
+          <span style="font-size: 0.88rem; color: var(--text-secondary);">+ Gastos administrativos y pedidos de informes</span>
+        </div>
+      </div>
+
+      <!-- Bloque 2: Actualización Contractual -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">📈</div>
+          <div>
+            <h2>Actualización del Canon Locativo</h2>
+            <p>Condición y periodicidad de ajuste durante el año de vigencia.</p>
+          </div>
+        </div>
+        <div class="req-item" style="border-left: 3px solid #38bdf8;">
+          <div class="req-check" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8; border-color: rgba(56, 189, 248, 0.35);">✓</div>
+          <div>
+            <strong>Ajuste Cuatrimestral por IPC (Mínimo 10%)</strong>
+            <span>Actualización cuatrimestral según el Índice de Precios al Consumidor (IPC) publicado por el INDEC, estableciéndose un piso mínimo del 10% por cuatrimestre.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 3: Garantías Aceptadas -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">🛡️</div>
+          <div>
+            <h2>Garantías Aceptadas (Presentar una de las siguientes)</h2>
+            <p>Opciones respaldatorias válidas para el contrato.</p>
+          </div>
+        </div>
+        <div class="garantias-list">
+          <div class="garantia-box">
+            <div class="garantia-header">
+              <span class="garantia-tag">Opción 1</span>
+              <h3>Garantía Propietaria</h3>
+            </div>
+            <p>Inmueble que no posea gravámenes, embargos ni se encuentre constituido como bien de familia. Se solicitarán informes de dominio e inhibiciones.</p>
+          </div>
+
+          <div class="garantia-box">
+            <div class="garantia-header">
+              <span class="garantia-tag">Opción 2</span>
+              <h3>Seguro de Caución</h3>
+            </div>
+            <p>Póliza emitida a través de compañías avaladas (Finaer, Respaldar, Garantía Ya, Premium Group, etc.). Gestión ágil con aprobación rápida.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque 4: Condiciones a Tener en Cuenta -->
+      <div class="requisitos-card glass-panel">
+        <div class="card-section-header">
+          <div class="badge-icon">⚠️</div>
+          <div>
+            <h2>Condiciones a Tener en Cuenta</h2>
+            <p>Normas de convivencia y obligaciones obligatorias para el inmueble.</p>
+          </div>
+        </div>
+        <div class="requisitos-grid">
+          <div class="req-item" style="border-left: 3px solid #ef4444;">
+            <div class="req-check" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.35);">✕</div>
+            <div>
+              <strong>No pueden hacerse eventos</strong>
+              <span>Inmueble destinado exclusivamente para vivienda familiar permanente; prohibida la realización de fiestas, eventos masivos o actividades comerciales.</span>
+            </div>
+          </div>
+
+          <div class="req-item" style="border-left: 3px solid #ef4444;">
+            <div class="req-check" style="background: rgba(239, 68, 68, 0.15); color: #f87171; border-color: rgba(239, 68, 68, 0.35);">✕</div>
+            <div>
+              <strong>No se aceptan mascotas</strong>
+              <span>Cláusula estricta de admisión sin animales domésticos.</span>
+            </div>
+          </div>
+
+          <div class="req-item" style="border-left: 3px solid #f59e0b;">
+            <div class="req-check" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35);">✓</div>
+            <div>
+              <strong>Seguro contra incendios</strong>
+              <span>Contratación obligatoria de póliza contra incendios vigente durante todo el período locado (1 año).</span>
+            </div>
+          </div>
+
+          <div class="req-item" style="border-left: 3px solid #f59e0b;">
+            <div class="req-check" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24; border-color: rgba(245, 158, 11, 0.35);">✓</div>
+            <div>
+              <strong>Tasas Generales</strong>
+              <span>El impuesto de Tasas Generales e impuestos municipales queda a cargo exclusivo del inquilino.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Banner Inferior de Contacto & Asesoramiento -->
+    <div class="req-footer-contact glass-panel">
+      <div class="footer-contact-text">
+        <h3>¿Tenés dudas sobre los requisitos o querés coordinar una visita a Castañeda 235?</h3>
+        <p>Nuestro equipo de martilleros y corredores colegiados está a tu disposición para asesorarte en cada paso.</p>
+      </div>
+      <div class="footer-contact-actions">
+        <a href="https://wa.me/541168091223?text=%C2%A1Hola%20Ivana!%20Estuve%20viendo%20los%20requisitos%20para%20el%20Alquiler%20de%20la%20Caba%C3%B1a%20en%20Casta%C3%B1eda%20235%20(20%20de%20Junio).%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <span>Hablar con Ivana Molina</span>
+        </a>
+        <a href="../index.html" class="btn btn-secondary">
+          <span>Volver al Inicio</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Legal -->
+  <footer class="app-footer" style="text-align: center; padding: 2rem; color: var(--text-muted); font-size: 0.8rem;">
+    <p>Ivana Molina & Asociados Bienes Raíces • Matrícula 1048 • 20 de Junio, Buenos Aires</p>
+  </footer>
+
+</body>
+</html>`;
+  }
+
   const isAlquiler = (prop.operacion || '').toLowerCase() === 'alquiler';
   const isAptoCredito = Boolean(prop.apto_credito);
   const mainImage = (prop.imagenes && prop.imagenes.length > 0) ? prop.imagenes[0] : '';
