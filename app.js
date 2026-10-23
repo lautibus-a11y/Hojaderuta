@@ -1388,6 +1388,48 @@ const DEFAULT_PROPIEDADES = [
     "google_maps": "Balladares 4388, Pontevedra, Merlo, Provincia de Buenos Aires, Argentina",
     "slug": "galpon-comercial-balladares-pontevedra"
   }
+,
+  {
+    "id": 39,
+    "nombre": "Terreno Camilo Torres y Manuel Rico",
+    "tipo": "Lote",
+    "precio": 63000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Camilo Torres y Manuel Rico, 20 de Junio",
+    "superficie": "1.100 m²",
+    "estado": "Excelente",
+    "habitaciones": 0,
+    "banos": 0,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.52.jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.53 (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.53 (2).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.53 (3).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.53.jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.54 (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.54 (2).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.54 (3).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.54.jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.55 (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.55 (2).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.55 (3).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.55.jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.56 (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Camilo torres manuel rico marca de agua/wm_WhatsApp Image 2026-10-16 at 16.26.56.jpeg"
+    ],
+    "video": "",
+    "potencial_inversion": "Excelente Oportunidad en 20 de Junio – Amplio Terreno de 1.100 m² sobre Camilo Torres y Manuel Rico. Ideal para desarrollo residencial, emprendimiento o casa de fin de semana. Estado de subdivisión aprobado con estudio técnico favorable.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Inversión",
+      "Vivienda"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Camilo Torres y Manuel Rico, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "terreno-camilo-torres-y-manuel-rico"
+  }
 ];
 
 const DEFAULT_CLIENTES = [
