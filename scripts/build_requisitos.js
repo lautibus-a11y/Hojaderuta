@@ -63,7 +63,9 @@ const SLUG_MAP = {
   35: 'rio-de-janeiro-venta-todo',
   36: 'terreno-rio-de-janeiro',
   37: 'carlos-cassafouth-541',
-  38: 'galpon-comercial-balladares-pontevedra'
+  38: 'galpon-comercial-balladares-pontevedra',
+  39: 'terreno-camilo-torres-y-manuel-rico',
+  40: 'manuel-castro-775'
 };
 
 /**

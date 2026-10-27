@@ -1415,5 +1415,53 @@
     "apto_credito": false,
     "google_maps": "Camilo Torres y Manuel Rico, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
     "slug": "terreno-camilo-torres-y-manuel-rico"
+  },
+  {
+    "id": 40,
+    "nombre": "Manuel Castro 775",
+    "tipo": "Casa Quinta",
+    "precio": 128000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Manuel Castro 775, 20 de Junio",
+    "superficie": "1.512 m²",
+    "estado": "Excelente",
+    "habitaciones": 2,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_04_WhatsApp_Image_2026-10-26_at_18_08_09.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_01_WhatsApp_Image_2026-10-26_at_18_08_06.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_01_WhatsApp_Image_2026-10-26_at_18_09_11__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_02_WhatsApp_Image_2026-10-26_at_18_08_08__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_02_WhatsApp_Image_2026-10-26_at_18_09_12__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_03_WhatsApp_Image_2026-10-26_at_18_08_08.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_03_WhatsApp_Image_2026-10-26_at_18_09_12.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_05_WhatsApp_Image_2026-10-26_at_18_08_14.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_06_WhatsApp_Image_2026-10-26_at_18_09_04.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_07_WhatsApp_Image_2026-10-26_at_18_09_05__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_08_WhatsApp_Image_2026-10-26_at_18_09_05.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_09_WhatsApp_Image_2026-10-26_at_18_09_06__2_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_10_WhatsApp_Image_2026-10-26_at_18_09_06.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_11_WhatsApp_Image_2026-10-26_at_18_09_07__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_12_WhatsApp_Image_2026-10-26_at_18_09_07.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_13_WhatsApp_Image_2026-10-26_at_18_09_08__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_14_WhatsApp_Image_2026-10-26_at_18_09_08__2_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_15_WhatsApp_Image_2026-10-26_at_18_09_08.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_16_WhatsApp_Image_2026-10-26_at_18_09_09__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_17_WhatsApp_Image_2026-10-26_at_18_09_09.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_18_WhatsApp_Image_2026-10-26_at_18_09_10__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/Manuel Castro - 775/wm_limpia_19_WhatsApp_Image_2026-10-26_at_18_09_10.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "Casa quinta en venta 20 de Junio sobre lote de 1.512 m² (25,5 m x 55 m). Parque soñado de 1.403 m² con arboleda añosa y excelente ubicación a solo 50 metros del asfalto. Cuenta con 77 m² cubiertos y 32 m² semicubiertos: living comedor amplio y muy luminoso con vista al verde, 2 habitaciones con gran luz natural, 1 baño completo, quincho/galería con parrilla y piscina de 10 x 4 m.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Manuel Castro 775, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "manuel-castro-775"
   }
 ]
