@@ -1477,6 +1477,63 @@ const DEFAULT_PROPIEDADES = [
     "apto_credito": false,
     "google_maps": "Manuel Castro 775, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
     "slug": "manuel-castro-775"
+  },
+  {
+    "id": 41,
+    "nombre": "Casa Quinta en Alquiler – Marcos Paz",
+    "tipo": "Casa Quinta",
+    "precio": 900000,
+    "ubicacion": "Marcos Paz",
+    "direccion": "Rubén Durero 290 (entre Berni y Toulouse), Marcos Paz",
+    "superficie": "Parque con piscina 4x8 m",
+    "estado": "Excelente",
+    "habitaciones": 2,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_01_1.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_02_3.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_03_4.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_04_5.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_05_6.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_06_6_1_.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_07_7.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_08_7_1_.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_09_8.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_10.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_10_9.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_12_11.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_13_12.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_14_13.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_15_14.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_16_15.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_17_16.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_18_17.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_19_18.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_20_19.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_21_20.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_22_21.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_23_22.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_24_23.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_25_25.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_26_26.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_27_27.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_28.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_29_29.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_30_30.webp",
+      "assets/imagenes/Marcos Paz/Alquiler/M_PAZ_alquiler/wm_limpia_31_31.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "CASA QUINTA EN ALQUILER - MARCOS PAZ\n\nUbicación: Rubén Durero 290 (Entre Berni y Toulouse) - Ruta 3 Km 48, Marcos Paz. Excelente entorno residencial y de fácil acceso.\nValor de alquiler: $ 900.000.- mensuales.\n\nDescripción de la propiedad:\n• Superficie desarrollada con excelente luminosidad natural y ventilación en todos sus ambientes.\n• Dos amplias habitaciones de cómoda distribución.\n• Altillo de gran versatilidad, apto para múltiples destinos (playroom, espacio de trabajo o baulera).\n• Amplia galería semicubierta.\n• Cocina comedor integrada, funcional y de buenas dimensiones.\n• Baño completo instalado con todos sus artefactos.\n• Parque totalmente parquizado, consolidado y arbolado.\n• Piscina emplazada de 4x8 aprox., en el sector exterior, lista para su uso.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048",
+    "renta_estimada": "$ 900.000 / mes",
+    "destinos": [
+      "Vivienda",
+      "Alquiler"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Ruben Durero 290, Marcos Paz, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-quinta-ruben-durero-marcos-paz"
   }
 ];
 
@@ -1662,7 +1719,8 @@ const PROPERTY_SLUG_MAP = {
   37: 'carlos-cassafouth-541',
   38: 'galpon-comercial-balladares-pontevedra',
   39: 'terreno-camilo-torres-y-manuel-rico',
-  40: 'manuel-castro-775'
+  40: 'manuel-castro-775',
+  41: 'casa-quinta-ruben-durero-marcos-paz'
 };
 
 function getPropertySlug(p) {

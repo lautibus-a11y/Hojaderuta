@@ -65,7 +65,8 @@ const SLUG_MAP = {
   37: 'carlos-cassafouth-541',
   38: 'galpon-comercial-balladares-pontevedra',
   39: 'terreno-camilo-torres-y-manuel-rico',
-  40: 'manuel-castro-775'
+  40: 'manuel-castro-775',
+  41: 'casa-quinta-ruben-durero-marcos-paz'
 };
 
 /**
