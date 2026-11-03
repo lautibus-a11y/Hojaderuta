@@ -66,7 +66,9 @@ const SLUG_MAP = {
   38: 'galpon-comercial-balladares-pontevedra',
   39: 'terreno-camilo-torres-y-manuel-rico',
   40: 'manuel-castro-775',
-  41: 'casa-quinta-ruben-durero-marcos-paz'
+  41: 'casa-quinta-ruben-durero-marcos-paz',
+  42: 'terreno-urien-2695m-20-de-junio',
+  43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario'
 };
 
 /**

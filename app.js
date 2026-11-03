@@ -1534,6 +1534,94 @@ const DEFAULT_PROPIEDADES = [
     "apto_credito": false,
     "google_maps": "Ruben Durero 290, Marcos Paz, Provincia de Buenos Aires, Argentina",
     "slug": "casa-quinta-ruben-durero-marcos-paz"
+  },
+  {
+    "id": 42,
+    "nombre": "Terreno Urien – 2.695 m²",
+    "tipo": "Lote",
+    "precio": 100000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Urien, 20 de Junio",
+    "superficie": "2.695 m²",
+    "estado": "Bueno",
+    "habitaciones": 0,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM.jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (2).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (3).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (4).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (5).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.15 PM (6).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM.jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (1).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (2).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (3).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (4).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (5).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (6).jpeg",
+      "assets/imagenes/20-de-junio/venta/Urien venta/WhatsApp Image 2026-11-02 at 11.33.16 PM (7).jpeg"
+    ],
+    "video": "",
+    "potencial_inversion": "TERRENO EN VENTA – 20 DE JUNIO – 2.695 M²\n\n¿Buscás el lugar perfecto para tu próximo proyecto o para disfrutar de la naturaleza?\n\nTe presentamos este amplio terreno de 2.695 m², ubicado sobre la calle Urien, en la localidad de 20 de Junio.\n\nCARACTERÍSTICAS:\n• Terreno totalmente parquizado.\n• Arboleda añosa y consolidada.\n• Gran amplitud y privacidad.\n• Construcción existente con amplio taller y baño propio.\n• Edificación a reciclar, ideal para depósito, quincho o espacio de trabajo.\n\nUn entorno natural y tranquilo, ideal para proyectar la casa de tus sueños o desarrollar tu propio espacio de descanso.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 CDMDLM.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Urien, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "terreno-urien-2695m-20-de-junio"
+  },
+  {
+    "id": 43,
+    "nombre": "Casa Quinta Alquiler Temporario – Manuel Antonio Castro",
+    "tipo": "Casa Quinta",
+    "precio": 0,
+    "ubicacion": "20 de Junio",
+    "direccion": "Manuel Antonio Castro, 20 de Junio",
+    "superficie": "Parque arbolado con pileta",
+    "estado": "Excelente",
+    "habitaciones": 1,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_D_NQ_NP_2X_905753-MLA48916166636_012022-F.webp",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-09-08 at 11.35.37.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-09-08 at 11.35.39.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.02.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.03.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.04.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.07.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.07 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.08.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.08 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.09.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.10.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.10 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.11.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.11 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.12.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.12 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.13.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.14.jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.14 (1).jpeg",
+      "assets/imagenes/20-de-junio/alquiler/Manuel antonio castro alquiler temporal/wm_WhatsApp Image 2025-11-28 at 13.23.15.jpeg"
+    ],
+    "video": "",
+    "potencial_inversion": "CASA QUINTA EN ALQUILER TEMPORARIO – 20 DE JUNIO, LA MATANZA\n\nDisfrutá de una estadía en un entorno natural y tranquilo en esta casa quinta ubicada en 20 de Junio, partido de La Matanza. Ideal para vacaciones, escapadas de fin de semana o días de descanso.\n\nCARACTERÍSTICAS DE LA PROPIEDAD:\n• Dormitorio principal: habitación matrimonial con baño completo en suite.\n• Living comedor: ambiente amplio con espacio para alojar a 2 personas adicionales.\n• Cocina comedor: totalmente amueblada y equipada con vajilla, artefactos y utensilios de cocina.\n• Baños: 2 baños completos, uno en suite y otro de uso general.\n• Parque y pileta: amplio parque arbolado con pileta de natación en buen estado de mantenimiento.\n• Parrilla: sector equipado para disfrutar comidas al aire libre.\n• Seguridad y acceso: propiedad cercada en todo su perímetro, con portón de ingreso sobre calle principal.\n\nCONDICIONES DEL ALQUILER TEMPORARIO:\n• Modalidad: alquiler temporario por quincena o mes.\n• Horarios: Ingreso 10:00 hs. | Egreso 18:00 hs.\n• Servicios incluidos: productos para el mantenimiento de la pileta y servicio de limpieza.\n• Depósito de garantía e inventario firmado al ingresar.\n\nPRESUPUESTO Y DISPONIBILIDAD:\nEl presupuesto se conversa exclusivamente por privado. Consultanos para conocer las tarifas y fechas disponibles.\n\nIVANA MOLINA BIENES RAÍCES Y ASOCIADOS\nMatrícula 1048 CDMDLM.",
+    "renta_estimada": "Consultar por privado",
+    "destinos": [
+      "Alquiler",
+      "Vivienda"
+    ],
+    "moneda": "USD",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Manuel Antonio Castro, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-quinta-manuel-antonio-castro-alquiler-temporario"
   }
 ];
 
@@ -1720,7 +1808,9 @@ const PROPERTY_SLUG_MAP = {
   38: 'galpon-comercial-balladares-pontevedra',
   39: 'terreno-camilo-torres-y-manuel-rico',
   40: 'manuel-castro-775',
-  41: 'casa-quinta-ruben-durero-marcos-paz'
+  41: 'casa-quinta-ruben-durero-marcos-paz',
+  42: 'terreno-urien-2695m-20-de-junio',
+  43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario'
 };
 
 function getPropertySlug(p) {
