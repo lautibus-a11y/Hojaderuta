@@ -43,11 +43,9 @@ const SLUG_MAP = {
   14: 'gibraltar-1-pontevedra',
   15: 'gibraltar-2-pontevedra',
   16: 'girardot-1345',
-  17: 'castex-y-del-carril',
   18: 'propiedad-6-ambientes-caseros',
   19: 'quinta-el-maestro',
   20: 'cosquin-1120', // Explicit slug from user specification
-  21: 'castro-al-600-20-de-junio',
   22: 'urien-casa-quinta',
   24: 'la-rosalia-simona-venta',
   25: 'departamento-independiente-la-rosalia',
