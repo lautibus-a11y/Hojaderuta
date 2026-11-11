@@ -13,6 +13,57 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
+    "id": 45,
+    "nombre": "Casa en Venta – Sanabria 3784",
+    "tipo": "Casa Quinta",
+    "precio": 50000,
+    "ubicacion": "González Catán",
+    "direccion": "Sanabria 3784, González Catán",
+    "superficie": "240 m² (150 m² cub.)",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_25_PORTADA_.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_01_1.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_02_2.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_03_3.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_04_4.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_05_5.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_06_6.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_07_7.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_08_8.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_09_9.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_10_10.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_11_11.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_12_12.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_13_13.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_14_14.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_15_15.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_16_16.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_17_17.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_18_18.jpeg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_19_19.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_20_20.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_21_21.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_22_22.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_23_23.jpg",
+      "assets/imagenes/gonzalez-catan/venta/Sanabria Catan !/Sanabria Catan nuevas_limpia_24_24.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "Casa en venta – Sanabria 3784, González Catán\nValor de venta: U$S 50.000\n\nPresentamos una excelente oportunidad inmobiliaria sobre un lote total de 240 m², con aproximadamente 150 m² cubiertos distribuidos en ambientes funcionales y de gran versatilidad.\n\nCaracterísticas principales:\n• Acceso y cochera: Frente con portón de chapa y espacio cubierto para el resguardo de dos vehículos.\n• Área social: Cocina independiente y amplio comedor con excelente distribución de espacios.\n• Dormitorio principal: Habitación matrimonial que incorpora un entrepiso de madera con ventilación natural, ideal para adaptar como segundo dormitorio, espacio de estudio o sector multifunción.\n• Baño, antebaño y altillo: Baño completo complementado por un antebaño de generosas dimensiones (con potencial para uso como vestidor o habitación auxiliar) que cuenta además con espacio de altillo.\n• Espacio exterior: Patio al contrafrente de 5 x 10 metros aproximadamente.\n\nUna propiedad sólida y versátil, adecuada tanto para vivienda familiar como para proyecto de inversión.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 CDMDLM",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Sanabria 3784, González Catán, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-sanabria-3784-gonzalez-catan"
+  },
+  {
     "id": 44,
     "nombre": "Casa Quinta 33 Orientales 2165",
     "tipo": "Casa Quinta",
@@ -1787,7 +1838,8 @@ const PROPERTY_SLUG_MAP = {
   41: 'casa-quinta-ruben-durero-marcos-paz',
   42: 'terreno-urien-2695m-20-de-junio',
   43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario',
-  44: 'casa-quinta-33-orientales-2165'
+  44: 'casa-quinta-33-orientales-2165',
+  45: 'casa-sanabria-3784-gonzalez-catan'
 };
 
 function getPropertySlug(p) {

@@ -67,7 +67,8 @@ const SLUG_MAP = {
   41: 'casa-quinta-ruben-durero-marcos-paz',
   42: 'terreno-urien-2695m-20-de-junio',
   43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario',
-  44: 'casa-quinta-33-orientales-2165'
+  44: 'casa-quinta-33-orientales-2165',
+  45: 'casa-sanabria-3784-gonzalez-catan'
 };
 
 /**
