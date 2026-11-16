@@ -13,6 +13,36 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
+    "id": 46,
+    "nombre": "Terreno en Venta + Casa a Terminar – Cañuelas",
+    "tipo": "Lote",
+    "precio": 50000,
+    "ubicacion": "Cañuelas",
+    "direccion": "Juana Azurduy (entre Tita Merello y Remedios de Escalada), Cañuelas",
+    "superficie": "585 m² (120 m² constr.)",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_04_PORTADA.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_01_1.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_02_2.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_03_3.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "TERRENO EN VENTA + CASA A TERMINAR EN CAÑUELAS\nValor de venta: U$S 50.000\n\nExcelente oportunidad de inversión. Se ofrece terreno con casa en construcción a terminar en la localidad de Cañuelas, ubicado sobre la calle Juana Azurduy, entre Tita Merello y Remedios de Escalada.\n\n• Superficie total: 585 m²\n• Superficie construida: 120 m²\n• Distribución: 2 habitaciones y 2 baños, cocina comedor, platea y carpeta.\n• Servicios: Cuenta con agua y medidor de luz instalado.\n• Cerramiento y accesos: Perímetro íntegramente delimitado con alambrado olímpico en excelente estado, portón de acceso peatonal y portón independiente para ingreso vehicular.\n\nIdeal para proyectar y finalizar a medida en una zona en constante crecimiento.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 – Colegio de Martilleros de La Matanza.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Juana Azurduy, Canuelas, Provincia de Buenos Aires, Argentina",
+    "slug": "terreno-casa-a-terminar-juana-azurduy-canuelas"
+  },
+  {
     "id": 45,
     "nombre": "Casa en Venta – Sanabria 3784",
     "tipo": "Casa Quinta",
@@ -803,7 +833,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-juan-casacuberta"
   },
   {
     "id": 28,
@@ -835,7 +866,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Carlos Casafoust 630, B1786ayl 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Carlos Casafoust 630, B1786ayl 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "cassafousth-terreno"
   },
   {
     "id": 27,
@@ -863,7 +895,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Pablo Ceretti 1673, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Pablo Ceretti 1673, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-pablo-ceretti"
   },
   {
     "id": 26,
@@ -892,7 +925,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Alejo Castex 1133, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Alejo Castex 1133, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "terreno-alejo-castex"
   },
   {
     "id": 25,
@@ -933,7 +967,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Ejercito De Los Andes, California 20, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Ejercito De Los Andes, California 20, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "departamento-independiente-la-rosalia"
   },
   {
     "id": 24,
@@ -994,7 +1029,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Condor 1489, B1786acg 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Condor 1489, B1786acg 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "la-rosalia-simona-venta"
   },
   {
     "id": 22,
@@ -1034,7 +1070,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Urien Sn, 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Urien Sn, 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "urien-casa-quinta"
   },
   {
     "id": 20,
@@ -1085,7 +1122,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": true,
-    "google_maps": "Cosquin 1120, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 1120, B1786 20 de junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "cosquin-1120"
   },
   {
     "id": 19,
@@ -1132,7 +1170,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "El Maestro 892, B1786bfd 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "El Maestro 892, B1786bfd 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "quinta-el-maestro"
   },
   {
     "id": 18,
@@ -1179,7 +1218,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina",
+    "slug": "propiedad-6-ambientes-caseros"
   },
   {
     "id": 16,
@@ -1217,7 +1257,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Girardot 1345, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Girardot 1345, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "girardot-1345"
   },
   {
     "id": 15,
@@ -1247,7 +1288,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina",
+    "slug": "gibraltar-2-pontevedra"
   },
   {
     "id": 14,
@@ -1284,7 +1326,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Gibraltar, B1761 Pontevedra, Merlo, Provincia De Buenos Aires, Argentina",
+    "slug": "gibraltar-1-pontevedra"
   },
   {
     "id": 12,
@@ -1321,7 +1364,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Juan Pío Gana 4400, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "juan-pio-gana-4400"
   },
   {
     "id": 11,
@@ -1367,7 +1411,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Giacomo Leopardi 5800, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Giacomo Leopardi 5800, B1759 González Catán, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "leopardi-5800-gonzalez-catan"
   },
   {
     "id": 10,
@@ -1403,7 +1448,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Carlos Tejedor, B1678 Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Carlos Tejedor, B1678 Caseros, Tres de Febrero, Provincia De Buenos Aires, Argentina",
+    "slug": "carlos-tejedor-caseros"
   },
   {
     "id": 9,
@@ -1437,7 +1483,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": true,
-    "google_maps": "Aguapey 1119, B1786 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Aguapey 1119, B1786 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "aguapey-1119"
   },
   {
     "id": 8,
@@ -1497,7 +1544,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Pablo Ceretti 1350, B1786bzb 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Pablo Ceretti 1350, B1786bzb 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "ceretti-1300"
   },
   {
     "id": 7,
@@ -1537,7 +1585,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Laprida 375, B1704 Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Laprida 375, B1704 Ramos Mejía, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "laprida-375-ramos-mejia"
   },
   {
     "id": 6,
@@ -1569,7 +1618,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Venta",
     "apto_credito": false,
-    "google_maps": "Cosquin 1421, B1786big 20 De Junio, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 1421, B1786big 20 De Junio, Provincia De Buenos Aires, Argentina",
+    "slug": "cosquin-1400-venta"
   },
   {
     "id": 5,
@@ -1617,7 +1667,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "Cosquin 194, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina"
+    "google_maps": "Cosquin 194, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "casa-quinta-cosquin-194-alquiler"
   },
   {
     "id": 4,
@@ -1650,19 +1701,8 @@ const DEFAULT_PROPIEDADES = [
     "moneda": "USD",
     "operacion": "Alquiler",
     "apto_credito": false,
-    "google_maps": "Canning Center, Av. Mariano Castex 1277, B1804 Canning, Provincia De Buenos Aires, Argentina"
-  }
-];
-
-const DEFAULT_CLIENTES = [
-  {
-    "id": 1,
-    "nombre": "Carlos Mendoza",
-    "presupuesto_max": 100000,
-    "objetivo": "Casa quinta",
-    "tipo_interes": "Casa Quinta",
-    "fecha_registro": "2026-08-01",
-    "observaciones": "Busca amplio parque y tranquilidad para fin de semana."
+    "google_maps": "Canning Center, Av. Mariano Castex 1277, B1804 Canning, Provincia De Buenos Aires, Argentina",
+    "slug": "depto-canning"
   }
 ];
 
@@ -1839,7 +1879,8 @@ const PROPERTY_SLUG_MAP = {
   42: 'terreno-urien-2695m-20-de-junio',
   43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario',
   44: 'casa-quinta-33-orientales-2165',
-  45: 'casa-sanabria-3784-gonzalez-catan'
+  45: 'casa-sanabria-3784-gonzalez-catan',
+  46: 'terreno-casa-a-terminar-juana-azurduy-canuelas'
 };
 
 function getPropertySlug(p) {

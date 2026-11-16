@@ -1,5 +1,35 @@
 [
   {
+    "id": 46,
+    "nombre": "Terreno en Venta + Casa a Terminar – Cañuelas",
+    "tipo": "Lote",
+    "precio": 50000,
+    "ubicacion": "Cañuelas",
+    "direccion": "Juana Azurduy (entre Tita Merello y Remedios de Escalada), Cañuelas",
+    "superficie": "585 m² (120 m² constr.)",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_04_PORTADA.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_01_1.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_02_2.jpg",
+      "assets/imagenes/Caniuelas/canuelas/wm_limpia_03_3.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "TERRENO EN VENTA + CASA A TERMINAR EN CAÑUELAS\nValor de venta: U$S 50.000\n\nExcelente oportunidad de inversión. Se ofrece terreno con casa en construcción a terminar en la localidad de Cañuelas, ubicado sobre la calle Juana Azurduy, entre Tita Merello y Remedios de Escalada.\n\n• Superficie total: 585 m²\n• Superficie construida: 120 m²\n• Distribución: 2 habitaciones y 2 baños, cocina comedor, platea y carpeta.\n• Servicios: Cuenta con agua y medidor de luz instalado.\n• Cerramiento y accesos: Perímetro íntegramente delimitado con alambrado olímpico en excelente estado, portón de acceso peatonal y portón independiente para ingreso vehicular.\n\nIdeal para proyectar y finalizar a medida en una zona en constante crecimiento.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 – Colegio de Martilleros de La Matanza.",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Juana Azurduy, Canuelas, Provincia de Buenos Aires, Argentina",
+    "slug": "terreno-casa-a-terminar-juana-azurduy-canuelas"
+  },
+  {
     "id": 45,
     "nombre": "Casa en Venta – Sanabria 3784",
     "tipo": "Casa Quinta",
