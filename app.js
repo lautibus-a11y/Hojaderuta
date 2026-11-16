@@ -13,6 +13,53 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
+    "id": 47,
+    "nombre": "Casa en Venta – Lucas Páez",
+    "tipo": "Casa Quinta",
+    "precio": 50000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Lucas Páez, 20 de Junio",
+    "superficie": "377 m² (67 m² cub.)",
+    "estado": "A reciclar",
+    "habitaciones": 2,
+    "banos": 1,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ01_WhatsApp_Image_2024-12-10_at_08_33_31.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ02_WhatsApp_Image_2024-12-10_at_08_33_32.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ03_WhatsApp_Image_2024-12-10_at_08_33_35.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ04_WhatsApp_Image_2024-12-10_at_08_33_36.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ05_WhatsApp_Image_2024-12-10_at_08_33_37.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ06_WhatsApp_Image_2024-12-10_at_08_33_38.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ07_WhatsApp_Image_2024-12-10_at_08_33_41.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ08_WhatsApp_Image_2024-12-10_at_08_33_43.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ09_WhatsApp_Image_2024-12-10_at_08_33_47.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ10_WhatsApp_Image_2024-12-10_at_08_33_48.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ11_WhatsApp_Image_2024-12-18_at_15_36_03.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ12_WhatsApp_Image_2024-12-18_at_15_36_04__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ13_WhatsApp_Image_2025-06-09_at_19_51_24__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ14_WhatsApp_Image_2025-06-09_at_19_51_24__2_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ15_WhatsApp_Image_2025-06-09_at_19_51_24__3_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ16_WhatsApp_Image_2025-06-09_at_19_51_24__4_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ17_WhatsApp_Image_2025-06-09_at_19_51_24__5_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ18_WhatsApp_Image_2025-06-09_at_19_51_24.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ19_WhatsApp_Image_2025-06-09_at_19_51_25__1_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ20_WhatsApp_Image_2025-06-09_at_19_51_25__2_.jpg",
+      "assets/imagenes/20-de-junio/venta/L-Paez/wm_limpia_LPAEZ21_WhatsApp_Image_2025-06-09_at_19_51_26.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "CASA EN VENTA - 20 DE JUNIO (Lucas Páez)\nValor de venta: U$S 50.000\n\nPropiedad con gran potencial para reciclar en excelente ubicación, a metros del asfalto y de la estación del tren. De construcción tradicional y estilo rústico, presenta paredes de ladrillo visto pintadas, aberturas con rejas de seguridad y postigones de madera. Se desarrolla sobre un lote de 377 m² totales con 67 m² cubiertos, destacándose por su importante arboleda añosa con ejemplares de palmera, araucaria y nogal.\n\nEn su interior dispone de un comedor amplio con hogar a leña, cocina independiente, dos dormitorios y un baño completo. El inmueble cuenta con instalación eléctrica renovada hace 4 años, y perforación de agua realizada hace 5 años. El exterior ofrece circulación peatonal con piso de ladrillos, ingreso para vehículo, parrilla techada y horno de barro. Una propuesta funcional que combina conectividad inmediata, servicios actualizados y un entorno natural consolidado.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 CDMDLM",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "Lucas Paez, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-lucas-paez-20-de-junio"
+  },
+  {
     "id": 46,
     "nombre": "Terreno en Venta + Casa a Terminar – Cañuelas",
     "tipo": "Lote",
@@ -1829,7 +1876,8 @@ const PROPERTY_SLUG_MAP = {
   43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario',
   44: 'casa-quinta-33-orientales-2165',
   45: 'casa-sanabria-3784-gonzalez-catan',
-  46: 'terreno-casa-a-terminar-juana-azurduy-canuelas'
+  46: 'terreno-casa-a-terminar-juana-azurduy-canuelas',
+  47: 'casa-lucas-paez-20-de-junio'
 };
 
 function getPropertySlug(p) {

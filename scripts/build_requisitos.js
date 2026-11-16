@@ -68,7 +68,8 @@ const SLUG_MAP = {
   43: 'casa-quinta-manuel-antonio-castro-alquiler-temporario',
   44: 'casa-quinta-33-orientales-2165',
   45: 'casa-sanabria-3784-gonzalez-catan',
-  46: 'terreno-casa-a-terminar-juana-azurduy-canuelas'
+  46: 'terreno-casa-a-terminar-juana-azurduy-canuelas',
+  47: 'casa-lucas-paez-20-de-junio'
 };
 
 /**
