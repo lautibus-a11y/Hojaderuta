@@ -47,7 +47,6 @@ const SLUG_MAP = {
   19: 'quinta-el-maestro',
   20: 'cosquin-1120', // Explicit slug from user specification
   22: 'urien-casa-quinta',
-  24: 'la-rosalia-simona-venta',
   25: 'departamento-independiente-la-rosalia',
   26: 'terreno-alejo-castex',
   27: 'terreno-pablo-ceretti',
