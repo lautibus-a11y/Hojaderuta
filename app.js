@@ -1706,6 +1706,18 @@ const DEFAULT_PROPIEDADES = [
   }
 ];
 
+const DEFAULT_CLIENTES = [
+  {
+    "id": 1,
+    "nombre": "Carlos Mendoza",
+    "presupuesto_max": 100000,
+    "objetivo": "Casa quinta",
+    "tipo_interes": "Casa Quinta",
+    "fecha_registro": "2026-08-01",
+    "observaciones": "Busca amplio parque y tranquilidad para fin de semana."
+  }
+];
+
 let currentGeneratedRoadmap = null;
 
 const state = {
