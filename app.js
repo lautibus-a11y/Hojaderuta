@@ -13,6 +13,60 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
+    "id": 48,
+    "nombre": "Casa en Venta – Del Porvenir 4354",
+    "tipo": "Casa Quinta",
+    "precio": 95000,
+    "ubicacion": "Pontevedra",
+    "direccion": "Del Porvenir 4354 (entre Cuba y Valparaíso), Pontevedra",
+    "superficie": "374 m² (100 m² cub.)",
+    "estado": "Bueno",
+    "habitaciones": 4,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_28_PORTADA_.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_01_1.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_02_2.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_03_3.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_04_4.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_05_5.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_06_6.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_07_7.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_08_8.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_09_9.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_10_10.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_11_11.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_12_12.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_13_13.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_14_14.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_15_15.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_16_16.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_17_17.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_18_18.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_19_19.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_20_20.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_21_21.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_22_22.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_23_23.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_24_24.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_25_25.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_26_26.jpg",
+      "assets/imagenes/pontevedra/venta/del-por-venir-4354/Del por venir ---_limpia_27_27.jpg"
+    ],
+    "video": "",
+    "potencial_inversion": "CASA EN VENTA - PONTEVEDRA (Del Porvenir 4354)\nValor de contado: U$S 95.000\nPrecio de lista con financiación: U$S 105.000 (con posibilidad de financiar hasta el 40%)\n\nSe ofrece a la venta una cómoda propiedad ubicada sobre la calle Del Porvenir número 4354, entre Cuba y Valparaíso, con una superficie total de 374 metros cuadrados y aproximadamente 100 metros cuadrados edificados.\n\nLa distribución interior cuenta con cuatro dormitorios amplios y luminosos, dos baños completos (uno ubicado en el interior de la propiedad y el segundo en el área exterior), un cálido estar comedor equipado con hogar a leña y una cocina funcional. La construcción destaca por sus distinguidas aberturas de madera con vidrio repartido y la incorporación estratégica de claraboyas que otorgan iluminación natural cenital en los baños y en dos de las habitaciones.\n\nEn el sector exterior, el inmueble dispone de un amplio patio delantero y trasero, cochera techada para resguardo vehicular, un quincho con parrilla cubierta ideal para reuniones y un galpón o espacio de guardado independiente. El parque cuenta con una atractiva pileta con diseño en forma de corazón y una profundidad uniforme de 1,20 metros.\n\nEn cuanto a los servicios e infraestructura, la propiedad cuenta con conexión de gas natural y perforación de agua con bomba sumergible a 70 metros (sin cloacas). Asimismo, se destaca por ser APTA PARA CRÉDITO HIPOTECARIO y ofrece flexibilidad comercial, evaluando vehículos en parte de pago.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 CDMDLM",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": true,
+    "google_maps": "Del Porvenir 4354, Pontevedra, Merlo, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-del-por-venir-4354-pontevedra"
+  },
+  {
     "id": 47,
     "nombre": "Casa en Venta – Lucas Páez",
     "tipo": "Casa Quinta",
@@ -1877,7 +1931,8 @@ const PROPERTY_SLUG_MAP = {
   44: 'casa-quinta-33-orientales-2165',
   45: 'casa-sanabria-3784-gonzalez-catan',
   46: 'terreno-casa-a-terminar-juana-azurduy-canuelas',
-  47: 'casa-lucas-paez-20-de-junio'
+  47: 'casa-lucas-paez-20-de-junio',
+  48: 'casa-del-por-venir-4354-pontevedra'
 };
 
 function getPropertySlug(p) {
