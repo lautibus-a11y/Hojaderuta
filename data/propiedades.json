@@ -1,5 +1,46 @@
 [
   {
+    "id": 49,
+    "nombre": "Casa Quinta en Venta – California 5900",
+    "tipo": "Casa Quinta",
+    "precio": 135000,
+    "ubicacion": "20 de Junio",
+    "direccion": "California 5900, 20 de Junio",
+    "superficie": "2.600 m²",
+    "estado": "Bueno",
+    "habitaciones": 2,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/1.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/2.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/3.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/4.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/5.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/6.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/7.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/8.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/9.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/10.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/11.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/12.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/13.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/14.png",
+      "assets/imagenes/20-de-junio/venta/CALIFORNIA- VENTA/15.png"
+    ],
+    "video": "",
+    "potencial_inversion": "Casa Quinta En Venta - Terreno 2600 M2 - 20 De Junio\nCALIFORNIA 5900\nValor de venta: U$S 135.000\n\nCasa quinta en venta sobre amplio lote de 2.600 m². La propiedad se desarrolla en una sola planta y cuenta con un luminoso living comedor integrado. Dispone de una cocina amplia y funcional, dos dormitorios, baño completo y lavadero cubierto. Posee proyecto de ampliación en planta alta, aportando gran potencial de crecimiento y desarrollo a la propiedad.\n\nEn el exterior se destaca un gran parque arbolado, con abundante sombra natural. Además, posee dos piletas y un quincho con techo de paja, complementado con baño exterior.\n\n• Terreno de 2.600 m²\n• Acceso por ripio\n• Excelente entorno natural\n• Amplio parque y arboleda\n• Quincho y dos piletas\n\nIVANA MOLINA & ASOC. BIENES RAÍCES\nMat. 1048 - Colegio de Martilleros de La Matanza",
+    "renta_estimada": "Consultar",
+    "destinos": [
+      "Vivienda",
+      "Inversión"
+    ],
+    "moneda": "USD",
+    "operacion": "Venta",
+    "apto_credito": false,
+    "google_maps": "California 5900, 20 de Junio, La Matanza, Provincia de Buenos Aires, Argentina",
+    "slug": "casa-quinta-california-5900-venta"
+  },
+  {
     "id": 1,
     "nombre": "Casa Quinta en Alquiler – Ejército de los Andes",
     "tipo": "Casa Quinta",

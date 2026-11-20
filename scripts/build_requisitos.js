@@ -67,7 +67,8 @@ const SLUG_MAP = {
   45: 'casa-sanabria-3784-gonzalez-catan',
   46: 'terreno-casa-a-terminar-juana-azurduy-canuelas',
   47: 'casa-lucas-paez-20-de-junio',
-  48: 'casa-del-por-venir-4354-pontevedra'
+  48: 'casa-del-por-venir-4354-pontevedra',
+  49: 'casa-quinta-california-5900-venta'
 };
 
 /**
