@@ -30,6 +30,7 @@ function slugify(text) {
 
 // Mapeo canónico de slugs limpios y únicos para cada propiedad
 const SLUG_MAP = {
+  1: 'casa-quinta-ejercito-de-los-andes-alquiler',
   2: 'la-rosalia-simona-alquiler',
   4: 'depto-canning',
   5: 'casa-quinta-cosquin-194-alquiler',

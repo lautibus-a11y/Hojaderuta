@@ -13,6 +13,45 @@ const WPP_ICON_SVG = `<svg width="17" height="17" viewBox="0 0 24 24" fill="curr
 
 const DEFAULT_PROPIEDADES = [
   {
+    "id": 1,
+    "nombre": "Casa Quinta en Alquiler – Ejército de los Andes",
+    "tipo": "Casa Quinta",
+    "precio": 1000000,
+    "ubicacion": "20 de Junio",
+    "direccion": "Ejército de los Andes 498 (entre 33 Orientales y Carhué), 20 de Junio",
+    "superficie": "3.109 m² (100 m² cub.)",
+    "estado": "Bueno",
+    "habitaciones": 3,
+    "banos": 2,
+    "imagenes": [
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_1.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_2.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_3.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_4.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_5.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_6.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_7.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_8.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_9.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_10.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_11.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_12.webp",
+      "assets/imagenes/20-de-junio/alquiler/ejercito-de-los-andes-1/ejercito-de-los-andes_13.webp"
+    ],
+    "video": "",
+    "potencial_inversion": "ALQUILER PERMANENTE: CASA QUINTA CON PARQUE Y PILETA\nPrecio: $ 1.000.000 mensuales\n\nExcelente propiedad residencial disponible para alquiler de larga duración en 20 de Junio, La Matanza. Ideal para disfrutar del aire libre con todas las comodidades.\n\n• Dimensiones: Lote total de 3.109 m² (37,5 m de frente x 82,92 m de fondo) con 100 m² cubiertos.\n• Distribución: Casa con 2 dormitorios, baño completo, cocina, comedor y amplio living.\n• Exterior: Quincho independiente con baño, pileta en muy buen estado y extenso terreno con arboleda añosa.\n• Ubicación: Calle Ejército de los Andes entre 33 Orientales y Carhué (zona residencial consolidada).\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 – Colegio de Martilleros de La Matanza",
+    "renta_estimada": "$ 1.000.000 / mes",
+    "destinos": [
+      "Vivienda",
+      "Alquiler"
+    ],
+    "moneda": "ARS",
+    "operacion": "Alquiler",
+    "apto_credito": false,
+    "google_maps": "Ejercito De Los Andes 498, B1786 20 De Junio, La Matanza, Provincia De Buenos Aires, Argentina",
+    "slug": "casa-quinta-ejercito-de-los-andes-alquiler"
+  },
+  {
     "id": 48,
     "nombre": "Casa en Venta – Del Porvenir 4354",
     "tipo": "Casa Quinta",
@@ -1704,6 +1743,7 @@ function renderPropertiesGrid(list) {
 }
 
 const PROPERTY_SLUG_MAP = {
+  1: 'casa-quinta-ejercito-de-los-andes-alquiler',
   4: 'depto-canning',
   5: 'casa-quinta-cosquin-194-alquiler',
   6: 'cosquin-1400-venta',
