@@ -770,7 +770,7 @@
     "id": 34,
     "nombre": "Departamento 2 Ambientes – Río de Janeiro 3450",
     "tipo": "Departamento",
-    "precio": 450000,
+    "precio": 380000,
     "ubicacion": "Pontevedra",
     "direccion": "Río de Janeiro 3450, Pontevedra, Partido de Merlo, Buenos Aires",
     "superficie": "45 m² aprox",
@@ -789,8 +789,8 @@
       "assets/imagenes/pontevedra/Alquiler/Departamento rio de janeiro/wm_8.webp"
     ],
     "video": "",
-    "potencial_inversion": "ALQUILER DE DEPARTAMENTO 2 AMBIENTES - DESTINO VIVIENDA PERMANENTE\n\nPrecio: $ 450.000 / mes.\nUbicación: Río de Janeiro 3450, Pontevedra, Partido de Merlo, Buenos Aires.\n\nFuncional departamento de dos ambientes, ideal para quienes buscan comodidad y practicidad. Cuenta con una luminosa habitación, un amplio living, cocina-comedor integrada de diseño eficiente y baño completo. Sector exterior compartido.\n\nCondiciones:\n• Plazo de locación: 1 año\n• Actualización: Cuatrimestral por IPC (con ajuste mínimo del 10%)\n• Requisitos: Mes de ingreso (.000), mes de depósito (.000), honorarios inmobiliarios (.000). Total inicial aprox: .350.000 (más gastos e informes)\n• Garantías aceptadas: Garantía propietaria, 3 recibos de sueldo que dupliquen el alquiler o seguro de caución.",
-    "renta_estimada": "$ 450.000 / mes",
+    "potencial_inversion": "ALQUILER DE DEPARTAMENTO 2 AMBIENTES - DESTINO VIVIENDA PERMANENTE\n\nPrecio: $ 380.000 / mes.\nUbicación: Río de Janeiro 3450, Pontevedra, Partido de Merlo, Buenos Aires.\n\nFuncional departamento de dos ambientes, ideal para quienes buscan comodidad y practicidad. Cuenta con una luminosa habitación, un amplio living, cocina-comedor integrada de diseño eficiente y baño completo. Sector exterior compartido.\n\nCondiciones:\n• Plazo de locación: 1 año\n• Actualización: Cuatrimestral por IPC (con ajuste mínimo del 10%)\n• Requisitos: Mes de ingreso ($380.000), mes de depósito ($380.000), honorarios inmobiliarios ($380.000). Total inicial aprox: $1.140.000 (más gastos e informes)\n• Garantías aceptadas: Garantía propietaria, 3 recibos de sueldo que dupliquen el alquiler o seguro de caución.\n\nIVANA MOLINA & ASOCIADOS BIENES RAÍCES\nMatrícula 1048 CDMDLM",
+    "renta_estimada": "$ 380.000 / mes",
     "destinos": [
       "Vivienda",
       "Alquiler"
