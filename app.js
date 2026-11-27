@@ -928,33 +928,6 @@ const DEFAULT_PROPIEDADES = [
     "slug": "la-camella-alquiler"
   },
   {
-    "id": 29,
-    "nombre": "Terreno_Venta_Juancasacuberta_20Dejunio_Lamatanza",
-    "tipo": "Lote",
-    "precio": 29000,
-    "ubicacion": "20 de Junio",
-    "direccion": "Coronda 1040, 20 de Junio",
-    "superficie": "546 m²",
-    "estado": "Bueno",
-    "habitaciones": 0,
-    "banos": 0,
-    "imagenes": [
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-juancasacuberta-20dejunio-lamatanza-1/portada-1_1.webp",
-      "assets/imagenes/20-de-junio/venta/terrenos/terreno-venta-juancasacuberta-20dejunio-lamatanza-1/foto-2.webp"
-    ],
-    "video": "",
-    "potencial_inversion": "Excelente oportunidad en 20 de Junio. Precio: USD 29.000  Terrenos en Venta – Juan Casacuberta, 20 de Junio Ubicación: Calle Juan Casacube...",
-    "renta_estimada": "Consultar",
-    "destinos": [
-      "Inversión"
-    ],
-    "moneda": "USD",
-    "operacion": "Venta",
-    "apto_credito": false,
-    "google_maps": "Coronda 1040, B1786abb 20 De Junio, Provincia De Buenos Aires, Argentina",
-    "slug": "terreno-juan-casacuberta"
-  },
-  {
     "id": 28,
     "nombre": "Cassafousth Terreno",
     "tipo": "Lote",
@@ -1802,7 +1775,6 @@ const PROPERTY_SLUG_MAP = {
   26: 'terreno-alejo-castex',
   27: 'terreno-pablo-ceretti',
   28: 'cassafousth-terreno',
-  29: 'terreno-juan-casacuberta',
   30: 'la-camella-alquiler',
   31: 'lote-1915m-manuel-antonio-castro',
   32: 'depto-av-rivadavia-14600',
